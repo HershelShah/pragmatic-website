@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const products = [
+  {
+    name: 'PADS-5080',
+    description: 'Our flagship directional speaker with 50ft range and 80° beam width',
+    href: '/products/directional-speakers/pads-5080',
+  },
+  {
+    name: 'PADS-4060',
+    description: 'Mid-range directional speaker perfect for retail and museums',
+    href: '/products/directional-speakers/pads-4060',
+  },
+  {
+    name: 'PADS-3040',
+    description: 'Compact directional speaker for smaller installations',
+    href: '#',
+  },
+];
+---
+
+<BaseLayout
+  title="Directional Speakers"
+  description="PADS™ directional speaker technology delivers focused audio exactly where you need it, without disturbing surrounding areas."
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary to-primary-dark text-white py-20">
+    <div class="container-default">
+      <div class="max-w-3xl">
+        <span class="badge bg-white/20 text-white mb-4">PADS™ Technology</span>
+        <h1 class="text-5xl font-bold mb-6">Directional Speaker Systems</h1>
+        <p class="text-xl text-gray-200 leading-relaxed">
+          PADS™ (Pragmatic Audio Directional System) delivers focused sound in a narrow beam,
+          allowing audio to be heard clearly in specific areas while remaining inaudible just
+          feet away. Perfect for museums, retail, healthcare, and corporate environments.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Explanation -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">How Directional Speakers Work</h2>
+          <div class="prose prose-lg text-gray-600 space-y-4">
+            <p>
+              Unlike conventional speakers that broadcast sound in all directions, PADS™ technology
+              uses advanced acoustic focusing to create a precise "column" of sound. This allows
+              you to deliver audio content to specific listeners without disturbing people nearby.
+            </p>
+            <p>
+              Developed from NASA research partnerships, our directional speakers use proprietary
+              transducer arrays and digital signal processing to achieve unprecedented beam control
+              and audio clarity.
+            </p>
+          </div>
+          <div class="mt-6 grid grid-cols-2 gap-4">
+            <div class="bg-secondary/10 rounded-lg p-4">
+              <div class="text-2xl font-bold text-secondary mb-1">30°-80°</div>
+              <div class="text-sm text-gray-600">Beam Width Options</div>
+            </div>
+            <div class="bg-secondary/10 rounded-lg p-4">
+              <div class="text-2xl font-bold text-secondary mb-1">Up to 50ft</div>
+              <div class="text-sm text-gray-600">Effective Range</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-2xl p-12 text-center">
+          <div class="text-9xl">🔊</div>
+          <p class="text-gray-500 mt-4">Directional Sound Technology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">PADS™ Product Line</h2>
+        <p class="text-gray-600 text-lg">
+          Choose the right directional speaker for your application
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {products.map((product) => (
+          <a href={product.href} class="card group">
+            <div class="aspect-square bg-gray-100 flex items-center justify-center">
+              <div class="text-7xl">🔊</div>
+            </div>
+            <div class="card-body">
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                {product.name}
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                {product.description}
+              </p>
+              <span class="text-primary font-medium text-sm">
+                Learn More →
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="section-padding">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold mb-12 text-center">Common Applications</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">🏛️</div>
+          <h3 class="font-semibold mb-2">Museums & Galleries</h3>
+          <p class="text-sm text-gray-600">Exhibit audio without crosstalk between displays</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">🏥</div>
+          <h3 class="font-semibold mb-2">Healthcare</h3>
+          <p class="text-sm text-gray-600">Patient entertainment without disturbing neighbors</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">🛍️</div>
+          <h3 class="font-semibold mb-2">Retail</h3>
+          <p class="text-sm text-gray-600">Targeted promotions and product information</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-5xl mb-4">🏢</div>
+          <h3 class="font-semibold mb-2">Corporate</h3>
+          <p class="text-sm text-gray-600">Conference room privacy and focused audio</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary text-white section-padding">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Need Help Choosing?</h2>
+      <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        Our team can help you select the right directional speaker for your specific application.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary bg-accent hover:bg-accent-light">
+          Request a Quote
+        </a>
+        <a href="/contact" class="btn-outline-white">
+          Contact Sales
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

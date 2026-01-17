@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const industries = [
+  { name: 'Government & Defense', href: '/industries/government', icon: '🏛️', description: 'Federal, defense, and municipal audio solutions with security clearance capability' },
+  { name: 'Healthcare', href: '/industries/healthcare', icon: '🏥', description: 'Patient entertainment and clinical audio systems for medical facilities' },
+  { name: 'Education', href: '/industries/education', icon: '🎓', description: 'Campus-wide paging, classroom audio, and event systems' },
+  { name: 'Corporate', href: '/industries/corporate', icon: '🏢', description: 'Conference rooms, lobby audio, and facility-wide communications' },
+  { name: 'Hospitality', href: '/industries/hospitality', icon: '🏨', description: 'Guest experience enhancement through targeted audio delivery' },
+  { name: 'Houses of Worship', href: '/industries/houses-of-worship', icon: '⛪', description: 'Sound reinforcement and distributed audio for worship spaces' },
+  { name: 'Cultural & Events', href: '/industries/events', icon: '🎭', description: 'Museums, galleries, theaters, and event venues' },
+  { name: 'Residential', href: '/industries/residential', icon: '🏠', description: 'High-end home theater and distributed audio systems' },
+];
+---
+
+<BaseLayout
+  title="Industries We Serve"
+  description="Pragmatic Communications provides audio solutions for government, healthcare, education, corporate, hospitality, and more."
+>
+  <section class="bg-primary text-white py-20">
+    <div class="container-default">
+      <h1 class="text-5xl font-bold mb-6">Industries We Serve</h1>
+      <p class="text-xl text-gray-200 max-w-3xl">
+        For over 30 years, we've provided professional audio solutions to the most demanding
+        environments across multiple industries. From NASA research facilities to major
+        healthcare systems, our technology is trusted where performance matters most.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {industries.map((industry) => (
+          <a href={industry.href} class="card group">
+            <div class="card-body text-center">
+              <span class="text-5xl mb-4 block">{industry.icon}</span>
+              <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                {industry.name}
+              </h3>
+              <p class="text-gray-600 text-sm">
+                {industry.description}
+              </p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-50 section-padding">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Trusted by Leading Organizations</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div class="text-gray-600 font-semibold">NASA</div>
+          <div class="text-gray-600 font-semibold">US Coast Guard</div>
+          <div class="text-gray-600 font-semibold">Kaiser Permanente</div>
+          <div class="text-gray-600 font-semibold">Smithsonian</div>
+        </div>
+        <p class="text-gray-600 mb-8">
+          Whether you're a government agency, healthcare facility, educational institution, or
+          private business, we have the expertise to deliver the perfect audio solution.
+        </p>
+        <a href="/quote" class="btn-primary">Discuss Your Project</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

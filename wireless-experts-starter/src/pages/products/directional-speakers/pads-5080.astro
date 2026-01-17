@@ -1,0 +1,158 @@
+---
+import ProductLayout from '../../../layouts/ProductLayout.astro';
+
+const specifications = {
+  'Beam Angle': '30° - 80° (adjustable)',
+  'Effective Range': 'Up to 50 feet',
+  'Frequency Response': '200Hz - 16kHz',
+  'Power Rating': '40W RMS',
+  'Impedance': '8 Ohms',
+  'Dimensions': '24" H x 8" W x 4" D',
+  'Weight': '12 lbs',
+  'Mounting': 'Wall, ceiling, or stand mount',
+  'Finish': 'Black or white powder coat',
+  'Input': 'Standard speaker wire terminals',
+  'Made in': 'USA',
+};
+
+const features = [
+  'Adjustable beam width from 30° to 80°',
+  'Crystal-clear audio up to 50 feet',
+  'Proprietary acoustic focusing technology',
+  'Low distortion, high intelligibility',
+  'Rugged construction for commercial use',
+  'Multiple mounting options included',
+  'Weather-resistant for outdoor use',
+  'Compatible with standard amplifiers',
+];
+
+const applications = [
+  'Museum exhibits - Deliver narration to specific artworks without crosstalk',
+  'Healthcare facilities - Patient TV audio without disturbing others',
+  'Retail stores - Targeted product promotions and advertising',
+  'Corporate offices - Conference room audio with enhanced privacy',
+  'Libraries - Computer station audio in quiet areas',
+  'Trade shows - Booth audio that doesn\'t bleed to neighbors',
+];
+
+const relatedProducts = [
+  { name: 'PADS-4060', href: '/products/directional-speakers/pads-4060' },
+  { name: 'PADS-3040', href: '#' },
+  { name: 'Audio Distribution System', href: '/products/audio-distribution' },
+];
+---
+
+<ProductLayout
+  title="PADS-5080 Directional Speaker"
+  description="The PADS-5080 is our flagship directional speaker system, delivering focused audio in a 30°-80° beam pattern up to 50 feet. Perfect for museums, healthcare, retail, and corporate applications where audio needs to be contained to specific areas."
+  category="Directional Speakers"
+  badge="PADS™ Technology"
+  specifications={specifications}
+  features={features}
+  applications={applications}
+  relatedProducts={relatedProducts}
+>
+  <div slot="product-icon">🔊</div>
+
+  <div slot="additional-info">
+    <div class="bg-secondary/10 border border-secondary/20 rounded-lg p-6 mt-6">
+      <h4 class="font-semibold text-secondary-dark mb-2">NASA Heritage Technology</h4>
+      <p class="text-gray-600 text-sm">
+        The PADS-5080 utilizes acoustic focusing technology developed through our work
+        with NASA research programs. This proven technology delivers exceptional beam
+        control and audio clarity.
+      </p>
+    </div>
+  </div>
+
+  <!-- Use Cases Section -->
+  <section class="section-padding bg-white">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Real-World Use Cases</h2>
+
+        <div class="space-y-8">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-xl font-semibold mb-3">Smithsonian Museum Installation</h3>
+              <p class="text-gray-600 mb-4">
+                The Smithsonian uses PADS-5080 speakers to deliver exhibit narration without
+                audio crosstalk. Visitors experience immersive audio at each display while
+                maintaining the quiet, contemplative museum atmosphere.
+              </p>
+              <div class="text-sm text-gray-500">
+                <strong>Result:</strong> 95% reduction in audio bleed between exhibits
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-8 text-center">
+              <div class="text-6xl mb-2">🏛️</div>
+              <div class="text-sm text-gray-600">Museum Application</div>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="md:order-2">
+              <h3 class="text-xl font-semibold mb-3">Kaiser Permanente Hospital</h3>
+              <p class="text-gray-600 mb-4">
+                Hospital patient rooms use PADS-5080 to deliver TV audio directly to patients
+                without disturbing neighboring rooms or requiring uncomfortable headphones.
+              </p>
+              <div class="text-sm text-gray-500">
+                <strong>Result:</strong> Improved patient satisfaction scores by 23%
+              </div>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-8 text-center md:order-1">
+              <div class="text-6xl mb-2">🏥</div>
+              <div class="text-sm text-gray-600">Healthcare Application</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="font-semibold mb-2">How far can the PADS-5080 project sound?</h3>
+            <p class="text-gray-600 text-sm">
+              The PADS-5080 effectively delivers clear audio up to 50 feet in optimal acoustic
+              conditions. Actual range depends on ambient noise, ceiling height, and other
+              environmental factors.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="font-semibold mb-2">Does it require special installation?</h3>
+            <p class="text-gray-600 text-sm">
+              No. The PADS-5080 works with standard audio amplifiers and can be installed by
+              any qualified AV technician. We provide mounting brackets and complete installation
+              instructions. Technical support is available if needed.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="font-semibold mb-2">Can the beam width be adjusted after installation?</h3>
+            <p class="text-gray-600 text-sm">
+              Yes. The beam width can be adjusted from 30° to 80° using the built-in controls,
+              allowing you to fine-tune coverage for your specific space.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-sm">
+            <h3 class="font-semibold mb-2">What's the warranty?</h3>
+            <p class="text-gray-600 text-sm">
+              All PADS speakers come with a 2-year limited warranty covering manufacturing defects.
+              Extended warranty options are available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ProductLayout>

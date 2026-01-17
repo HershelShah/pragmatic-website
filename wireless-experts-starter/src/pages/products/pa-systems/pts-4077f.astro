@@ -1,0 +1,66 @@
+---
+import ProductLayout from '../../../layouts/ProductLayout.astro';
+
+const specifications = {
+  'System Type': 'Integrated PA/Paging System',
+  'Power Output': '40W RMS',
+  'Zones': 'Up to 4 independent zones',
+  'Inputs': 'Microphone, Aux (3.5mm), AM/FM Tuner',
+  'Outputs': 'Speaker terminals (70V/25V/8Ω)',
+  'Frequency Response': '100Hz - 15kHz',
+  'Dimensions': '19" W x 3.5" H x 12" D (2U rack)',
+  'Weight': '15 lbs',
+  'Power Requirements': '120VAC, 60Hz',
+  'Mounting': '19" rack mount (included)',
+  'Made in': 'USA',
+};
+
+const features = [
+  'Built-in AM/FM tuner with preset memory',
+  'Microphone input with priority override',
+  'Auxiliary input for external audio sources',
+  'Independent volume control for each zone',
+  'Tone generator for testing and alerts',
+  'LED indicators for power and signal',
+  'Cooling fan for continuous operation',
+  'Rack-mountable 2U design',
+];
+
+const applications = [
+  'Schools and universities - Campus-wide paging and announcements',
+  'Warehouses and factories - Safety announcements and background music',
+  'Retail stores - Music and promotional announcements',
+  'Office buildings - Paging and emergency notifications',
+  'Houses of worship - Sound distribution to multiple rooms',
+  'Hospitals - Facility-wide paging and zone control',
+];
+
+const relatedProducts = [
+  { name: 'Audio Distribution System', href: '/products/audio-distribution' },
+  { name: 'Source Components', href: '/products/source-components' },
+];
+---
+
+<ProductLayout
+  title="PTS-4077F PA System"
+  description="Complete integrated paging and announcement system with AM/FM tuner, multi-zone capability, and 40W power output. Perfect for commercial facilities requiring reliable audio distribution."
+  category="PA Systems"
+  badge="Professional Grade"
+  specifications={specifications}
+  features={features}
+  applications={applications}
+  relatedProducts={relatedProducts}
+>
+  <div slot="product-icon">📢</div>
+
+  <div slot="additional-info">
+    <div class="bg-primary/10 border border-primary/20 rounded-lg p-6 mt-6">
+      <h4 class="font-semibold text-primary-dark mb-2">Complete PA Solution</h4>
+      <p class="text-gray-600 text-sm">
+        The PTS-4077F is a complete PA system in a single 2U rack unit. Just add speakers
+        and you're ready to broadcast announcements, music, and emergency notifications
+        across your facility.
+      </p>
+    </div>
+  </div>
+</ProductLayout>
