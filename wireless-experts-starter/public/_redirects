@@ -1,0 +1,60 @@
+# Redirect old .html pages to new clean URLs
+# Format: /old-path /new-path status-code
+
+# Core Pages
+/index.html                         /                                   301
+/aboutus.html                       /about                              301
+/support.html                       /contact                            301
+/quote.html                         /quote                              301
+/corphq.html                        /contact                            301
+
+# Products - PA Systems
+/PTS4077F.html                      /products/pa-systems/pts-4077f      301
+/PTS-4077F.html                     /products/pa-systems/pts-4077f      301
+
+# Products - Source Components
+/PIM-21B.html                       /products/source-components/pim-21b 301
+/MuSe.html                          /products/source-components/muse    301
+
+# Products - Healthcare
+/phLCDTv&MP.html                    /products/healthcare/phlcd-tv       301
+/phLCDTv%26MP.html                  /products/healthcare/phlcd-tv       301
+
+# Products - Directional Speakers
+/PADS-5080.html                     /products/directional-speakers/pads-5080  301
+/PADS-4060.html                     /products/directional-speakers/pads-4060  301
+
+# Products - Audio Distribution
+/PragmaticAudioDistribution.html    /products/audio-distribution        301
+
+# Industries
+/government.html                    /industries/government              301
+/healthcare.html                    /industries/healthcare              301
+/education.html                     /industries/education               301
+/corporate.html                     /industries/corporate               301
+/hospitality.html                   /industries/hospitality             301
+/how.html                           /industries/houses-of-worship       301
+/culturalandevents.html             /industries/events                  301
+/residential.html                   /industries/residential             301
+
+# Support & Resources
+/Manuals,%20diagrams,%20DS.html     /support/downloads                  301
+/Manuals%2C%20diagrams%2C%20DS.html /support/downloads                  301
+/Press-releases.html                /about#press                        301
+/dealers.html                       /contact#dealers                    301
+/reseller.html                      /contact#reseller                   301
+/joinemail.html                     /contact#newsletter                 301
+/sitemap.html                       /sitemap.xml                        301
+
+# Press Releases
+/iwc-pr.html                        /about#press                        301
+/SAA-pr2.html                       /about#press                        301
+
+# Catch-all for any remaining .html files
+/*.html                             /:splat                             301
+
+# Handle trailing slashes
+/products/                          /products                           301
+/industries/                        /industries                         301
+/about/                             /about                              301
+/contact/                           /contact                            301

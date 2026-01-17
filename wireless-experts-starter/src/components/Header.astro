@@ -1,0 +1,122 @@
+---
+const navigation = [
+  {
+    name: 'Products',
+    href: '/products',
+    children: [
+      { name: 'Directional Speakers', href: '/products/directional-speakers' },
+      { name: 'PA Systems', href: '/products/pa-systems' },
+      { name: 'Audio Distribution', href: '/products/audio-distribution' },
+      { name: 'Source Components', href: '/products/source-components' },
+      { name: 'Healthcare Solutions', href: '/products/healthcare' },
+    ]
+  },
+  {
+    name: 'Industries',
+    href: '/industries',
+    children: [
+      { name: 'Government', href: '/industries/government' },
+      { name: 'Healthcare', href: '/industries/healthcare' },
+      { name: 'Education', href: '/industries/education' },
+      { name: 'Corporate', href: '/industries/corporate' },
+      { name: 'Hospitality', href: '/industries/hospitality' },
+      { name: 'Houses of Worship', href: '/industries/houses-of-worship' },
+    ]
+  },
+  { name: 'About', href: '/about' },
+  { name: 'Support', href: '/support' },
+];
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <span class="text-xl font-bold text-primary">Pragmatic</span>
+        <span class="text-xl font-light text-gray-600 ml-1">Communications</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        {navigation.map((item) => (
+          item.children ? (
+            <div class="relative group">
+              <button class="flex items-center text-gray-700 hover:text-primary font-medium transition-colors">
+                {item.name}
+                <svg class="ml-1 w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-out">
+                <div class="py-2 bg-white rounded-lg shadow-xl border border-gray-100">
+                  {item.children.map((child) => (
+                    <a href={child.href} class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-primary transition-colors">
+                      {child.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <a href={item.href} class="text-gray-700 hover:text-primary font-medium transition-colors">
+              {item.name}
+            </a>
+          )
+        ))}
+      </div>
+      
+      <!-- CTA Button -->
+      <div class="hidden lg:block">
+        <a href="/quote" class="inline-flex items-center px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-semibold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+          Get a Quote
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 hover:text-primary" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden pb-4">
+      {navigation.map((item) => (
+        <div class="py-2">
+          {item.children ? (
+            <div>
+              <span class="block px-3 py-2 text-gray-900 font-medium">{item.name}</span>
+              <div class="pl-4">
+                {item.children.map((child) => (
+                  <a href={child.href} class="block px-3 py-2 text-gray-600 hover:text-primary">
+                    {child.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <a href={item.href} class="block px-3 py-2 text-gray-900 font-medium hover:text-primary">
+              {item.name}
+            </a>
+          )}
+        </div>
+      ))}
+      <div class="pt-4 px-3">
+        <a href="/quote" class="block w-full text-center px-5 py-2.5 bg-accent hover:bg-accent-light text-white font-semibold rounded-lg transition-colors">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

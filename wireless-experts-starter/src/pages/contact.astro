@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Contact Us" 
+  description="Get in touch with Pragmatic Communications Systems. Request a quote, technical support, or general inquiries."
+>
+  <!-- Hero -->
+  <section class="bg-primary text-white py-16">
+    <div class="container-default">
+      <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+      <p class="text-xl text-gray-200 max-w-2xl">
+        Have a question or need a quote? We're here to help. Reach out to our team 
+        and we'll respond within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12">
+        
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
+          
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="/contact/success"
+            class="space-y-6"
+          >
+            <!-- Honeypot field for spam protection -->
+            <p class="hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <input type="hidden" name="form-name" value="contact" />
+            
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="label">Full Name *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  class="input"
+                  placeholder="John Smith"
+                />
+              </div>
+              <div>
+                <label for="company" class="label">Company *</label>
+                <input 
+                  type="text" 
+                  id="company" 
+                  name="company" 
+                  required 
+                  class="input"
+                  placeholder="Acme Corporation"
+                />
+              </div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label for="email" class="label">Email Address *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  class="input"
+                  placeholder="john@company.com"
+                />
+              </div>
+              <div>
+                <label for="phone" class="label">Phone Number</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  class="input"
+                  placeholder="(555) 123-4567"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <label for="interest" class="label">Product Interest</label>
+              <select id="interest" name="interest" class="input">
+                <option value="">Select a product category...</option>
+                <option value="directional-speakers">Directional Speakers (PADS™)</option>
+                <option value="pa-systems">PA Systems</option>
+                <option value="audio-distribution">Audio Distribution</option>
+                <option value="healthcare">Healthcare Solutions</option>
+                <option value="custom">Custom Solution</option>
+                <option value="other">Other / General Inquiry</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" class="label">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required 
+                class="input resize-none"
+                placeholder="Tell us about your project or question..."
+              ></textarea>
+            </div>
+            
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-500">
+                * Required fields
+              </p>
+              <button type="submit" class="btn-primary">
+                Send Message →
+              </button>
+            </div>
+            
+            <p class="text-sm text-gray-500">
+              🔒 We respect your privacy and never share your information.
+            </p>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6">Get in Touch</h2>
+          
+          <!-- Contact Cards -->
+          <div class="space-y-6 mb-8">
+            <div class="bg-gray-50 rounded-lg p-6">
+              <h3 class="font-semibold text-lg mb-2">📍 Corporate Headquarters</h3>
+              <address class="text-gray-600 not-italic">
+                Pragmatic Communications Systems, Inc.<br>
+                2340A Walsh Avenue<br>
+                Santa Clara, CA 95051
+              </address>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-6">
+              <h3 class="font-semibold text-lg mb-2">📞 Phone</h3>
+              <p class="text-gray-600">
+                <a href="tel:+14087481100" class="text-primary hover:underline">
+                  408-748-1100
+                </a>
+              </p>
+              <p class="text-sm text-gray-500 mt-1">
+                Monday - Friday, 8am - 5pm PST
+              </p>
+            </div>
+            
+            <div class="bg-gray-50 rounded-lg p-6">
+              <h3 class="font-semibold text-lg mb-2">✉️ Email</h3>
+              <p class="text-gray-600">
+                Sales: <a href="mailto:sales@pragmatic1.com" class="text-primary hover:underline">sales@pragmatic1.com</a>
+              </p>
+              <p class="text-gray-600">
+                Support: <a href="mailto:support@pragmatic1.com" class="text-primary hover:underline">support@pragmatic1.com</a>
+              </p>
+            </div>
+          </div>
+          
+          <!-- Response Time -->
+          <div class="bg-secondary/10 border border-secondary/20 rounded-lg p-6">
+            <h3 class="font-semibold text-secondary-dark mb-2">
+              ⚡ Fast Response Guarantee
+            </h3>
+            <p class="text-gray-600 text-sm">
+              We respond to all inquiries within 24 business hours. For urgent matters, 
+              please call us directly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section (Placeholder) -->
+  <section class="bg-gray-100 py-12">
+    <div class="container-default">
+      <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
+        <p class="text-gray-500">
+          [Google Maps embed would go here]
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

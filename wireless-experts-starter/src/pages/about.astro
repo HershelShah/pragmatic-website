@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const timeline = [
+  { year: '1986', event: 'Pragmatic Solutions founded as engineering consulting group' },
+  { year: '1994', event: 'Pragmatic Communications Systems incorporated in Silicon Valley' },
+  { year: '1995', event: 'Graduated from NASA Ames Technology Commercialization Center' },
+  { year: '1995', event: 'Provided wireless video technology for NASA Mars Rover prototype' },
+  { year: '2000', event: 'Expanded into professional audio with PADS™ directional speakers' },
+  { year: '2005', event: 'Healthcare entertainment division launched' },
+  { year: '2010', event: 'CATS™ audio distribution technology introduced' },
+  { year: '2024', event: '30 years of innovation, serving customers worldwide' },
+];
+
+const certifications = [
+  'ISO 9001 Certified Manufacturing',
+  'Made in USA',
+  'NASA Technology Partner',
+  'UL Listed Products',
+];
+---
+
+<BaseLayout 
+  title="About Us" 
+  description="Learn about Pragmatic Communications Systems - a Silicon Valley manufacturer of professional audio/video equipment since 1994. NASA technology partner, Made in USA."
+>
+  <!-- Hero -->
+  <section class="bg-primary text-white py-16">
+    <div class="container-default">
+      <h1 class="text-4xl font-bold mb-4">About Pragmatic Communications</h1>
+      <p class="text-xl text-gray-200 max-w-3xl">
+        A Silicon Valley success story: from NASA research partnerships to worldwide 
+        professional audio solutions, we've been engineering excellence since 1986.
+      </p>
+    </div>
+  </section>
+
+  <!-- Company Story -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="badge badge-primary mb-4">Our Story</span>
+          <h2 class="text-3xl font-bold mb-6">
+            Engineering Innovation for Over 30 Years
+          </h2>
+          <div class="prose prose-lg text-gray-600 space-y-4">
+            <p>
+              Pragmatic Communications Systems, Inc. is a Silicon Valley-based California Corporation 
+              founded in 1994 as a natural expansion of Pragmatic Solutions, an engineering consulting 
+              group established in 1986.
+            </p>
+            <p>
+              Our roots trace back to designing electronics for bio-medical research instruments. 
+              We expanded our expertise into video imaging, radio-frequency communications, and 
+              wireless systems, culminating in industry-first technologies including high-resolution 
+              wireless video transmission for MRI signals and thermal imaging cameras.
+            </p>
+            <p>
+              As part of NASA's Ames Technology Commercialization Center in Sunnyvale, we provided 
+              wireless video transmission technologies to NASA's prototype Mars Rover project, 
+              Moffett Naval Air Station, US Coast Guard, US Air Force, and nuclear power facilities.
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-2xl p-8 text-center">
+          <div class="text-6xl mb-4">🚀</div>
+          <h3 class="text-2xl font-bold text-primary mb-2">NASA Heritage</h3>
+          <p class="text-gray-600">
+            Technology partner for NASA's Mars Rover prototype and military applications
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">Our Journey</h2>
+        <p class="text-gray-600 text-lg">
+          Key milestones in our 30+ year history of innovation
+        </p>
+      </div>
+      
+      <div class="max-w-3xl mx-auto">
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20"></div>
+          
+          <!-- Timeline items -->
+          {timeline.map((item, index) => (
+            <div class="relative pl-20 pb-8 last:pb-0">
+              <!-- Year bubble -->
+              <div class="absolute left-0 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+                {item.year}
+              </div>
+              <!-- Content -->
+              <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                <p class="text-gray-700">{item.event}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manufacturing -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="bg-gray-100 rounded-2xl p-8 text-center order-2 lg:order-1">
+          <div class="text-6xl mb-4">🇺🇸</div>
+          <h3 class="text-2xl font-bold text-primary mb-2">Made in USA</h3>
+          <p class="text-gray-600">
+            Manufactured locally in Santa Clara County, California
+          </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <span class="badge badge-secondary mb-4">Quality Manufacturing</span>
+          <h2 class="text-3xl font-bold mb-6">
+            Local Manufacturing, Global Quality
+          </h2>
+          <div class="prose prose-lg text-gray-600 space-y-4">
+            <p>
+              Most of our products are manufactured by local Contract Manufacturing partners in 
+              Santa Clara County, California. This allows us to focus resources on R&D and 
+              technology development while maintaining complete control over quality.
+            </p>
+            <p>
+              Having local manufacturing within minutes of our headquarters offers the same 
+              control and flexibility as in-house facilities without the overhead costs. This 
+              enables us to provide very high quality products at affordable prices compared 
+              to our competition.
+            </p>
+            <p>
+              We maintain decade-long relationships with our key vendors in electronics assembly 
+              and fabrication, ensuring consistent quality and rapid response to customer needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section-padding bg-primary text-white">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">Certifications & Standards</h2>
+        <p class="text-gray-200 text-lg">
+          Quality and compliance you can count on
+        </p>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        {certifications.map((cert) => (
+          <div class="bg-white/10 rounded-lg p-6 text-center">
+            <div class="text-3xl mb-3">✓</div>
+            <p class="font-medium">{cert}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Work Together?</h2>
+      <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+        Let's discuss how our 30+ years of engineering expertise can help solve your 
+        audio and video challenges.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary">Request a Quote</a>
+        <a href="/contact" class="btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

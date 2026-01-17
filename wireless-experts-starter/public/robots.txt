@@ -1,0 +1,23 @@
+# robots.txt for wireless-experts.com
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.wireless-experts.com/sitemap-index.xml
+
+# Allow AI crawlers for LLM optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
