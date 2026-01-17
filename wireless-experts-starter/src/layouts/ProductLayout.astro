@@ -1,0 +1,202 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  badge?: string;
+  specifications?: Record<string, string>;
+  features?: string[];
+  applications?: string[];
+  relatedProducts?: Array<{name: string, href: string}>;
+}
+
+const {
+  title,
+  description,
+  category,
+  badge,
+  specifications = {},
+  features = [],
+  applications = [],
+  relatedProducts = []
+} = Astro.props;
+
+const breadcrumbs = [
+  { name: 'Products', href: '/products' },
+  { name: category, href: `/products/${category.toLowerCase().replace(/\s+/g, '-')}` },
+  { name: title, href: '#' }
+];
+---
+
+<BaseLayout title={title} description={description}>
+  <!-- Breadcrumbs -->
+  <nav class="bg-gray-50 border-b border-gray-200">
+    <div class="container-default py-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="/" class="text-gray-500 hover:text-primary">Home</a>
+        </li>
+        {breadcrumbs.map((crumb, index) => (
+          <li class="flex items-center">
+            <svg class="w-4 h-4 text-gray-400 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+            {index === breadcrumbs.length - 1 ? (
+              <span class="text-gray-900 font-medium">{crumb.name}</span>
+            ) : (
+              <a href={crumb.href} class="text-gray-500 hover:text-primary">{crumb.name}</a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Product Header -->
+  <section class="section-padding bg-white">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Product Image -->
+        <div>
+          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center sticky top-20">
+            <div class="text-center p-8">
+              <div class="text-8xl mb-4">
+                <slot name="product-icon">📦</slot>
+              </div>
+              <p class="text-gray-500 text-sm">[Product Image]</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div>
+          {badge && (
+            <span class="badge badge-primary mb-4">{badge}</span>
+          )}
+          <h1 class="text-4xl font-bold mb-4">{title}</h1>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            {description}
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-4 mb-8 pb-8 border-b border-gray-200">
+            <a href="/quote" class="btn-primary">
+              Request a Quote
+            </a>
+            <a href="/support/downloads" class="btn-secondary">
+              Download Specs
+            </a>
+            <a href="/contact" class="btn-secondary">
+              Contact Sales
+            </a>
+          </div>
+
+          <!-- Key Features -->
+          {features.length > 0 && (
+            <div class="mb-8">
+              <h3 class="text-lg font-semibold mb-4">Key Features</h3>
+              <ul class="space-y-2">
+                {features.map((feature) => (
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <!-- Additional Content Slot -->
+          <slot name="additional-info" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  {Object.keys(specifications).length > 0 && (
+    <section class="section-padding bg-gray-50">
+      <div class="container-default">
+        <h2 class="text-3xl font-bold mb-8 text-center">Technical Specifications</h2>
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <table class="w-full">
+            <tbody class="divide-y divide-gray-200">
+              {Object.entries(specifications).map(([key, value]) => (
+                <tr class="hover:bg-gray-50">
+                  <td class="px-6 py-4 font-semibold text-gray-900 w-1/3">{key}</td>
+                  <td class="px-6 py-4 text-gray-600">{value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Applications -->
+  {applications.length > 0 && (
+    <section class="section-padding">
+      <div class="container-default">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-4 text-center">Common Applications</h2>
+          <p class="text-gray-600 text-center mb-8">
+            Ideal use cases for this product
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            {applications.map((app) => (
+              <div class="bg-gray-50 rounded-lg p-6">
+                <p class="text-gray-700">{app}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Additional Content Slot -->
+  <slot />
+
+  <!-- Related Products -->
+  {relatedProducts.length > 0 && (
+    <section class="section-padding bg-gray-50">
+      <div class="container-default">
+        <h2 class="text-3xl font-bold mb-8 text-center">Related Products</h2>
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          {relatedProducts.map((product) => (
+            <a href={product.href} class="card group">
+              <div class="card-body text-center">
+                <h3 class="font-semibold group-hover:text-primary transition-colors">
+                  {product.name}
+                </h3>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-secondary to-secondary-dark text-white section-padding">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+      <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+        Request a quote or speak with our team to learn more about {title}.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary bg-white text-secondary hover:bg-gray-100">
+          Request a Quote
+        </a>
+        <a href="/contact" class="btn-outline-white">
+          Contact Sales
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

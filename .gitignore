@@ -1,0 +1,31 @@
+# Dependencies
+wireless-experts-starter/node_modules/
+wireless-experts-starter/package-lock.json
+
+# Build output
+wireless-experts-starter/dist/
+wireless-experts-starter/.astro/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Temporary files
+*.tmp
+.cache
