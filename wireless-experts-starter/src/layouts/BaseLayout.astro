@@ -9,10 +9,10 @@ interface Props {
   image?: string;
 }
 
-const { 
-  title, 
+const {
+  title,
   description = "Professional audio and video solutions from Pragmatic Communications Systems. Directional speakers, PA systems, and healthcare entertainment since 1994.",
-  image = "/images/og-default.jpg"
+  image = "/images/logo.png"
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
