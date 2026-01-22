@@ -2,65 +2,119 @@
 import ProductLayout from '../../../layouts/ProductLayout.astro';
 
 const specifications = {
-  'System Type': 'Integrated PA/Paging System',
-  'Power Output': '40W RMS',
-  'Zones': 'Up to 4 independent zones',
-  'Inputs': 'Microphone, Aux (3.5mm), AM/FM Tuner',
-  'Outputs': 'Speaker terminals (70V/25V/8Ω)',
-  'Frequency Response': '100Hz - 15kHz',
-  'Dimensions': '19" W x 3.5" H x 12" D (2U rack)',
-  'Weight': '15 lbs',
-  'Power Requirements': '120VAC, 60Hz',
-  'Mounting': '19" rack mount (included)',
+  'System Type': 'Focused Tile-Array Active Speaker',
+  'Dimensions': '2\' x 2\' (600mm x 600mm)',
+  'Format': 'Standard drop-tile ceiling format',
+  'Connectivity': 'Cat5 cable (max 300ft to PH-1AA)',
+  'Amplifier': 'Energy efficient internal amplifier',
+  'Drivers': 'Array of high-efficiency full-range drivers',
+  'Default Color': 'White',
+  'Custom Colors': 'Black, silver, and custom colors available',
+  'Certifications': 'CE Compliant',
   'Made in': 'USA',
 };
 
 const features = [
-  'Built-in AM/FM tuner with preset memory',
-  'Microphone input with priority override',
-  'Auxiliary input for external audio sources',
-  'Independent volume control for each zone',
-  'Tone generator for testing and alerts',
-  'LED indicators for power and signal',
-  'Cooling fan for continuous operation',
-  'Rack-mountable 2U design',
+  'High-performance focused tile-array active speaker',
+  'Well-defined dispersion pattern with no hot spots',
+  'Eliminates sound bleeding into adjacent areas/zones',
+  'Great low frequency response for full-range drivers',
+  'Simple Cat5 plug-and-play operation',
+  'Energy efficient internal audio amplifier',
+  'Mounts in standard commercial drop-tile ceilings',
+  'Optional mounting brackets for open ceiling spaces',
 ];
 
 const applications = [
-  'Schools and universities - Campus-wide paging and announcements',
-  'Warehouses and factories - Safety announcements and background music',
-  'Retail stores - Music and promotional announcements',
-  'Office buildings - Paging and emergency notifications',
-  'Houses of worship - Sound distribution to multiple rooms',
-  'Hospitals - Facility-wide paging and zone control',
+  'Digital signage - Focused audio for displays without disturbing nearby areas',
+  'Museums - Exhibit-specific audio that stays contained',
+  'Retail environments - Targeted promotional audio at displays',
+  'Healthcare waiting areas - Zoned audio without bleed-over',
+  'Educational spaces - Collaborative learning areas with isolated audio',
+  'Commercial installations - Conference rooms and open office audio zones',
 ];
 
 const relatedProducts = [
-  { name: 'Audio Distribution System', href: '/products/audio-distribution' },
-  { name: 'Source Components', href: '/products/source-components' },
+  { name: 'CATS Audio Distribution', href: '/products/audio-distribution', image: '/images/products/audio-distribution/cats-mx4.png' },
+  { name: 'PH4 Port Hub', href: '/products/audio-distribution', image: '/images/products/audio-distribution/cats-mx4.png' },
 ];
 ---
 
 <ProductLayout
-  title="PTS-4077F PA System"
-  description="Complete integrated paging and announcement system with AM/FM tuner, multi-zone capability, and 40W power output. Perfect for commercial facilities requiring reliable audio distribution."
-  category="PA Systems"
-  badge="Professional Grade"
+  title="PTS-4077F Tile-Array Speaker"
+  description="High-performance focused tile-array active speaker with well-defined audio zones. Mounts in standard 2'x2' drop-tile ceilings with simple Cat5 connectivity up to 300ft."
+  category="Directional Audio"
+  badge="PADS™ Compatible"
+  image="/images/products/pa-systems/pts-4077f.png"
   specifications={specifications}
   features={features}
   applications={applications}
   relatedProducts={relatedProducts}
 >
-  <div slot="product-icon">📢</div>
 
   <div slot="additional-info">
     <div class="bg-primary/10 border border-primary/20 rounded-lg p-6 mt-6">
-      <h4 class="font-semibold text-primary-dark mb-2">Complete PA Solution</h4>
+      <h4 class="font-semibold text-primary-dark mb-2">Part of the PADS™ Family</h4>
       <p class="text-gray-600 text-sm">
-        The PTS-4077F is a complete PA system in a single 2U rack unit. Just add speakers
-        and you're ready to broadcast announcements, music, and emergency notifications
-        across your facility.
+        The PTS-4077F integrates seamlessly with the PADS™ (Pragmatic Audio Distribution System)
+        family of products. Compatible with PALS™ (Pragmatic Audio Leveling System) for automatic
+        volume control based on ambient noise levels.
       </p>
     </div>
   </div>
+
+  <!-- Installation Options Section -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Flexible Installation Options</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Drop-Tile Ceiling</h3>
+            <p class="text-gray-600 text-sm">
+              Standard 2' x 2' format drops directly into commercial suspended ceiling grids.
+              Clean, integrated appearance with no visible mounting hardware.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Suspended Mount</h3>
+            <p class="text-gray-600 text-sm">
+              Optional mounting brackets available for suspended installation in open ceiling
+              spaces. Ideal for warehouses, retail, and spaces with exposed ceilings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Note -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="max-w-3xl mx-auto bg-secondary/10 rounded-xl p-8">
+        <h3 class="text-xl font-bold mb-4">Cat5 Connectivity</h3>
+        <p class="text-gray-700 mb-4">
+          The PTS-4077F connects via standard Cat5/Cat5e cable to the PH-1AA hub, allowing
+          cable runs up to 300 feet. This simplifies installation and reduces cabling costs
+          compared to traditional speaker wire installations.
+        </p>
+        <p class="text-gray-600 text-sm">
+          <strong>Note:</strong> For optimal performance, use quality Cat5e or Cat6 cable and
+          ensure proper termination at both ends.
+        </p>
+      </div>
+    </div>
+  </section>
 </ProductLayout>

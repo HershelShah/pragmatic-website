@@ -3,15 +3,15 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Source Components"
-  description="Digital tuners, music servers, and media players for professional AV installations."
+  title="Source Components & Distribution"
+  description="Music servers, distributed audio/video systems, and media players for commercial AV installations. DAVES, DMS, MuSe, and LSAD life safety products."
 >
   <section class="bg-primary text-white py-20">
     <div class="container-default">
-      <h1 class="text-5xl font-bold mb-6">Source Components & Media Players</h1>
+      <h1 class="text-5xl font-bold mb-6">Source Components & Media</h1>
       <p class="text-xl text-gray-200 max-w-3xl">
-        Professional-grade audio source components including digital tuners, music servers,
-        and media players designed for commercial installations.
+        Professional-grade music servers, media players, and displays designed for
+        commercial, industrial, and healthcare installations.
       </p>
     </div>
   </section>
@@ -19,43 +19,282 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
   <section class="section-padding">
     <div class="container-default">
       <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="card">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">🎵</div>
+        <!-- MuSe Music Server -->
+        <div class="card overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-2 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+              </svg>
+              <span class="text-sm opacity-70">4RU Rack Server</span>
+            </div>
           </div>
           <div class="card-body">
+            <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded mb-2 inline-block">Music Server</span>
             <h3 class="text-xl font-semibold mb-2">MuSe™ Music Server</h3>
             <p class="text-gray-600 text-sm mb-4">
-              Network-capable music server with massive storage for commercial background music
+              High-performance 4RU rack-mounted music server with up to 4 stereo channels,
+              500GB storage, advanced playlist scheduling, and network remote access.
+              Perfect for hotels, restaurants, retail, and multi-room audio.
             </p>
-            <a href="#" class="text-primary font-medium text-sm">Learn More →</a>
+            <div class="text-xs text-gray-500 mb-4">
+              <span class="mr-3">4 Channels</span>
+              <span class="mr-3">500GB HDD</span>
+              <span>Network Remote</span>
+            </div>
+            <a href="/support/downloads" class="text-primary font-medium text-sm">View Datasheet →</a>
           </div>
         </div>
 
-        <div class="card">
+        <!-- PIM-21B Medical Display -->
+        <div class="card overflow-hidden">
           <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">📻</div>
+            <img src="/images/carousel/pim-21b.png" alt="PIM-21B Medical Display" class="w-full h-full object-contain p-4" />
           </div>
           <div class="card-body">
-            <h3 class="text-xl font-semibold mb-2">PIM-21B Digital Tuner</h3>
+            <span class="text-xs font-semibold text-secondary bg-secondary/10 px-2 py-1 rounded mb-2 inline-block">Medical Display</span>
+            <h3 class="text-xl font-semibold mb-2">PIM-21B Medical Display</h3>
             <p class="text-gray-600 text-sm mb-4">
-              Professional AM/FM tuner with preset memory and remote control capability
+              21" DICOM-calibrated LCD monitor for medical and dental imaging.
+              1920x1080 resolution, 250 nits brightness, 178° viewing angles.
+              HDMI, DVI-D, and VGA inputs with RS-232 control.
             </p>
-            <a href="#" class="text-primary font-medium text-sm">Learn More →</a>
+            <div class="text-xs text-gray-500 mb-4">
+              <span class="mr-3">1920x1080</span>
+              <span class="mr-3">DICOM Ready</span>
+              <span>3-Year Warranty</span>
+            </div>
+            <a href="/products/healthcare" class="text-primary font-medium text-sm">View Healthcare Products →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MuSe Details Section -->
+      <div class="mt-16 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">MuSe™ Music Server Features</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-50 rounded-xl p-6">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Advanced Scheduling</h3>
+            <p class="text-sm text-gray-600">
+              Schedule playlists by time of day, day of week, month, or specific dates.
+              Program silence periods throughout the day.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Remote Access</h3>
+            <p class="text-sm text-gray-600">
+              Manage playlists and settings from any computer via network connection.
+              Load music via DVD, USB, or Ethernet.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Secure & Autonomous</h3>
+            <p class="text-sm text-gray-600">
+              Locking front panel prevents tampering. Runs autonomously without
+              keyboard, mouse, or monitor after setup.
+            </p>
+          </div>
+        </div>
+
+        <!-- Specs Table -->
+        <div class="mt-12 bg-white border border-gray-200 rounded-xl overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b">
+            <h3 class="font-semibold">MuSe™ Specifications</h3>
+          </div>
+          <div class="grid md:grid-cols-2 gap-0">
+            <div class="px-6 py-3 border-b border-r flex justify-between">
+              <span class="text-gray-600">Outputs</span>
+              <span class="font-medium">Up to 4 stereo channels</span>
+            </div>
+            <div class="px-6 py-3 border-b flex justify-between">
+              <span class="text-gray-600">Output Type</span>
+              <span class="font-medium">Mini stereo (3.5mm)</span>
+            </div>
+            <div class="px-6 py-3 border-b border-r flex justify-between">
+              <span class="text-gray-600">Storage</span>
+              <span class="font-medium">500GB standard (expandable)</span>
+            </div>
+            <div class="px-6 py-3 border-b flex justify-between">
+              <span class="text-gray-600">Formats</span>
+              <span class="font-medium">MP3, WMA</span>
+            </div>
+            <div class="px-6 py-3 border-b border-r flex justify-between">
+              <span class="text-gray-600">Dimensions</span>
+              <span class="font-medium">7" x 19" x 20⅝" (4RU)</span>
+            </div>
+            <div class="px-6 py-3 border-b flex justify-between">
+              <span class="text-gray-600">Weight</span>
+              <span class="font-medium">41 lbs</span>
+            </div>
+            <div class="px-6 py-3 border-r flex justify-between">
+              <span class="text-gray-600">Power</span>
+              <span class="font-medium">110/240VAC Universal</span>
+            </div>
+            <div class="px-6 py-3 flex justify-between">
+              <span class="text-gray-600">Connectivity</span>
+              <span class="font-medium">Ethernet, USB, DVD</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-50 section-padding">
+  <!-- Distributed Audio/Video Systems -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="badge badge-primary mb-4">Multi-Zone Distribution</span>
+        <h2 class="text-3xl font-bold mb-4">Distributed Audio/Video Systems</h2>
+        <p class="text-gray-600">
+          Complete multi-zone audio and video distribution over standard Cat5 cabling.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- DAVES 4.4 -->
+        <div class="card overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-2 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+              </svg>
+              <span class="text-sm opacity-70">1RU Rack Unit</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="text-xs font-semibold text-primary bg-primary/10 px-2 py-1 rounded mb-2 inline-block">Audio + Video</span>
+            <h3 class="text-xl font-semibold mb-2">DAVES™ 4.4</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Digital Audio Video Entertainment System. Distributes high-quality audio/video
+              to 4 zones over Cat5 cables up to 1000ft. Expandable to 32 zones.
+              Each zone can independently select any source.
+            </p>
+            <div class="text-xs text-gray-500 mb-4 space-y-1">
+              <div class="flex justify-between"><span>Sources:</span><span class="font-medium">2 stereo inputs</span></div>
+              <div class="flex justify-between"><span>Zones:</span><span class="font-medium">4 (expandable to 32)</span></div>
+              <div class="flex justify-between"><span>Distance:</span><span class="font-medium">1000ft per zone</span></div>
+              <div class="flex justify-between"><span>Control:</span><span class="font-medium">IR + Keypad</span></div>
+            </div>
+            <a href="/support/downloads" class="text-primary font-medium text-sm">View Datasheet →</a>
+          </div>
+        </div>
+
+        <!-- DMS 2.1 -->
+        <div class="card overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-2 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+              </svg>
+              <span class="text-sm opacity-70">2RU Rack Unit</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="text-xs font-semibold text-secondary bg-secondary/10 px-2 py-1 rounded mb-2 inline-block">Audio Only</span>
+            <h3 class="text-xl font-semibold mb-2">DMS™ 2.1</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Distributed Music System with paging. Distributes audio to 32+ zones
+              over Cat5 up to 3000ft. Uses SuperTranz™ circuit to eliminate ground loops
+              and interference. Perfect for hotels, restaurants, and retail.
+            </p>
+            <div class="text-xs text-gray-500 mb-4 space-y-1">
+              <div class="flex justify-between"><span>Sources:</span><span class="font-medium">2 inputs</span></div>
+              <div class="flex justify-between"><span>Zones:</span><span class="font-medium">32+ (daisy-chain)</span></div>
+              <div class="flex justify-between"><span>Distance:</span><span class="font-medium">3000ft per zone</span></div>
+              <div class="flex justify-between"><span>SNR:</span><span class="font-medium">96dB</span></div>
+            </div>
+            <a href="/support/downloads" class="text-primary font-medium text-sm">View Datasheet →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Life Safety -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <span class="badge badge-secondary mb-4">Life Safety</span>
+            <h2 class="text-3xl font-bold mb-4">LSAD-1 Audio Defeat</h2>
+            <p class="text-gray-600 mb-4">
+              Life Safety Audio Defeat automatically kills background audio when triggered
+              by fire alarm or life safety system. Ensures emergency announcements are
+              clearly heard without interference from background music.
+            </p>
+            <ul class="space-y-2 text-sm text-gray-600 mb-6">
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Works with all fire panels and alarms
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Compatible with PADS™ and mini stereo inputs
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                5-24VDC or relay trigger options
+              </li>
+              <li class="flex items-center">
+                <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Compact size: 3.2" x 2.6" x 1"
+              </li>
+            </ul>
+            <a href="/support/downloads" class="text-primary font-medium">View Datasheet →</a>
+          </div>
+          <div class="bg-red-50 rounded-2xl p-8 text-center">
+            <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-10 h-10 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-red-800 mb-2">Life Safety Compliance</h3>
+            <p class="text-red-700 text-sm">
+              Required for code compliance in many commercial installations
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary text-white section-padding">
     <div class="container-default text-center">
       <h2 class="text-3xl font-bold mb-4">Custom Integration</h2>
-      <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+      <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
         We can integrate our source components with your existing AV systems or design
-        a complete solution from scratch.
+        a complete solution from scratch. All products integrate seamlessly with PADS™
+        audio distribution systems.
       </p>
-      <a href="/quote" class="btn-primary">Request a Quote</a>
+      <a href="/quote" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">Request a Quote</a>
     </div>
   </section>
 </BaseLayout>

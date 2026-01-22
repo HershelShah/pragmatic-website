@@ -1,0 +1,187 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const caseStudies = [
+  {
+    title: 'Smithsonian Institution',
+    industry: 'Museum & Cultural',
+    image: '/images/industries/events.jpg',
+    challenge: 'The Smithsonian needed to deliver exhibit-specific audio narration without sound bleeding between displays, disrupting the contemplative museum atmosphere.',
+    solution: 'Installed PADS-5080 directional speakers at key exhibits throughout the museum, allowing visitors to hear detailed narration only when standing in designated listening zones.',
+    results: [
+      { metric: '95%', description: 'Reduction in audio bleed between exhibits' },
+      { metric: '40%', description: 'Increase in visitor engagement with audio guides' },
+      { metric: '4.8/5', description: 'Visitor satisfaction rating' }
+    ],
+    products: ['PADS-5080', 'Audio Distribution System'],
+    quote: 'The PADS technology transformed how we deliver content to our visitors. Each exhibit now has its own acoustic space.',
+    quoteName: 'Audio Engineering Director',
+    quoteOrg: 'Smithsonian Institution'
+  },
+  {
+    title: 'Kaiser Permanente Medical Center',
+    industry: 'Healthcare',
+    image: '/images/industries/healthcare.jpg',
+    challenge: 'Patient rooms needed individual TV audio without disturbing neighboring patients or requiring uncomfortable headphones that interfere with medical equipment.',
+    solution: 'Deployed PADS directional speakers in patient rooms, delivering TV audio directly to patients in their beds while maintaining a quiet environment for roommates and the hallway.',
+    results: [
+      { metric: '23%', description: 'Improvement in patient satisfaction scores' },
+      { metric: '60%', description: 'Reduction in noise complaints' },
+      { metric: '0', description: 'Interference with medical equipment' }
+    ],
+    products: ['PADS-4060', 'Healthcare Solutions'],
+    quote: 'Our patients can now enjoy TV without disturbing others. It has made a real difference in patient comfort and recovery.',
+    quoteName: 'Facilities Manager',
+    quoteOrg: 'Kaiser Permanente'
+  },
+  {
+    title: 'NASA Ames Research Center',
+    industry: 'Government',
+    image: '/images/industries/government.jpg',
+    challenge: 'NASA required highly reliable PA and audio distribution systems for critical facility-wide communications in research buildings and testing facilities.',
+    solution: 'Implemented a comprehensive audio solution including PA systems for announcements, directional speakers for specific work areas, and CATS audio distribution for facility-wide coverage.',
+    results: [
+      { metric: '99.9%', description: 'System uptime over 10+ years' },
+      { metric: '100%', description: 'Coverage across all facilities' },
+      { metric: '15+', description: 'Years of continuous operation' }
+    ],
+    products: ['PA Systems', 'CATS Audio Distribution', 'Custom Solutions'],
+    quote: 'Pragmatic has been our trusted audio partner since 1986. Their systems meet the reliability standards we require for mission-critical facilities.',
+    quoteName: 'Facilities Operations',
+    quoteOrg: 'NASA Ames Research Center'
+  },
+  {
+    title: 'Major Retail Chain',
+    industry: 'Retail',
+    image: '/images/industries/corporate.jpg',
+    challenge: 'A national retail chain needed targeted audio zones for product promotions without creating a cacophony of competing sounds throughout the store.',
+    solution: 'Installed PADS directional speakers at key promotional displays, allowing each department to feature targeted audio promotions that customers hear only when browsing that specific area.',
+    results: [
+      { metric: '18%', description: 'Increase in promoted product sales' },
+      { metric: '32%', description: 'Longer dwell time at displays' },
+      { metric: '85%', description: 'Positive customer feedback on audio experience' }
+    ],
+    products: ['PADS-3040', 'Audio Distribution System'],
+    quote: 'The targeted audio has transformed our promotional displays. Customers engage more with products when they can hear relevant content without it being overwhelming.',
+    quoteName: 'VP of Store Operations',
+    quoteOrg: 'Fortune 500 Retailer'
+  },
+  {
+    title: 'University Campus',
+    industry: 'Education',
+    image: '/images/industries/education.jpg',
+    challenge: 'A large university needed a campus-wide PA system for emergency notifications, daily announcements, and event coordination across multiple buildings.',
+    solution: 'Deployed an integrated PA system with zone control, allowing targeted announcements to specific buildings or campus-wide broadcasts, with priority override for emergency situations.',
+    results: [
+      { metric: '100%', description: 'Campus coverage achieved' },
+      { metric: '<30s', description: 'Emergency broadcast deployment time' },
+      { metric: '12', description: 'Independent audio zones configured' }
+    ],
+    products: ['PTS-4077F PA System', 'CATS Audio Distribution'],
+    quote: 'The system gives us complete flexibility. We can address a single building for a department meeting or the entire campus for emergencies.',
+    quoteName: 'Campus Operations Director',
+    quoteOrg: 'State University System'
+  }
+];
+---
+
+<BaseLayout
+  title="Case Studies"
+  description="See how leading organizations use Pragmatic Communications audio solutions to solve their unique challenges. Real results from real installations."
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary to-primary-dark text-white section-padding">
+    <div class="container-default">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Case Studies</h1>
+        <p class="text-xl text-gray-200">
+          See how leading organizations use our audio solutions to solve real-world challenges.
+          From museums to hospitals, our technology delivers measurable results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="space-y-16">
+        {caseStudies.map((study, index) => (
+          <article class={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+            <!-- Image -->
+            <div class={index % 2 === 1 ? 'lg:order-2' : ''}>
+              <div class="relative rounded-2xl overflow-hidden shadow-xl">
+                <img src={study.image} alt={study.title} class="w-full aspect-video object-cover" />
+                <div class="absolute top-4 left-4">
+                  <span class="bg-white/90 text-primary text-sm font-semibold px-3 py-1 rounded-full">
+                    {study.industry}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class={index % 2 === 1 ? 'lg:order-1' : ''}>
+              <h2 class="text-3xl font-bold mb-4">{study.title}</h2>
+
+              <div class="space-y-4 mb-6">
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Challenge</h3>
+                  <p class="text-gray-600">{study.challenge}</p>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Solution</h3>
+                  <p class="text-gray-600">{study.solution}</p>
+                </div>
+              </div>
+
+              <!-- Results -->
+              <div class="grid grid-cols-3 gap-4 mb-6">
+                {study.results.map((result) => (
+                  <div class="text-center bg-gray-50 rounded-lg p-4">
+                    <div class="text-2xl font-bold text-primary">{result.metric}</div>
+                    <div class="text-xs text-gray-600">{result.description}</div>
+                  </div>
+                ))}
+              </div>
+
+              <!-- Quote -->
+              <blockquote class="border-l-4 border-secondary pl-4 mb-6">
+                <p class="text-gray-700 italic mb-2">"{study.quote}"</p>
+                <footer class="text-sm text-gray-500">
+                  <span class="font-semibold">{study.quoteName}</span>, {study.quoteOrg}
+                </footer>
+              </blockquote>
+
+              <!-- Products Used -->
+              <div class="flex flex-wrap gap-2">
+                <span class="text-sm text-gray-500">Products used:</span>
+                {study.products.map((product) => (
+                  <span class="text-sm bg-primary/10 text-primary px-2 py-1 rounded">{product}</span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-secondary to-secondary-dark text-white section-padding">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Create Your Success Story?</h2>
+      <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+        Let's discuss how our solutions can solve your unique audio challenges.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary bg-white text-secondary hover:bg-gray-100">
+          Request a Quote
+        </a>
+        <a href="/contact" class="btn-outline-white">
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

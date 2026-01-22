@@ -1,0 +1,290 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const mbaAmplifiers = [
+  {
+    model: 'MBA-120',
+    name: 'HideAway™ 20W Mono-block',
+    power: '20W continuous / 36W peak',
+    dimensions: '3.45" x 1.5" x 4.2"',
+    weight: '6 oz',
+    description: 'Ultra-compact mono-block amplifier for digital signage, kiosks, and tight spaces.',
+  },
+  {
+    model: 'MBA-124',
+    name: 'HideAway™ 40W Stereo',
+    power: '2 x 20W continuous',
+    dimensions: '3.45" x 1.5" x 4.2"',
+    weight: '8 oz',
+    description: 'Compact stereo amplifier with dual 20W channels for small installations.',
+  },
+  {
+    model: 'MBA-136',
+    name: 'HideAway™ 60W Stereo',
+    power: '2 x 30W continuous',
+    dimensions: '4.5" x 1.5" x 5"',
+    weight: '10 oz',
+    description: 'Mid-power stereo amplifier for retail and commercial audio applications.',
+  },
+  {
+    model: 'MBA-148',
+    name: 'HideAway™ 80W Stereo',
+    power: '2 x 40W continuous',
+    dimensions: '5" x 2" x 6"',
+    weight: '14 oz',
+    description: 'High-power compact amplifier for demanding commercial installations.',
+  },
+];
+
+const saaAmplifiers = [
+  {
+    model: 'SAA-212',
+    name: 'Stereo Audio Amplifier 120W',
+    power: '2 x 60W @ 4Ω',
+    format: '1U Rack Mount',
+    description: 'Professional rack-mount stereo amplifier for commercial installations.',
+  },
+  {
+    model: 'SAA-224',
+    name: 'Stereo Audio Amplifier 240W',
+    power: '2 x 120W @ 4Ω',
+    format: '1U Rack Mount',
+    description: 'High-power rack-mount stereo amplifier for larger venues.',
+  },
+  {
+    model: 'SAA-236',
+    name: 'Stereo Audio Amplifier 360W',
+    power: '2 x 180W @ 4Ω',
+    format: '2U Rack Mount',
+    description: 'Professional high-power amplifier for auditoriums and large spaces.',
+  },
+  {
+    model: 'SAA-248',
+    name: 'Stereo Audio Amplifier 480W',
+    power: '2 x 240W @ 4Ω',
+    format: '2U Rack Mount',
+    description: 'Maximum power rack-mount amplifier for the most demanding applications.',
+  },
+];
+---
+
+<BaseLayout
+  title="Amplifiers"
+  description="Professional audio amplifiers from compact HideAway™ series to high-power rack-mount SAA series for commercial and residential installations."
+>
+  <!-- Hero -->
+  <section class="bg-primary text-white py-20">
+    <div class="container-default">
+      <h1 class="text-5xl font-bold mb-6">Audio Amplifiers</h1>
+      <p class="text-xl text-gray-200 max-w-3xl">
+        From ultra-compact HideAway™ amplifiers for tight spaces to professional rack-mount
+        SAA series for high-power applications. Made in USA with premium components.
+      </p>
+    </div>
+  </section>
+
+  <!-- MBA HideAway Series -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="max-w-2xl mb-12">
+        <span class="badge badge-primary mb-3">HideAway™ Series</span>
+        <h2 class="text-3xl font-bold mb-4">MBA Compact Amplifiers</h2>
+        <p class="text-gray-600">
+          Ultra-compact mono-block and stereo amplifiers designed to fit in tight spaces.
+          Perfect for digital signage, kiosks, retail displays, and plenum-rated installations.
+          12VDC powered with high efficiency and low heat.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {mbaAmplifiers.map((amp) => (
+          <div class="card">
+            <div class="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+              <div class="text-center">
+                <svg class="w-12 h-12 mx-auto text-gray-400 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+                <span class="text-xs text-gray-500">Compact Design</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-lg font-bold text-primary">{amp.model}</span>
+                <span class="text-xs bg-secondary/10 text-secondary px-2 py-1 rounded">{amp.power}</span>
+              </div>
+              <h3 class="font-semibold mb-2">{amp.name}</h3>
+              <p class="text-gray-600 text-sm mb-3">{amp.description}</p>
+              <div class="text-xs text-gray-500 space-y-1">
+                <div>Size: {amp.dimensions}</div>
+                <div>Weight: {amp.weight}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- MBA Features -->
+      <div class="mt-12 bg-gray-50 rounded-xl p-8">
+        <h3 class="text-xl font-bold mb-6">HideAway™ Series Features</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="flex items-start">
+            <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-sm">12VDC Power</h4>
+              <p class="text-xs text-gray-600">Low voltage for safety, includes switching power supply</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-sm">>90dB SNR</h4>
+              <p class="text-xs text-gray-600">High signal-to-noise ratio for clean audio</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-sm">45dB Gain</h4>
+              <p class="text-xs text-gray-600">No preamp needed for line-level sources</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-sm">20Hz-20kHz</h4>
+              <p class="text-xs text-gray-600">Full frequency response, flat with no ripple</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-sm">Protection Circuits</h4>
+              <p class="text-xs text-gray-600">Overload, over-temperature, short circuit protection</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-sm">Easy Mounting</h4>
+              <p class="text-xs text-gray-600">Integrated flanges with mounting holes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAA Rack Mount Series -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="max-w-2xl mb-12">
+        <span class="badge badge-secondary mb-3">Professional Series</span>
+        <h2 class="text-3xl font-bold mb-4">SAA Rack Mount Amplifiers</h2>
+        <p class="text-gray-600">
+          Professional rack-mount stereo amplifiers for commercial installations, auditoriums,
+          and high-power applications. Standard 19" rack format with robust construction.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl">
+        {saaAmplifiers.map((amp) => (
+          <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-6 text-white">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-2xl font-bold">{amp.model}</span>
+                  <p class="text-gray-300 text-sm">{amp.name}</p>
+                </div>
+                <div class="text-right">
+                  <span class="text-lg font-semibold text-secondary">{amp.power}</span>
+                  <p class="text-gray-400 text-xs">{amp.format}</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 text-sm">{amp.description}</p>
+              <a href="/support/downloads" class="text-primary font-medium text-sm mt-4 inline-block">
+                View Datasheet →
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="section-padding">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold mb-12 text-center">Amplifier Applications</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Digital Signage</h3>
+          <p class="text-sm text-gray-600">Compact amplifiers for video displays with audio</p>
+        </div>
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Retail Kiosks</h3>
+          <p class="text-sm text-gray-600">HideAway amps fit inside kiosk enclosures</p>
+        </div>
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Commercial Audio</h3>
+          <p class="text-sm text-gray-600">Rack-mount amps for AV systems and PA</p>
+        </div>
+        <div class="text-center p-6 bg-gray-50 rounded-xl">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Classrooms</h3>
+          <p class="text-sm text-gray-600">Clear audio for educational environments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary text-white section-padding">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Need Help Selecting an Amplifier?</h2>
+      <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+        Our team can help you choose the right amplifier for your power requirements and installation constraints.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary bg-accent hover:bg-accent-light">
+          Request a Quote
+        </a>
+        <a href="/support/downloads" class="btn-outline-white">
+          View Datasheets
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,149 @@
+---
+import ProductLayout from '../../../layouts/ProductLayout.astro';
+
+const specifications = {
+  'Package Type': 'Entry-Level Multi-Room Audio Distribution',
+  'Connectivity': 'Cat5/Cat5e/Cat6 cable (up to 300ft runs)',
+  'Rooms Supported': 'Multi-room (expandable)',
+  'Control': 'Individual room volume control',
+  'IR Remote': 'No (upgrade to Silver for IR)',
+  'Paging': 'No (upgrade to Gold for paging)',
+  'Doorbell Integration': 'No (upgrade to Gold)',
+  'Components': 'PARI, PH, PTWI',
+  'Made in': 'USA',
+};
+
+const features = [
+  'Entry-level whole-home audio distribution',
+  'PARI in-wall speakers with individual volume control',
+  'Port Hub (PH) for centralized audio distribution',
+  'PTWI in-wall interface modules',
+  'Standard Cat5 cable installation - no special wiring',
+  'Audio runs up to 300 feet over Cat5',
+  'Expandable - add more rooms as needed',
+  'Upgrade path to Silver and Gold packages',
+];
+
+const relatedProducts = [
+  { name: 'PADS Silver Package', href: '/products/directional-speakers/pads-4060', image: '/images/products/directional-speakers/pads-silver.jpg' },
+  { name: 'PADS Gold Package', href: '/products/directional-speakers/pads-5080', image: '/images/products/directional-speakers/pads-gold.jpg' },
+  { name: 'PTS-4077F Tile Speaker', href: '/products/pa-systems/pts-4077f', image: '/images/products/pa-systems/pts-4077f.png' },
+];
+---
+
+<ProductLayout
+  title="PADS™ Bronze Package"
+  description="Entry-level whole-home audio distribution system. Multi-room audio with individual volume control over standard Cat5 cables."
+  category="Audio Distribution"
+  badge="Entry Level"
+  image="/images/products/directional-speakers/pads-bronze.jpg"
+  specifications={specifications}
+  features={features}
+  applications={[
+    'Starter homes - Affordable whole-home audio',
+    'Apartments and condos - Multi-room audio without complex wiring',
+    'Small offices - Background music in multiple areas',
+    'Retail boutiques - Consistent audio throughout the store',
+    'Waiting rooms - Simple multi-zone audio',
+    'New construction - Easy to install during build',
+  ]}
+  relatedProducts={relatedProducts}
+>
+
+  <div slot="additional-info">
+    <div class="bg-primary/10 border border-primary/20 rounded-lg p-6 mt-6">
+      <h4 class="font-semibold text-primary-dark mb-2">Start Simple, Upgrade Later</h4>
+      <p class="text-gray-600 text-sm">
+        The PADS™ Bronze Package provides the foundation for whole-building audio.
+        Start with basic multi-room capability and upgrade to Silver (IR remote) or
+        Gold (paging, doorbell) as your needs grow.
+      </p>
+    </div>
+  </div>
+
+  <!-- What's Included -->
+  <section class="section-padding bg-white">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">What's Included in Bronze</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414m2.828-9.9a9 9 0 0112.728 0" />
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">PARI Speakers</h3>
+            <p class="text-sm text-gray-600">
+              In-wall speakers with built-in amplifier and volume control knob for each room.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2" />
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Port Hub (PH)</h3>
+            <p class="text-sm text-gray-600">
+              Central distribution hub that connects to your music source and sends audio to all rooms.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 rounded-xl p-6 text-center">
+            <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">PTWI Interface</h3>
+            <p class="text-sm text-gray-600">
+              In-wall interface module for clean, professional installation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upgrade Path -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Upgrade When You're Ready</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <div class="flex items-center mb-4">
+              <span class="bg-secondary/10 text-secondary text-sm font-semibold px-3 py-1 rounded">Silver</span>
+              <span class="ml-auto text-gray-500 text-sm">Next Level</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Add IR Remote Control</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Control your music source from any room using IR remote signals transmitted over Cat5.
+            </p>
+            <a href="/products/directional-speakers/pads-4060" class="text-primary font-medium text-sm">
+              Learn about Silver →
+            </a>
+          </div>
+
+          <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+            <div class="flex items-center mb-4">
+              <span class="bg-accent/10 text-accent text-sm font-semibold px-3 py-1 rounded">Gold</span>
+              <span class="ml-auto text-gray-500 text-sm">Full Featured</span>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Add Paging & Doorbell</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Full building automation with paging announcements and doorbell integration.
+            </p>
+            <a href="/products/directional-speakers/pads-5080" class="text-primary font-medium text-sm">
+              Learn about Gold →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ProductLayout>

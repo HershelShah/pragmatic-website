@@ -6,7 +6,7 @@ const timeline = [
   { year: '1994', event: 'Pragmatic Communications Systems incorporated in Silicon Valley' },
   { year: '1995', event: 'Graduated from NASA Ames Technology Commercialization Center' },
   { year: '1995', event: 'Provided wireless video technology for NASA Mars Rover prototype' },
-  { year: '2000', event: 'Expanded into professional audio with PADS™ directional speakers' },
+  { year: '2000', event: 'Expanded into professional audio with PADS™ audio distribution systems' },
   { year: '2005', event: 'Healthcare entertainment division launched' },
   { year: '2010', event: 'CATS™ audio distribution technology introduced' },
   { year: '2024', event: '30 years of innovation, serving customers worldwide' },
@@ -64,7 +64,11 @@ const certifications = [
           </div>
         </div>
         <div class="bg-gray-100 rounded-2xl p-8 text-center">
-          <div class="text-6xl mb-4">🚀</div>
+          <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-10 h-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
           <h3 class="text-2xl font-bold text-primary mb-2">NASA Heritage</h3>
           <p class="text-gray-600">
             Technology partner for NASA's Mars Rover prototype and military applications
@@ -112,7 +116,11 @@ const certifications = [
     <div class="container-default">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="bg-gray-100 rounded-2xl p-8 text-center order-2 lg:order-1">
-          <div class="text-6xl mb-4">🇺🇸</div>
+          <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-10 h-10 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+            </svg>
+          </div>
           <h3 class="text-2xl font-bold text-primary mb-2">Made in USA</h3>
           <p class="text-gray-600">
             Manufactured locally in Santa Clara County, California
@@ -158,7 +166,11 @@ const certifications = [
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
         {certifications.map((cert) => (
           <div class="bg-white/10 rounded-lg p-6 text-center">
-            <div class="text-3xl mb-3">✓</div>
+            <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
             <p class="font-medium">{cert}</p>
           </div>
         ))}
@@ -166,12 +178,74 @@ const certifications = [
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- Leadership Team -->
   <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">Leadership Team</h2>
+        <p class="text-gray-600 text-lg">
+          Experienced professionals dedicated to engineering excellence
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Team Member 1 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <div class="aspect-square bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center">
+            <svg class="w-24 h-24 text-white/80" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-1">Engineering Leadership</h3>
+            <p class="text-primary font-medium mb-3">Chief Technology Officer</p>
+            <p class="text-gray-600 text-sm">
+              Over 35 years of experience in audio/video engineering, with expertise spanning NASA partnerships, wireless communications, and commercial audio systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <div class="aspect-square bg-gradient-to-br from-secondary to-secondary-dark flex items-center justify-center">
+            <svg class="w-24 h-24 text-white/80" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-1">Operations Leadership</h3>
+            <p class="text-secondary font-medium mb-3">Director of Operations</p>
+            <p class="text-gray-600 text-sm">
+              Manages manufacturing partnerships, quality control, and supply chain operations ensuring ISO 9001 compliance and on-time delivery.
+            </p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <div class="aspect-square bg-gradient-to-br from-accent to-accent-light flex items-center justify-center">
+            <svg class="w-24 h-24 text-white/80" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-xl font-bold mb-1">Sales Leadership</h3>
+            <p class="text-accent font-medium mb-3">Director of Sales</p>
+            <p class="text-gray-600 text-sm">
+              Leads customer relationships across government, healthcare, and commercial sectors with deep expertise in professional AV solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding">
     <div class="container-default text-center">
       <h2 class="text-3xl font-bold mb-4">Ready to Work Together?</h2>
       <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-        Let's discuss how our 30+ years of engineering expertise can help solve your 
+        Let's discuss how our 30+ years of engineering expertise can help solve your
         audio and video challenges.
       </p>
       <div class="flex flex-wrap justify-center gap-4">

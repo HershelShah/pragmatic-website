@@ -1,0 +1,364 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const phaModels = [
+  {
+    model: 'PHA-4',
+    drivers: 4,
+    power: '48W max',
+    sensitivity: '83dB',
+    dimensions: '9" x 2" x 2"',
+    weight: '1 lb',
+    finish: 'Black or White',
+    description: 'Compact speaker for digital signage and small venues'
+  },
+  {
+    model: 'PHA-8',
+    drivers: 8,
+    power: '96W max',
+    sensitivity: '87dB',
+    dimensions: '18½" x 2" x 2"',
+    weight: '1.5 lbs',
+    finish: 'Black',
+    description: 'Mid-size array for retail and hospitality'
+  },
+  {
+    model: 'PHA-16',
+    drivers: 16,
+    power: '192W max',
+    sensitivity: '89dB',
+    dimensions: '25" x 2" x 2"',
+    weight: '2.25 lbs',
+    finish: 'Black, White, or Silver',
+    description: 'Professional array for conference rooms and worship'
+  },
+  {
+    model: 'PHA-25',
+    drivers: 25,
+    power: '288W max',
+    sensitivity: '96dB',
+    dimensions: '42" x 2" x 2"',
+    weight: '6 lbs',
+    finish: 'Black, White, or Silver',
+    description: 'High-power array for large venues and theaters'
+  },
+  {
+    model: 'PHA-264',
+    drivers: 26,
+    power: '48W max',
+    sensitivity: '83dB',
+    dimensions: '26⅛" x 2" x 2"',
+    weight: '6 lbs',
+    finish: 'Black',
+    description: 'Extended array for wider coverage areas'
+  },
+  {
+    model: 'PHA-5125',
+    drivers: 51,
+    power: '288W max',
+    sensitivity: '89dB',
+    dimensions: '51 9/16" x 2" x 2"',
+    weight: '6 lbs',
+    finish: 'Black',
+    description: 'Maximum coverage for stadiums and large venues'
+  },
+];
+---
+
+<BaseLayout
+  title="PHA Line Array Speakers"
+  description="Pragmatic High-Performance Arrays (PHA) - professional line array speakers with Defined Acoustical Coverage for commercial, professional, and residential applications."
+>
+  <section class="bg-primary text-white py-20">
+    <div class="container-default">
+      <span class="badge bg-white/20 text-white mb-4">Pragmatic Audio</span>
+      <h1 class="text-5xl font-bold mb-6">PHA Line Array Speakers</h1>
+      <p class="text-xl text-gray-200 max-w-3xl">
+        Pragmatic High-Performance Arrays with Defined Acoustical Coverage (DAC) technology.
+        The loudest, most efficient, and most compact speakers to deliver your message
+        with exceptional clarity and precision.
+      </p>
+    </div>
+  </section>
+
+  <!-- DAC Technology -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div>
+          <span class="badge badge-primary mb-4">DAC Technology</span>
+          <h2 class="text-3xl font-bold mb-6">Defined Acoustical Coverage</h2>
+          <p class="text-gray-600 mb-4">
+            Introducing a new era in line-array-speaker technology. Based on years of meticulous
+            research by Pragmatic engineers, the PHA Series line array columns with Defined
+            Acoustical Coverage breaks new ground in performance, versatility, and cost.
+          </p>
+          <p class="text-gray-600 mb-4">
+            The PHA array speakers offer excellent acoustical coverage control, focusing sound
+            so that the sound level is greater in the coverage area than just a step to the side.
+            They're the most precise in the industry.
+          </p>
+          <p class="text-gray-600">
+            The PHA directional speakers ensure audio is played where you want it. Even in the
+            noisiest environments, you can use a PHA focused speaker to deliver crystal clear
+            audio to your target audience.
+          </p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="font-semibold text-lg mb-4">Compact 2" x 2" Footprint</h3>
+          <div class="bg-gray-100 rounded-lg p-6 text-center mb-4">
+            <div class="inline-block border-2 border-primary rounded" style="width: 60px; height: 60px;">
+              <div class="text-xs text-primary mt-4">2.25"</div>
+            </div>
+            <div class="text-xs text-gray-500 mt-2">1.97"</div>
+            <p class="text-sm text-gray-600 mt-4">Actual footprint</p>
+          </div>
+          <p class="text-sm text-gray-600">
+            Bring focused sound to any project in a sleek, unobtrusive package. With a tiny
+            2" x 2" footprint, the PHA can fit seamlessly into any display, kiosk, entertainment
+            venue, or home theater.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">PHA Model Range</h2>
+        <p class="text-gray-600">
+          We offer 4, 8, 16, and 25 driver versions with different widths, depending on
+          how much focus you need and distance from the speaker.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {phaModels.map((pha) => (
+          <div class="card overflow-hidden">
+            <div class="aspect-[3/1] bg-gradient-to-r from-gray-700 to-gray-900 flex items-center justify-center p-4">
+              <div class="bg-gray-600 rounded-full h-4 w-full max-w-xs"></div>
+            </div>
+            <div class="card-body">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">{pha.model}</h3>
+                <span class="text-xs font-semibold text-white bg-primary px-2 py-1 rounded">
+                  {pha.drivers} Drivers
+                </span>
+              </div>
+              <p class="text-gray-600 text-sm mb-4">{pha.description}</p>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Power</span>
+                  <span class="font-medium">{pha.power}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Sensitivity</span>
+                  <span class="font-medium">{pha.sensitivity} @ 1W/1m</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Dimensions</span>
+                  <span class="font-medium">{pha.dimensions}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Weight</span>
+                  <span class="font-medium">{pha.weight}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Finish</span>
+                  <span class="font-medium">{pha.finish}</span>
+                </div>
+              </div>
+              <a href="/support/downloads" class="text-primary font-medium text-sm mt-4 inline-block">
+                View Datasheet →
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Common Specs -->
+      <div class="mt-12 max-w-4xl mx-auto">
+        <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+          <div class="bg-gray-50 px-6 py-4 border-b">
+            <h3 class="font-semibold">Common Specifications (All PHA Models)</h3>
+          </div>
+          <div class="grid md:grid-cols-2 gap-0">
+            <div class="px-6 py-3 border-b md:border-r flex justify-between">
+              <span class="text-gray-600">Frequency Response</span>
+              <span class="font-medium">120Hz - 20kHz</span>
+            </div>
+            <div class="px-6 py-3 border-b flex justify-between">
+              <span class="text-gray-600">Impedance</span>
+              <span class="font-medium">4-ohm</span>
+            </div>
+            <div class="px-6 py-3 border-b md:border-r flex justify-between">
+              <span class="text-gray-600">Driver Type</span>
+              <span class="font-medium">Full-range</span>
+            </div>
+            <div class="px-6 py-3 border-b flex justify-between">
+              <span class="text-gray-600">Enclosure</span>
+              <span class="font-medium">Extruded aluminum</span>
+            </div>
+            <div class="px-6 py-3 md:border-r flex justify-between">
+              <span class="text-gray-600">Mounting</span>
+              <span class="font-medium">Horizontal or Vertical</span>
+            </div>
+            <div class="px-6 py-3 flex justify-between">
+              <span class="text-gray-600">Compliance</span>
+              <span class="font-medium">CE Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-12">Features & Benefits</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Sleek Design</h3>
+          <p class="text-sm text-gray-600">
+            Line array design with exceptional dispersion control and impeccable clarity
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Energy Efficient</h3>
+          <p class="text-sm text-gray-600">
+            High sensitivity ratings mean more output per watt of input power
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Versatile Mounting</h3>
+          <p class="text-sm text-gray-600">
+            Mount horizontally as sound bar or vertically as column speaker
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">System Integration</h3>
+          <p class="text-sm text-gray-600">
+            Works with HideAway™ amplifiers and PADS™/TPA receivers
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="section-padding">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-12">Applications</h2>
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Sports</span>
+          <p class="text-xs text-gray-600 mt-1">Arenas, Stadiums, Tennis Courts</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Transportation</span>
+          <p class="text-xs text-gray-600 mt-1">Airports, Trains, Bus Stations</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Corporate</span>
+          <p class="text-xs text-gray-600 mt-1">Conference Rooms, Assemblies</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Healthcare</span>
+          <p class="text-xs text-gray-600 mt-1">Hospitals, Pharmacies, Clinics</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Education</span>
+          <p class="text-xs text-gray-600 mt-1">Schools, Universities, Training</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Entertainment</span>
+          <p class="text-xs text-gray-600 mt-1">Theaters, Casinos, Theme Parks</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Worship</span>
+          <p class="text-xs text-gray-600 mt-1">Churches, Mosques, Synagogues</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Hospitality</span>
+          <p class="text-xs text-gray-600 mt-1">Hotels, Restaurants, Cruise Ships</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Recreation</span>
+          <p class="text-xs text-gray-600 mt-1">Yachts, RVs, Outdoor Gardens</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Retail</span>
+          <p class="text-xs text-gray-600 mt-1">Grocery, Malls, POS Terminals</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Residential</span>
+          <p class="text-xs text-gray-600 mt-1">Home Theaters, Multi-room Audio</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4 text-center">
+          <span class="font-semibold text-primary">Digital Signage</span>
+          <p class="text-xs text-gray-600 mt-1">LCD/Plasma TV Integration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessories -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-8">Mounting Accessories</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-2">PHA-MB-KIT</h3>
+          <p class="text-sm text-gray-600">Mounting bracket kit for wall installation</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-2">PHA-MNT-KIT39/42</h3>
+          <p class="text-sm text-gray-600">TV mounting kits for 39" and 42" displays</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <h3 class="font-semibold mb-2">PHA-TBAR-KIT</h3>
+          <p class="text-sm text-gray-600">T-bar ceiling grid mounting kit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary text-white section-padding">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Need Help Selecting the Right PHA?</h2>
+      <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+        Our team can help you choose the perfect speaker configuration based on your
+        venue size, coverage requirements, and installation constraints.
+      </p>
+      <a href="/quote" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+        Request a Quote
+      </a>
+    </div>
+  </section>
+</BaseLayout>

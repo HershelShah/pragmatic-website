@@ -3,16 +3,23 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 interface Props {
   title: string;
   description?: string;
   image?: string;
+  faqs?: FAQItem[];
 }
 
 const {
   title,
   description = "Professional audio and video solutions from Pragmatic Communications Systems. Directional speakers, PA systems, and healthcare entertainment since 1994.",
-  image = "/images/logo.png"
+  image = "/images/logo.png",
+  faqs = []
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -83,6 +90,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       ]
     }
   </script>
+
+  {faqs.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    })} />
+  )}
 </head>
 <body class="min-h-screen flex flex-col bg-white text-gray-900">
   <Header />

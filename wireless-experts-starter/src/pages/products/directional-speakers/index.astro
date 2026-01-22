@@ -1,96 +1,114 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
-const products = [
+const focusedAudioProducts = [
   {
-    name: 'PADS-5080',
-    description: 'Our flagship directional speaker with 50ft range and 80° beam width',
+    name: 'PTS-4077F Tile Speaker',
+    description: 'High-performance focused tile-array active speaker for drop-tile ceilings. Creates well-defined audio zones.',
+    href: '/products/pa-systems/pts-4077f',
+    image: '/images/products/pa-systems/pts-4077f.png',
+    badge: 'Directional',
+  },
+];
+
+const distributionPackages = [
+  {
+    name: 'PADS™ Gold Package',
+    description: 'Complete whole-building audio with paging, doorbell integration, and multi-room control via Cat5.',
     href: '/products/directional-speakers/pads-5080',
+    image: '/images/products/directional-speakers/pads-gold.jpg',
+    badge: 'Full Featured',
   },
   {
-    name: 'PADS-4060',
-    description: 'Mid-range directional speaker perfect for retail and museums',
+    name: 'PADS™ Silver Package',
+    description: 'Multi-room audio distribution with IR remote control capability. Upgrade from Bronze.',
     href: '/products/directional-speakers/pads-4060',
+    image: '/images/products/directional-speakers/pads-silver.jpg',
+    badge: 'Popular',
   },
   {
-    name: 'PADS-3040',
-    description: 'Compact directional speaker for smaller installations',
-    href: '#',
+    name: 'PADS™ Bronze Package',
+    description: 'Entry-level whole-home audio distribution with in-wall speakers and Cat5 connectivity.',
+    href: '/products/directional-speakers/pads-3040',
+    image: '/images/products/directional-speakers/pads-bronze.jpg',
+    badge: 'Entry Level',
   },
 ];
 ---
 
 <BaseLayout
-  title="Directional Speakers"
-  description="PADS™ directional speaker technology delivers focused audio exactly where you need it, without disturbing surrounding areas."
+  title="Focused Audio & Distribution"
+  description="PADS™ audio distribution systems and focused tile-array speakers for commercial and residential applications."
 >
   <!-- Hero -->
   <section class="bg-gradient-to-br from-primary to-primary-dark text-white py-20">
     <div class="container-default">
       <div class="max-w-3xl">
         <span class="badge bg-white/20 text-white mb-4">PADS™ Technology</span>
-        <h1 class="text-5xl font-bold mb-6">Directional Speaker Systems</h1>
+        <h1 class="text-5xl font-bold mb-6">Audio Distribution & Focused Sound</h1>
         <p class="text-xl text-gray-200 leading-relaxed">
-          PADS™ (Pragmatic Audio Directional System) delivers focused sound in a narrow beam,
-          allowing audio to be heard clearly in specific areas while remaining inaudible just
-          feet away. Perfect for museums, retail, healthcare, and corporate environments.
+          PADS™ (Pragmatic Audio Distribution System) delivers whole-building audio over Cat5 cables.
+          Combined with our PTS focused tile-array speakers, we offer complete solutions for
+          residential, commercial, and healthcare environments.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Technology Explanation -->
+  <!-- Focused Audio Section -->
   <section class="section-padding">
     <div class="container-default">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 class="text-3xl font-bold mb-6">How Directional Speakers Work</h2>
-          <div class="prose prose-lg text-gray-600 space-y-4">
-            <p>
-              Unlike conventional speakers that broadcast sound in all directions, PADS™ technology
-              uses advanced acoustic focusing to create a precise "column" of sound. This allows
-              you to deliver audio content to specific listeners without disturbing people nearby.
-            </p>
-            <p>
-              Developed from NASA research partnerships, our directional speakers use proprietary
-              transducer arrays and digital signal processing to achieve unprecedented beam control
-              and audio clarity.
-            </p>
-          </div>
-          <div class="mt-6 grid grid-cols-2 gap-4">
-            <div class="bg-secondary/10 rounded-lg p-4">
-              <div class="text-2xl font-bold text-secondary mb-1">30°-80°</div>
-              <div class="text-sm text-gray-600">Beam Width Options</div>
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">Focused Audio Speakers</h2>
+        <p class="text-gray-600 text-lg">
+          Tile-array speakers that create well-defined audio zones without sound bleeding into adjacent areas
+        </p>
+      </div>
+
+      <div class="max-w-lg mx-auto">
+        {focusedAudioProducts.map((product) => (
+          <a href={product.href} class="card group overflow-hidden block">
+            <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden relative">
+              <img src={product.image} alt={product.name} class="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-300" />
+              {product.badge && (
+                <span class="absolute top-3 right-3 bg-primary text-white text-xs font-semibold px-2 py-1 rounded">{product.badge}</span>
+              )}
             </div>
-            <div class="bg-secondary/10 rounded-lg p-4">
-              <div class="text-2xl font-bold text-secondary mb-1">Up to 50ft</div>
-              <div class="text-sm text-gray-600">Effective Range</div>
+            <div class="card-body text-center">
+              <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
+                {product.name}
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                {product.description}
+              </p>
+              <span class="text-primary font-medium text-sm">
+                View Product →
+              </span>
             </div>
-          </div>
-        </div>
-        <div class="bg-gray-100 rounded-2xl p-12 text-center">
-          <div class="text-9xl">🔊</div>
-          <p class="text-gray-500 mt-4">Directional Sound Technology</p>
-        </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- PADS Distribution Packages -->
   <section class="section-padding bg-gray-50">
     <div class="container-default">
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl font-bold mb-4">PADS™ Product Line</h2>
+        <h2 class="text-3xl font-bold mb-4">PADS™ Audio Distribution Packages</h2>
         <p class="text-gray-600 text-lg">
-          Choose the right directional speaker for your application
+          Complete whole-home and commercial audio distribution systems using Cat5 cabling
         </p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {products.map((product) => (
-          <a href={product.href} class="card group">
-            <div class="aspect-square bg-gray-100 flex items-center justify-center">
-              <div class="text-7xl">🔊</div>
+        {distributionPackages.map((product) => (
+          <a href={product.href} class="card group overflow-hidden">
+            <div class="aspect-square bg-gray-100 flex items-center justify-center overflow-hidden relative">
+              <img src={product.image} alt={product.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              {product.badge && (
+                <span class="absolute top-3 right-3 bg-secondary text-white text-xs font-semibold px-2 py-1 rounded">{product.badge}</span>
+              )}
             </div>
             <div class="card-body">
               <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
@@ -109,30 +127,114 @@ const products = [
     </div>
   </section>
 
-  <!-- Applications -->
+  <!-- How PADS Works -->
   <section class="section-padding">
+    <div class="container-default">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">How PADS™ Distribution Works</h2>
+          <div class="prose prose-lg text-gray-600 space-y-4">
+            <p>
+              The PADS™ system uses standard Cat5 cables to distribute audio throughout your
+              building. A central music source connects to a Port Hub, which then sends audio
+              to in-wall speakers with individual volume controls in each room.
+            </p>
+            <p>
+              Each package tier adds more features: Bronze provides basic multi-room audio,
+              Silver adds IR remote control capability, and Gold includes paging, doorbell
+              integration, and advanced distribution modules.
+            </p>
+          </div>
+          <div class="mt-6 grid grid-cols-2 gap-4">
+            <div class="bg-secondary/10 rounded-lg p-4">
+              <div class="text-2xl font-bold text-secondary mb-1">300ft</div>
+              <div class="text-sm text-gray-600">Max Cable Run</div>
+            </div>
+            <div class="bg-secondary/10 rounded-lg p-4">
+              <div class="text-2xl font-bold text-secondary mb-1">Cat5</div>
+              <div class="text-sm text-gray-600">Standard Cabling</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-2xl p-8">
+          <h3 class="font-semibold text-lg mb-4">System Components</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span><strong>PARI</strong> - In-wall speakers with volume control</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span><strong>PH</strong> - Port Hub for distribution</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span><strong>PTWI</strong> - In-wall interface module</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span><strong>PPT</strong> - Paging system (Gold only)</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-secondary mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              <span><strong>PDB</strong> - Doorbell input (Gold only)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="section-padding bg-gray-50">
     <div class="container-default">
       <h2 class="text-3xl font-bold mb-12 text-center">Common Applications</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="text-center p-6">
-          <div class="text-5xl mb-4">🏛️</div>
-          <h3 class="font-semibold mb-2">Museums & Galleries</h3>
-          <p class="text-sm text-gray-600">Exhibit audio without crosstalk between displays</p>
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Residential</h3>
+          <p class="text-sm text-gray-600">Whole-home audio with room-by-room control</p>
         </div>
-        <div class="text-center p-6">
-          <div class="text-5xl mb-4">🏥</div>
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
           <h3 class="font-semibold mb-2">Healthcare</h3>
-          <p class="text-sm text-gray-600">Patient entertainment without disturbing neighbors</p>
+          <p class="text-sm text-gray-600">Patient rooms and waiting area audio</p>
         </div>
-        <div class="text-center p-6">
-          <div class="text-5xl mb-4">🛍️</div>
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+          </div>
           <h3 class="font-semibold mb-2">Retail</h3>
-          <p class="text-sm text-gray-600">Targeted promotions and product information</p>
+          <p class="text-sm text-gray-600">Background music and announcements</p>
         </div>
-        <div class="text-center p-6">
-          <div class="text-5xl mb-4">🏢</div>
+        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
           <h3 class="font-semibold mb-2">Corporate</h3>
-          <p class="text-sm text-gray-600">Conference room privacy and focused audio</p>
+          <p class="text-sm text-gray-600">Conference rooms and common areas</p>
         </div>
       </div>
     </div>
@@ -143,7 +245,7 @@ const products = [
     <div class="container-default text-center">
       <h2 class="text-3xl font-bold mb-4">Need Help Choosing?</h2>
       <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-        Our team can help you select the right directional speaker for your specific application.
+        Our team can help design a PADS™ system tailored to your building's needs.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="/quote" class="btn-primary bg-accent hover:bg-accent-light">

@@ -1,59 +1,309 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pasSystems = [
+  {
+    model: 'PAS-8-S8M4',
+    name: 'Portable PA System',
+    description: 'Complete portable PA with PHA-8 line-array speaker, PSUB-81 subwoofer, and PMA-4 mixer. Ideal for small venues and mobile applications.',
+    speaker: 'PHA-8 (8 drivers, 75W max)',
+    subwoofer: 'PSUB-81 (8" dual-voice coil)',
+    mixer: 'PMA-4 (4-channel)',
+    micInputs: '3 (2 high-gain, 1 medium)',
+    lineInputs: '1 with variable gain',
+    frequency: 'Sub: 33-150Hz, Array: 120Hz-20kHz',
+    speakerDim: '18" x 2" x 2"',
+    subDim: '12" x 12" x 13"',
+    weight: '7.5 lbs (with battery, excl. sub)',
+    battery: 'Built-in, 12+ hours',
+    portable: true,
+  },
+  {
+    model: 'PAS-5125-S8M4',
+    name: 'High-Power PA System',
+    description: 'Professional PA with PHA-5125 line-array speaker (25 drivers), PSUB-81 subwoofer, and PMA-4 mixer. For gymnasiums, sports courts, and large venues.',
+    speaker: 'PHA-5125 (25 drivers, 240W max)',
+    subwoofer: 'PSUB-81 (8" dual-voice coil)',
+    mixer: 'PMA-4 (4-channel)',
+    micInputs: '3 (2 high-gain, 1 medium)',
+    lineInputs: '1 with variable gain',
+    frequency: 'Sub: 33-150Hz, Array: 120Hz-20kHz',
+    speakerDim: '51" x 2" x 2"',
+    subDim: '12" x 12" x 13"',
+    weight: '27 lbs (without battery)',
+    battery: 'Optional, 12+ hours',
+    portable: false,
+  },
+];
+
+const applications = [
+  'Gymnasiums & Sports Courts',
+  'Dance Studios & Fitness Clubs',
+  'Cafeterias & Dining Halls',
+  'Conference Rooms & Meeting Spaces',
+  'Classroom Audio Solutions',
+  'Hotels & Restaurants',
+  'Houses of Worship',
+  'Street Performers & Mobile DJs',
+  'Solo/Duet Singers & Acoustic Performers',
+  'Small Group Seminars & Lectures',
+];
 ---
 
 <BaseLayout
   title="PA Systems"
-  description="Commercial-grade paging and announcement systems for facilities of any size."
+  description="Professional portable and fixed PA systems with line-array speakers, subwoofers, and mixer/amplifiers."
 >
+  <!-- Hero -->
   <section class="bg-primary text-white py-20">
     <div class="container-default">
+      <span class="badge bg-white/20 text-white mb-4">Pragmatic Audio</span>
       <h1 class="text-5xl font-bold mb-6">Professional PA Systems</h1>
       <p class="text-xl text-gray-200 max-w-3xl">
-        Reliable, high-quality paging and announcement systems designed for commercial,
-        industrial, and institutional applications.
+        Complete PA solutions featuring PHA line-array speakers, active subwoofers,
+        and 4-channel mixer/amplifiers. Portable or fixed installation options.
       </p>
     </div>
   </section>
 
+  <!-- PAS Systems -->
   <section class="section-padding">
     <div class="container-default">
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <a href="/products/pa-systems/pts-4077f" class="card group">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">📢</div>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Complete PA System Packages</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          All-in-one PA solutions with line-array speaker, powered subwoofer, and 4-channel
+          mixer with built-in amplifier. Quick setup, intuitive operation.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8 mb-16">
+        {pasSystems.map((system) => (
+          <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+            <div class="bg-gray-100 p-8">
+              <div class="flex items-center justify-center h-64">
+                <div class="text-center">
+                  <div class="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-12 h-12 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                    </svg>
+                  </div>
+                  <p class="text-gray-500 text-sm">Complete PA System Package</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="text-2xl font-bold">{system.model}</h3>
+                  <p class="text-secondary font-medium">{system.name}</p>
+                </div>
+                {system.portable && (
+                  <span class="bg-secondary/10 text-secondary text-xs font-semibold px-2 py-1 rounded">
+                    Portable
+                  </span>
+                )}
+              </div>
+              <p class="text-gray-600 mb-6">{system.description}</p>
+
+              <h4 class="font-semibold text-sm text-gray-700 mb-3">System Components:</h4>
+              <div class="space-y-2 mb-6">
+                <div class="flex items-center text-sm">
+                  <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-600"><strong>Speaker:</strong> {system.speaker}</span>
+                </div>
+                <div class="flex items-center text-sm">
+                  <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-600"><strong>Subwoofer:</strong> {system.subwoofer}</span>
+                </div>
+                <div class="flex items-center text-sm">
+                  <svg class="w-4 h-4 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                  <span class="text-gray-600"><strong>Mixer:</strong> {system.mixer}</span>
+                </div>
+              </div>
+
+              <details class="border-t border-gray-100 pt-4">
+                <summary class="cursor-pointer text-primary font-medium hover:text-primary-light">
+                  View Full Specifications
+                </summary>
+                <div class="mt-4 space-y-2 text-sm">
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">Mic Inputs</span>
+                    <span class="font-medium">{system.micInputs}</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">Line Inputs</span>
+                    <span class="font-medium">{system.lineInputs}</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">Frequency Response</span>
+                    <span class="font-medium">{system.frequency}</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">Speaker Dimensions</span>
+                    <span class="font-medium">{system.speakerDim}</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">Subwoofer Dimensions</span>
+                    <span class="font-medium">{system.subDim}</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">System Weight</span>
+                    <span class="font-medium">{system.weight}</span>
+                  </div>
+                  <div class="flex justify-between py-1 border-b border-gray-50">
+                    <span class="text-gray-500">Battery</span>
+                    <span class="font-medium">{system.battery}</span>
+                  </div>
+                  <div class="flex justify-between py-1">
+                    <span class="text-gray-500">Impedance</span>
+                    <span class="font-medium">4 Ohms</span>
+                  </div>
+                </div>
+              </details>
+
+              <div class="mt-6">
+                <a href="/quote" class="btn-primary w-full text-center">
+                  Request Quote
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="card-body">
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-              PTS-4077F PA System
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Complete paging system with AM/FM tuner, auxiliary inputs, and multi-zone capability
-            </p>
+        ))}
+      </div>
+
+      <!-- System Features -->
+      <div class="bg-gray-50 rounded-2xl p-8 mb-16">
+        <h3 class="text-xl font-bold mb-6 text-center">PAS System Features</h3>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-1">Quick Setup</h4>
+            <p class="text-sm text-gray-600">Simple assembly, intuitive operation</p>
           </div>
-        </a>
-        <div class="card opacity-60">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">📢</div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-1">Battery Option</h4>
+            <p class="text-sm text-gray-600">12+ hours of cordless operation</p>
           </div>
-          <div class="card-body">
-            <h3 class="text-xl font-semibold mb-2">More Products Coming Soon</h3>
-            <p class="text-gray-600 text-sm">
-              Additional PA system configurations available - contact us for details
-            </p>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-1">Line-Array Sound</h4>
+            <p class="text-sm text-gray-600">Wide, uniform horizontal coverage</p>
           </div>
+          <div class="text-center">
+            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+              </svg>
+            </div>
+            <h4 class="font-semibold mb-1">Tone Controls</h4>
+            <p class="text-sm text-gray-600">Treble and bass adjustment</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Products -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-bold mb-6 text-center">Individual PA Components</h3>
+        <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <a href="/products/pa-systems/pts-4077f" class="card group overflow-hidden">
+            <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
+              <img src="/images/products/pa-systems/pts-4077f.png" alt="PTS-4077F" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="card-body">
+              <h4 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                PTS-4077F
+              </h4>
+              <p class="text-gray-600 text-sm">
+                2'x2' ceiling tile speaker for PADS audio distribution
+              </p>
+            </div>
+          </a>
+          <a href="/products/speakers" class="card group overflow-hidden">
+            <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
+              <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                PHA Line-Array Speakers
+              </h4>
+              <p class="text-gray-600 text-sm">
+                Individual line-array speakers from PHA-4 to PHA-5125
+              </p>
+            </div>
+          </a>
+          <a href="/products/amplifiers" class="card group overflow-hidden">
+            <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
+              <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
+            </div>
+            <div class="card-body">
+              <h4 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+                Amplifiers
+              </h4>
+              <p class="text-gray-600 text-sm">
+                MBA HideAway and SAA rack-mount professional amplifiers
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Applications -->
   <section class="bg-gray-50 section-padding">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-8">Applications</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+        {applications.map((app) => (
+          <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+            <p class="text-gray-700 text-sm font-medium">{app}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-primary text-white section-padding">
     <div class="container-default text-center">
       <h2 class="text-3xl font-bold mb-4">Need a Custom PA Solution?</h2>
-      <p class="text-gray-600 mb-8">
-        We can design and build PA systems for facilities of any size.
+      <p class="text-gray-200 text-lg mb-8 max-w-2xl mx-auto">
+        We can configure PA systems for any venue size. Contact us to discuss your requirements.
       </p>
-      <a href="/quote" class="btn-primary">Request a Quote</a>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/quote" class="btn-white">Request a Quote</a>
+        <a href="/support/downloads" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+          Download Datasheets
+        </a>
+      </div>
     </div>
   </section>
 </BaseLayout>

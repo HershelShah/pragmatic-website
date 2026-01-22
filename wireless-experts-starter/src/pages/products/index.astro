@@ -3,44 +3,60 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const productCategories = [
   {
-    name: 'Directional Speakers',
+    name: 'PADS™ Audio Systems',
     slug: 'directional-speakers',
-    description: 'PADS™ technology delivers focused audio exactly where you need it, without disturbing surrounding areas.',
-    icon: '🔊',
+    description: 'PADS™ whole-building audio distribution over Cat5 cables, plus focused tile-array speakers for defined audio zones.',
+    image: '/images/products/directional-speakers/pads-gold.jpg',
     badge: 'PADS™ Technology',
-    products: ['PADS-5080', 'PADS-4060', 'PADS-3040'],
+    products: ['PADS Gold/Silver/Bronze Packages', 'PTS-4077F Tile Speaker'],
   },
   {
-    name: 'PA Systems',
-    slug: 'pa-systems',
-    description: 'Commercial-grade paging and announcement systems for facilities of any size.',
-    icon: '📢',
-    badge: 'Professional Grade',
-    products: ['PTS-4077F', 'PTS-2055', 'PALS-100'],
+    name: 'Amplifiers',
+    slug: 'amplifiers',
+    description: 'Professional audio amplifiers from compact HideAway™ series to high-power rack-mount SAA series.',
+    image: '/images/products/pa-systems/pts-4077f.png',
+    badge: 'HideAway™ & SAA',
+    products: ['MBA-120/124/136/148', 'SAA-212/224/236/248'],
   },
   {
-    name: 'Audio Distribution',
+    name: 'Security Cameras',
+    slug: 'cameras',
+    description: 'Professional video surveillance with Cat5 connectivity. Covert in-wall cameras and wireless video systems.',
+    image: '/images/products/cameras/domecam.png',
+    badge: 'Pragmatic Video',
+    products: ['DomeCam™', 'IWC™ In-Wall Camera', 'HazCam™ Wireless'],
+  },
+  {
+    name: 'PHA Line Array Speakers',
+    slug: 'speakers',
+    description: 'Pragmatic High-Performance Arrays with Defined Acoustical Coverage for venues of all sizes.',
+    image: '/images/products/speakers/pha-25.png',
+    badge: 'DAC Technology',
+    products: ['PHA-4/8/16/25', 'PHA-264', 'PHA-5125'],
+  },
+  {
+    name: 'CATS™ Distribution',
     slug: 'audio-distribution',
-    description: 'Distribute high-quality audio over standard Cat5 cables up to 300ft with CATS™ technology.',
-    icon: '🎛️',
+    description: 'Distribute high-quality audio and video over standard Cat5 cables up to 300ft with CATS™ technology.',
+    image: '/images/products/audio-distribution/cats-mx4.png',
     badge: 'CATS™ Technology',
-    products: ['Port Hub', 'Audio Endpoints', 'Control Units'],
+    products: ['CATS-HDMI-MX4/MX8', 'Port Hubs', 'VGA Distribution'],
   },
   {
     name: 'Source Components',
     slug: 'source-components',
-    description: 'Digital tuners, music servers, and media players for professional AV installations.',
-    icon: '🎵',
-    badge: 'Digital Audio',
-    products: ['MuSe™ Music Server', 'PIM-21B', 'Digital Tuners'],
+    description: 'Music servers, media players, and professional displays for commercial AV installations.',
+    image: '/images/carousel/pim-21b.png',
+    badge: 'Digital Media',
+    products: ['MuSe™ Music Server', 'PIM-21B Medical Display', 'DMS Media Systems'],
   },
   {
     name: 'Healthcare Solutions',
     slug: 'healthcare',
     description: 'Patient entertainment systems and clinical audio solutions designed for medical environments.',
-    icon: '🏥',
+    image: '/images/products/healthcare/hc-24.png',
     badge: 'Patient-Focused',
-    products: ['phLCD TV', 'Patient Entertainment', 'Clinical Audio'],
+    products: ['PHLCD TVs', 'Patient Entertainment', 'Medical Displays'],
   },
 ];
 ---
@@ -89,8 +105,8 @@ const productCategories = [
                 View {category.name} →
               </a>
             </div>
-            <div class={`bg-gray-100 rounded-2xl p-12 text-center ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-              <span class="text-8xl">{category.icon}</span>
+            <div class={`bg-gray-100 rounded-2xl overflow-hidden ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
+              <img src={category.image} alt={category.name} class="w-full h-full object-contain p-8" />
             </div>
           </div>
         ))}
@@ -132,15 +148,15 @@ const productCategories = [
       "@type": "ItemList",
       "name": "Pragmatic Communications Products",
       "description": "Professional audio and video solutions for commercial and industrial applications",
-      "numberOfItems": 5,
+      "numberOfItems": 7,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "item": {
             "@type": "Product",
-            "name": "Directional Speakers",
-            "description": "PADS technology delivers focused audio exactly where you need it",
+            "name": "PADS Audio Systems",
+            "description": "Whole-building audio distribution over Cat5 cables",
             "brand": "Pragmatic"
           }
         },
@@ -149,8 +165,8 @@ const productCategories = [
           "position": 2,
           "item": {
             "@type": "Product",
-            "name": "PA Systems",
-            "description": "Commercial-grade paging and announcement systems",
+            "name": "Amplifiers",
+            "description": "HideAway compact and SAA rack-mount professional amplifiers",
             "brand": "Pragmatic"
           }
         },
@@ -159,14 +175,24 @@ const productCategories = [
           "position": 3,
           "item": {
             "@type": "Product",
-            "name": "Audio Distribution",
-            "description": "CATS technology for audio over Cat5 cables",
+            "name": "Security Cameras",
+            "description": "Professional video surveillance with Cat5 connectivity",
             "brand": "Pragmatic"
           }
         },
         {
           "@type": "ListItem",
           "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "CATS Distribution",
+            "description": "CATS technology for audio over Cat5 cables",
+            "brand": "Pragmatic"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
           "item": {
             "@type": "Product",
             "name": "Source Components",
@@ -176,7 +202,7 @@ const productCategories = [
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "Product",
             "name": "Healthcare Solutions",

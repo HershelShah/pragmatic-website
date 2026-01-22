@@ -1,92 +1,285 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const phlcdModels = [
+  { model: 'PHLCD16', size: '16"', dimensions: '18.4 x 11.6 x 3.3"', weight: '3.53 lbs', vesa: 'Custom', inputs: 'HDMI, VGA, YPbPr, Composite' },
+  { model: 'PHLCD19', size: '19"', dimensions: '17.5 x 10.4 x 1.8"', weight: '5.1 lbs', vesa: '75x75', inputs: 'HDMI, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD20', size: '20"', dimensions: '18.4 x 11.1 x 2.1"', weight: '5.3 lbs', vesa: '75x75', inputs: 'HDMI, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD22', size: '22"', dimensions: '23.4 x 14.8 x 4.3"', weight: '6.61 lbs', vesa: '75x75', inputs: 'HDMI, VGA, YPbPr, Composite' },
+  { model: 'PHLCD24', size: '24"', dimensions: '22.4 x 13.3 x 2.6"', weight: '6.2 lbs', vesa: '100x100', inputs: 'HDMI, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD28', size: '28"', dimensions: '25.1 x 15.3 x 2.9"', weight: '8.1 lbs', vesa: '100x100', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD32', size: '32"', dimensions: '28.9 x 17.4 x 3.2"', weight: '11.7 lbs', vesa: '200x100', inputs: 'HDMI x3, YPbPr, Composite, USB' },
+  { model: 'PHLCD40', size: '40"', dimensions: '36.4 x 21.7 x 3.9"', weight: '21.1 lbs', vesa: '200x100', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD42', size: '42"', dimensions: '38.6 x 23.1 x 3.6"', weight: '30.4 lbs', vesa: '200x100', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD46', size: '46"', dimensions: '42.3 x 25.4 x 4.2"', weight: '35 lbs', vesa: '200x100', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD50', size: '50"', dimensions: '44.5 x 26.1 x 3.3"', weight: '32.4 lbs', vesa: '200x200', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD55', size: '55"', dimensions: '49.8 x 29.4 x 4.2"', weight: '46.7 lbs', vesa: '200x200', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD60', size: '60"', dimensions: '54 x 31.8 x 3.6"', weight: '47.3 lbs', vesa: '400x200', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+  { model: 'PHLCD65', size: '65"', dimensions: '58.5 x 34.4 x 3.9"', weight: '49.7 lbs', vesa: '400x200', inputs: 'HDMI x2, VGA, YPbPr, Composite, USB' },
+];
+
+const mediaPlayerModels = [
+  { model: 'PHLCD19MP', size: '19"', dimensions: '21 x 13.4 x 4.3"', weight: '8.8 lbs', vesa: '75x75' },
+  { model: 'PHLCD22MP', size: '22"', dimensions: '20.8 x 13 x 1.8"', weight: '8.8 lbs', vesa: '100x100' },
+  { model: 'PHLCD24MP', size: '24"', dimensions: '22.4 x 13.3 x 2.7"', weight: '7.3 lbs', vesa: '100x100' },
+  { model: 'PHLCD28MP', size: '28"', dimensions: '25.1 x 15.3 x 2.9"', weight: '9.3 lbs', vesa: '100x100' },
+  { model: 'PHLCD32MP', size: '32"', dimensions: '28.9 x 17.4 x 3.2"', weight: '12.8 lbs', vesa: '200x100' },
+  { model: 'PHLCD40MP', size: '40"', dimensions: '36.4 x 21.7 x 3.9"', weight: '19.4 lbs', vesa: '200x100' },
+  { model: 'PHLCD42MP', size: '42"', dimensions: '38.6 x 23.1 x 3.6"', weight: '31.5 lbs', vesa: '200x100' },
+];
 ---
 
 <BaseLayout
   title="Healthcare Solutions"
-  description="Patient entertainment systems and clinical audio solutions designed specifically for medical environments."
+  description="PHLCD patient entertainment TVs with built-in pillow speaker interface. Designed for healthcare facilities with UL compliance and 5-year warranty option."
 >
   <section class="bg-primary text-white py-20">
     <div class="container-default">
-      <h1 class="text-5xl font-bold mb-6">Healthcare Audio Solutions</h1>
+      <span class="badge bg-white/20 text-white mb-4">Pragmatic Healthcare</span>
+      <h1 class="text-5xl font-bold mb-6">Healthcare Television Systems</h1>
       <p class="text-xl text-gray-200 max-w-3xl">
-        Patient entertainment systems and clinical audio solutions designed specifically
-        for the unique requirements of healthcare facilities.
+        PHLCD patient entertainment TVs deliver superior picture quality with razor-sharp images
+        and brilliant colors. Designed specifically for healthcare facilities with built-in
+        pillow speaker interface.
       </p>
     </div>
   </section>
 
-  <section class="section-padding">
+  <!-- Key Features -->
+  <section class="section-padding bg-gray-50">
     <div class="container-default">
-      <div class="grid md:grid-cols-3 gap-8 mb-16">
-        <div class="card">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">📺</div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
           </div>
-          <div class="card-body">
-            <h3 class="text-xl font-semibold mb-2">phLCD Patient Entertainment</h3>
-            <p class="text-gray-600 text-sm">
-              Complete patient entertainment system with TV, music, and nurse call integration
-            </p>
-          </div>
+          <h3 class="font-semibold text-lg mb-2">Designed for Healthcare</h3>
+          <p class="text-sm text-gray-600">
+            Advanced integrated pillow speaker interface compatible with LG, RCA, Philips, and Zenith codes
+          </p>
         </div>
 
-        <div class="card">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">🔊</div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
           </div>
-          <div class="card-body">
-            <h3 class="text-xl font-semibold mb-2">Directional Patient Audio</h3>
-            <p class="text-gray-600 text-sm">
-              PADS™ speakers deliver TV audio without disturbing neighboring patients
-            </p>
-          </div>
+          <h3 class="font-semibold text-lg mb-2">UL Compliant</h3>
+          <p class="text-sm text-gray-600">
+            Complies with all applicable UL certifications for safety in medical environments
+          </p>
         </div>
 
-        <div class="card">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center">
-            <div class="text-7xl">🎧</div>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
           </div>
-          <div class="card-body">
-            <h3 class="text-xl font-semibold mb-2">Clinical Audio Systems</h3>
-            <p class="text-gray-600 text-sm">
-              Audio systems for waiting rooms, therapy areas, and common spaces
-            </p>
-          </div>
+          <h3 class="font-semibold text-lg mb-2">5-Year Warranty Option</h3>
+          <p class="text-sm text-gray-600">
+            Five Star Service with 1-year standard warranty, extendable up to 5 years
+          </p>
         </div>
-      </div>
 
-      <div class="bg-secondary/10 rounded-xl p-8 max-w-4xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4 text-center">Why Healthcare Facilities Choose Pragmatic</h2>
-        <div class="grid md:grid-cols-3 gap-6 mt-8">
-          <div class="text-center">
-            <div class="text-4xl mb-2">✓</div>
-            <h3 class="font-semibold mb-2">Patient Comfort</h3>
-            <p class="text-sm text-gray-600">Improve patient satisfaction with quality entertainment</p>
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
           </div>
-          <div class="text-center">
-            <div class="text-4xl mb-2">✓</div>
-            <h3 class="font-semibold mb-2">Privacy Compliant</h3>
-            <p class="text-sm text-gray-600">Meets HIPAA requirements for patient privacy</p>
+          <h3 class="font-semibold text-lg mb-2">Energy Efficient</h3>
+          <p class="text-sm text-gray-600">
+            Energy saver design reduces operating costs and environmental impact
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+            </svg>
           </div>
-          <div class="text-center">
-            <div class="text-4xl mb-2">✓</div>
-            <h3 class="font-semibold mb-2">Easy Maintenance</h3>
-            <p class="text-sm text-gray-600">Reliable systems with minimal maintenance needs</p>
+          <h3 class="font-semibold text-lg mb-2">Sustainable & Safe</h3>
+          <p class="text-sm text-gray-600">
+            Eco-friendly design with flame retardant housing for patient safety
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
           </div>
+          <h3 class="font-semibold text-lg mb-2">Multiple Inputs</h3>
+          <p class="text-sm text-gray-600">
+            HDMI, VGA, YPbPr, Composite, and USB inputs for versatile connectivity
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-50 section-padding">
+  <!-- PHLCD Standard Models -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold mb-4">PHLCD TV Models</h2>
+        <p class="text-gray-600">
+          Standard models with built-in pillow speaker interface. Available in sizes from 16" to 65".
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full bg-white rounded-xl shadow-sm overflow-hidden">
+          <thead class="bg-primary text-white">
+            <tr>
+              <th class="px-4 py-3 text-left font-semibold">Model</th>
+              <th class="px-4 py-3 text-left font-semibold">Screen</th>
+              <th class="px-4 py-3 text-left font-semibold hidden md:table-cell">Dimensions (WxHxD)</th>
+              <th class="px-4 py-3 text-left font-semibold hidden lg:table-cell">Weight</th>
+              <th class="px-4 py-3 text-left font-semibold hidden lg:table-cell">VESA Mount</th>
+              <th class="px-4 py-3 text-left font-semibold hidden xl:table-cell">Inputs</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            {phlcdModels.map((tv, index) => (
+              <tr class={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                <td class="px-4 py-3 font-medium text-primary">{tv.model}</td>
+                <td class="px-4 py-3">{tv.size}</td>
+                <td class="px-4 py-3 hidden md:table-cell text-sm">{tv.dimensions}</td>
+                <td class="px-4 py-3 hidden lg:table-cell text-sm">{tv.weight}</td>
+                <td class="px-4 py-3 hidden lg:table-cell text-sm">{tv.vesa}</td>
+                <td class="px-4 py-3 hidden xl:table-cell text-sm text-gray-600">{tv.inputs}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Media Player Models -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="badge badge-secondary mb-4">Built-in DVD</span>
+        <h2 class="text-3xl font-bold mb-4">PHLCD Media Player Models</h2>
+        <p class="text-gray-600">
+          PHLCDxxMP models include built-in DVD player and USB media input for playing JPEG, MP3, DivX, and more.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto">
+        {mediaPlayerModels.map((tv) => (
+          <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bold text-primary">{tv.model}</span>
+              <span class="text-sm bg-secondary/10 text-secondary px-2 py-1 rounded">{tv.size}</span>
+            </div>
+            <div class="text-xs text-gray-500 space-y-1">
+              <div class="flex justify-between">
+                <span>Dimensions:</span>
+                <span>{tv.dimensions}</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Weight:</span>
+                <span>{tv.weight}</span>
+              </div>
+              <div class="flex justify-between">
+                <span>VESA:</span>
+                <span>{tv.vesa}</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-8 text-center">
+        <p class="text-sm text-gray-600">
+          All Media Player models include HDMI, VGA, YPbPr, Composite, and USB inputs
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="section-padding">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-12">Healthcare Applications</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Patient Rooms</h3>
+          <p class="text-sm text-gray-600">Bedside entertainment with pillow speaker support</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Waiting Rooms</h3>
+          <p class="text-sm text-gray-600">Keep patients informed and entertained</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Lobbies</h3>
+          <p class="text-sm text-gray-600">Digital signage and information displays</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+            </svg>
+          </div>
+          <h3 class="font-semibold mb-2">Consulting Rooms</h3>
+          <p class="text-sm text-gray-600">Patient education and consultation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Customers -->
+  <section class="section-padding bg-primary text-white">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Trusted by Leading Healthcare Facilities</h2>
+      <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+        Our PHLCD TVs are installed in hospitals, medical centers, and healthcare facilities across the nation.
+      </p>
+      <a href="/support/downloads" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">
+        Download PHTV Brochure
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-padding">
     <div class="container-default text-center">
       <h2 class="text-3xl font-bold mb-4">Healthcare Project Consultation</h2>
       <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-        Let us help design an audio solution that meets your facility's unique requirements
-        while staying within budget.
+        Let us help design a patient entertainment solution that meets your facility's unique requirements.
+        We offer OEM solutions and standard packages for any size deployment.
       </p>
-      <a href="/quote" class="btn-primary">Request a Quote</a>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary">Request a Quote</a>
+        <a href="/contact" class="btn-secondary">Contact Sales</a>
+      </div>
     </div>
   </section>
 </BaseLayout>

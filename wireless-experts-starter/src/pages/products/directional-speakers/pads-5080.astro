@@ -2,155 +2,154 @@
 import ProductLayout from '../../../layouts/ProductLayout.astro';
 
 const specifications = {
-  'Beam Angle': '30° - 80° (adjustable)',
-  'Effective Range': 'Up to 50 feet',
-  'Frequency Response': '200Hz - 16kHz',
-  'Power Rating': '40W RMS',
-  'Impedance': '8 Ohms',
-  'Dimensions': '24" H x 8" W x 4" D',
-  'Weight': '12 lbs',
-  'Mounting': 'Wall, ceiling, or stand mount',
-  'Finish': 'Black or white powder coat',
-  'Input': 'Standard speaker wire terminals',
+  'Package Type': 'Complete Whole-Building Audio Distribution',
+  'Connectivity': 'Cat5/Cat5e/Cat6 cable (up to 300ft runs)',
+  'Rooms Supported': 'Multi-room (expandable)',
+  'Control': 'Individual room volume control',
+  'Paging': 'Yes - PPT paging system included',
+  'Doorbell Integration': 'Yes - PDB doorbell input included',
+  'IR Remote': 'Yes - IR detectors and emitters',
+  'Components': 'PARI, PH, PM 4.1, PDM, PPT, PDB, PTWI',
   'Made in': 'USA',
 };
 
 const features = [
-  'Adjustable beam width from 30° to 80°',
-  'Crystal-clear audio up to 50 feet',
-  'Proprietary acoustic focusing technology',
-  'Low distortion, high intelligibility',
-  'Rugged construction for commercial use',
-  'Multiple mounting options included',
-  'Weather-resistant for outdoor use',
-  'Compatible with standard amplifiers',
+  'Complete whole-building audio distribution system',
+  'Paging system (PPT) for announcements throughout the building',
+  'Doorbell integration (PDB) - audio alerts through speakers',
+  'IR remote control capability inherited from Silver',
+  'Individual volume control in each room (PARI in-wall speakers)',
+  'Port Hub (PH) for centralized distribution',
+  'PM 4.1 and PDM advanced distribution modules',
+  'Standard Cat5 cable installation - no special wiring needed',
 ];
 
-const applications = [
-  'Museum exhibits - Deliver narration to specific artworks without crosstalk',
-  'Healthcare facilities - Patient TV audio without disturbing others',
-  'Retail stores - Targeted product promotions and advertising',
-  'Corporate offices - Conference room audio with enhanced privacy',
-  'Libraries - Computer station audio in quiet areas',
-  'Trade shows - Booth audio that doesn\'t bleed to neighbors',
+const includedComponents = [
+  { name: 'PARI', description: 'In-wall speakers with individual volume control' },
+  { name: 'PH', description: 'Port Hub for audio distribution' },
+  { name: 'PM 4.1', description: 'Audio processing module' },
+  { name: 'PDM', description: 'Distribution module' },
+  { name: 'PPT', description: 'Paging system for announcements' },
+  { name: 'PDB', description: 'Doorbell input integration' },
+  { name: 'PTWI', description: 'In-wall interface' },
 ];
 
 const relatedProducts = [
-  { name: 'PADS-4060', href: '/products/directional-speakers/pads-4060' },
-  { name: 'PADS-3040', href: '#' },
-  { name: 'Audio Distribution System', href: '/products/audio-distribution' },
+  { name: 'PADS Silver Package', href: '/products/directional-speakers/pads-4060', image: '/images/products/directional-speakers/pads-silver.jpg' },
+  { name: 'PADS Bronze Package', href: '/products/directional-speakers/pads-3040', image: '/images/products/directional-speakers/pads-bronze.jpg' },
+  { name: 'PTS-4077F Tile Speaker', href: '/products/pa-systems/pts-4077f', image: '/images/products/pa-systems/pts-4077f.png' },
 ];
 ---
 
 <ProductLayout
-  title="PADS-5080 Directional Speaker"
-  description="The PADS-5080 is our flagship directional speaker system, delivering focused audio in a 30°-80° beam pattern up to 50 feet. Perfect for museums, healthcare, retail, and corporate applications where audio needs to be contained to specific areas."
-  category="Directional Speakers"
-  badge="PADS™ Technology"
+  title="PADS™ Gold Package"
+  description="Complete whole-building audio distribution system with paging, doorbell integration, IR remote control, and multi-room audio over Cat5 cables. The ultimate PADS™ package."
+  category="Audio Distribution"
+  badge="Full Featured"
+  image="/images/products/directional-speakers/pads-gold.jpg"
   specifications={specifications}
   features={features}
-  applications={applications}
+  applications={[
+    'Large residential homes - Whole-home audio with paging and doorbell alerts',
+    'Small commercial buildings - Background music with announcement capability',
+    'Healthcare facilities - Patient room audio with paging integration',
+    'Houses of worship - Multi-zone audio with announcement system',
+    'Hospitality - Guest rooms and common areas with central control',
+    'Corporate offices - Conference rooms and lobbies with paging',
+  ]}
   relatedProducts={relatedProducts}
 >
-  <div slot="product-icon">🔊</div>
 
   <div slot="additional-info">
-    <div class="bg-secondary/10 border border-secondary/20 rounded-lg p-6 mt-6">
-      <h4 class="font-semibold text-secondary-dark mb-2">NASA Heritage Technology</h4>
+    <div class="bg-accent/10 border border-accent/20 rounded-lg p-6 mt-6">
+      <h4 class="font-semibold text-accent-dark mb-2">Top-Tier Package</h4>
       <p class="text-gray-600 text-sm">
-        The PADS-5080 utilizes acoustic focusing technology developed through our work
-        with NASA research programs. This proven technology delivers exceptional beam
-        control and audio clarity.
+        The PADS™ Gold Package includes everything from the Silver Package plus paging system,
+        doorbell integration, and advanced distribution modules. This is our most complete
+        whole-building audio solution.
       </p>
     </div>
   </div>
 
-  <!-- Use Cases Section -->
+  <!-- Package Comparison -->
   <section class="section-padding bg-white">
     <div class="container-default">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Real-World Use Cases</h2>
+        <h2 class="text-3xl font-bold mb-8 text-center">What's Included in Gold</h2>
 
-        <div class="space-y-8">
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 class="text-xl font-semibold mb-3">Smithsonian Museum Installation</h3>
-              <p class="text-gray-600 mb-4">
-                The Smithsonian uses PADS-5080 speakers to deliver exhibit narration without
-                audio crosstalk. Visitors experience immersive audio at each display while
-                maintaining the quiet, contemplative museum atmosphere.
-              </p>
-              <div class="text-sm text-gray-500">
-                <strong>Result:</strong> 95% reduction in audio bleed between exhibits
-              </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {includedComponents.map((component) => (
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold text-primary mb-1">{component.name}</h4>
+              <p class="text-sm text-gray-600">{component.description}</p>
             </div>
-            <div class="bg-gray-100 rounded-lg p-8 text-center">
-              <div class="text-6xl mb-2">🏛️</div>
-              <div class="text-sm text-gray-600">Museum Application</div>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div class="md:order-2">
-              <h3 class="text-xl font-semibold mb-3">Kaiser Permanente Hospital</h3>
-              <p class="text-gray-600 mb-4">
-                Hospital patient rooms use PADS-5080 to deliver TV audio directly to patients
-                without disturbing neighboring rooms or requiring uncomfortable headphones.
-              </p>
-              <div class="text-sm text-gray-500">
-                <strong>Result:</strong> Improved patient satisfaction scores by 23%
-              </div>
-            </div>
-            <div class="bg-gray-100 rounded-lg p-8 text-center md:order-1">
-              <div class="text-6xl mb-2">🏥</div>
-              <div class="text-sm text-gray-600">Healthcare Application</div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- Package Tiers Comparison -->
   <section class="section-padding bg-gray-50">
     <div class="container-default">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Compare PADS™ Packages</h2>
 
-        <div class="space-y-4">
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <h3 class="font-semibold mb-2">How far can the PADS-5080 project sound?</h3>
-            <p class="text-gray-600 text-sm">
-              The PADS-5080 effectively delivers clear audio up to 50 feet in optimal acoustic
-              conditions. Actual range depends on ambient noise, ceiling height, and other
-              environmental factors.
-            </p>
-          </div>
-
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <h3 class="font-semibold mb-2">Does it require special installation?</h3>
-            <p class="text-gray-600 text-sm">
-              No. The PADS-5080 works with standard audio amplifiers and can be installed by
-              any qualified AV technician. We provide mounting brackets and complete installation
-              instructions. Technical support is available if needed.
-            </p>
-          </div>
-
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <h3 class="font-semibold mb-2">Can the beam width be adjusted after installation?</h3>
-            <p class="text-gray-600 text-sm">
-              Yes. The beam width can be adjusted from 30° to 80° using the built-in controls,
-              allowing you to fine-tune coverage for your specific space.
-            </p>
-          </div>
-
-          <div class="bg-white rounded-lg p-6 shadow-sm">
-            <h3 class="font-semibold mb-2">What's the warranty?</h3>
-            <p class="text-gray-600 text-sm">
-              All PADS speakers come with a 2-year limited warranty covering manufacturing defects.
-              Extended warranty options are available.
-            </p>
-          </div>
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="p-4 text-left font-semibold border-b">Feature</th>
+                <th class="p-4 text-center font-semibold border-b">Bronze</th>
+                <th class="p-4 text-center font-semibold border-b">Silver</th>
+                <th class="p-4 text-center font-semibold border-b bg-accent/10">Gold</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-4 border-b">Multi-Room Audio</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b bg-accent/5 text-green-600">✓</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b">In-Wall Speakers (PARI)</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b bg-accent/5 text-green-600">✓</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b">Cat5 Distribution</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b bg-accent/5 text-green-600">✓</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b">IR Remote Control</td>
+                <td class="p-4 text-center border-b text-gray-400">—</td>
+                <td class="p-4 text-center border-b text-green-600">✓</td>
+                <td class="p-4 text-center border-b bg-accent/5 text-green-600">✓</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b">Paging System (PPT)</td>
+                <td class="p-4 text-center border-b text-gray-400">—</td>
+                <td class="p-4 text-center border-b text-gray-400">—</td>
+                <td class="p-4 text-center border-b bg-accent/5 text-green-600">✓</td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b">Doorbell Integration (PDB)</td>
+                <td class="p-4 text-center border-b text-gray-400">—</td>
+                <td class="p-4 text-center border-b text-gray-400">—</td>
+                <td class="p-4 text-center border-b bg-accent/5 text-green-600">✓</td>
+              </tr>
+              <tr>
+                <td class="p-4">Advanced Modules (PM/PDM)</td>
+                <td class="p-4 text-center text-gray-400">—</td>
+                <td class="p-4 text-center text-gray-400">—</td>
+                <td class="p-4 text-center bg-accent/5 text-green-600">✓</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

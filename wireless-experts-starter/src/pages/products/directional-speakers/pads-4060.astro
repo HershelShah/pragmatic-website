@@ -1,0 +1,118 @@
+---
+import ProductLayout from '../../../layouts/ProductLayout.astro';
+
+const specifications = {
+  'Package Type': 'Multi-Room Audio Distribution with IR Control',
+  'Connectivity': 'Cat5/Cat5e/Cat6 cable (up to 300ft runs)',
+  'Rooms Supported': 'Multi-room (expandable)',
+  'Control': 'Individual room volume control + IR remote',
+  'IR Remote': 'Yes - IR detectors in amplifiers, IR emitter at source',
+  'Paging': 'No (upgrade to Gold for paging)',
+  'Doorbell Integration': 'No (upgrade to Gold)',
+  'Components': 'PARI with IR, PH, PTWI, IR emitter',
+  'Made in': 'USA',
+};
+
+const features = [
+  'Everything in Bronze Package plus IR remote control',
+  'IR detectors built into in-wall amplifiers',
+  'IR emitter at sending unit for source control',
+  'Control your music source from any room',
+  'Individual volume control in each room (PARI in-wall speakers)',
+  'Port Hub (PH) for centralized distribution',
+  'Standard Cat5 cable installation',
+  'Upgrade path to Gold Package available',
+];
+
+const relatedProducts = [
+  { name: 'PADS Gold Package', href: '/products/directional-speakers/pads-5080', image: '/images/products/directional-speakers/pads-gold.jpg' },
+  { name: 'PADS Bronze Package', href: '/products/directional-speakers/pads-3040', image: '/images/products/directional-speakers/pads-bronze.jpg' },
+  { name: 'PTS-4077F Tile Speaker', href: '/products/pa-systems/pts-4077f', image: '/images/products/pa-systems/pts-4077f.png' },
+];
+---
+
+<ProductLayout
+  title="PADS™ Silver Package"
+  description="Multi-room audio distribution system with IR remote control capability. Control your music source from any room in the building over Cat5 cables."
+  category="Audio Distribution"
+  badge="IR Remote Control"
+  image="/images/products/directional-speakers/pads-silver.jpg"
+  specifications={specifications}
+  features={features}
+  applications={[
+    'Mid-size residential homes - Multi-room audio with convenient remote control',
+    'Small offices - Background music with remote source control',
+    'Retail spaces - Zoned audio with easy control from anywhere',
+    'Restaurants - Dining area audio with bar/kitchen control',
+    'Waiting rooms - Patient/client areas with staff control',
+    'Fitness centers - Workout areas with trainer control',
+  ]}
+  relatedProducts={relatedProducts}
+>
+
+  <div slot="additional-info">
+    <div class="bg-secondary/10 border border-secondary/20 rounded-lg p-6 mt-6">
+      <h4 class="font-semibold text-secondary-dark mb-2">IR Remote Control Added</h4>
+      <p class="text-gray-600 text-sm">
+        The PADS™ Silver Package adds IR remote control capability to the Bronze Package.
+        IR detectors in each room's in-wall amplifier communicate with an IR emitter at
+        the music source, letting you control playback from any room.
+      </p>
+    </div>
+  </div>
+
+  <!-- How IR Control Works -->
+  <section class="section-padding bg-white">
+    <div class="container-default">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">How IR Remote Control Works</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-secondary">1</span>
+            </div>
+            <h3 class="font-semibold mb-2">Point Remote at Speaker</h3>
+            <p class="text-sm text-gray-600">
+              Use any compatible IR remote and point it at the PARI in-wall speaker in your room.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-secondary">2</span>
+            </div>
+            <h3 class="font-semibold mb-2">Signal Travels via Cat5</h3>
+            <p class="text-sm text-gray-600">
+              The IR detector picks up the signal and sends it over the Cat5 network to the central hub.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-secondary">3</span>
+            </div>
+            <h3 class="font-semibold mb-2">Source Responds</h3>
+            <p class="text-sm text-gray-600">
+              The IR emitter at the music source receives the command and controls playback.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upgrade Path -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready for More Features?</h2>
+        <p class="text-gray-600 mb-8">
+          Upgrade to the PADS™ Gold Package to add paging capability, doorbell integration,
+          and advanced distribution modules.
+        </p>
+        <a href="/products/directional-speakers/pads-5080" class="btn-primary">
+          View Gold Package →
+        </a>
+      </div>
+    </div>
+  </section>
+</ProductLayout>

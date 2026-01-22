@@ -6,10 +6,11 @@ interface Props {
   description: string;
   category: string;
   badge?: string;
+  image?: string;
   specifications?: Record<string, string>;
   features?: string[];
   applications?: string[];
-  relatedProducts?: Array<{name: string, href: string}>;
+  relatedProducts?: Array<{name: string, href: string, image?: string}>;
 }
 
 const {
@@ -17,6 +18,7 @@ const {
   description,
   category,
   badge,
+  image,
   specifications = {},
   features = [],
   applications = [],
@@ -60,13 +62,19 @@ const breadcrumbs = [
       <div class="grid lg:grid-cols-2 gap-12 items-start">
         <!-- Product Image -->
         <div>
-          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center sticky top-20">
-            <div class="text-center p-8">
-              <div class="text-8xl mb-4">
-                <slot name="product-icon">📦</slot>
+          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center sticky top-20 overflow-hidden">
+            {image ? (
+              <img src={image} alt={title} class="w-full h-full object-contain p-8" />
+            ) : (
+              <div class="text-center p-8">
+                <slot name="product-icon">
+                  <svg class="w-24 h-24 text-gray-400 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                </slot>
+                <p class="text-gray-500 text-sm mt-4">Product Image</p>
               </div>
-              <p class="text-gray-500 text-sm">[Product Image]</p>
-            </div>
+            )}
           </div>
         </div>
 
@@ -169,7 +177,12 @@ const breadcrumbs = [
         <h2 class="text-3xl font-bold mb-8 text-center">Related Products</h2>
         <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {relatedProducts.map((product) => (
-            <a href={product.href} class="card group">
+            <a href={product.href} class="card group overflow-hidden">
+              {product.image && (
+                <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <img src={product.image} alt={product.name} class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+                </div>
+              )}
               <div class="card-body text-center">
                 <h3 class="font-semibold group-hover:text-primary transition-colors">
                   {product.name}
