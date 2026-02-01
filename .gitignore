@@ -1,3 +1,13 @@
+# Claude Code
+.claude/
+
+# Project notes and source assets
+BACKLOG.md
+Products/
+
+# Windows artifacts
+nul
+
 # Dependencies
 wireless-experts-starter/node_modules/
 wireless-experts-starter/package-lock.json
