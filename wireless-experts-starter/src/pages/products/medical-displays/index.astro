@@ -1,0 +1,306 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductSearch from '../../../components/ProductSearch.astro';
+
+const products = [
+  {
+    name: 'PIM-21B',
+    title: 'PIM-21B Medical Imaging Monitor',
+    slug: 'pim-21b',
+    description: '21.5" DICOM calibrated medical/dental imaging monitor. 1920x1080 resolution, 3-year warranty.',
+    image: '/images/products/medical-displays/pim-21b/pim-21b-front.webp',
+    specs: {
+      size: '21.5"',
+      resolution: '1920 x 1080',
+      calibration: 'DICOM'
+    },
+    available: true
+  }
+];
+
+const breadcrumbs = [
+  { name: 'Products', href: '/products' },
+  { name: 'Medical Displays', href: '#' }
+];
+---
+
+<BaseLayout title="Medical Displays" description="DICOM calibrated medical and dental imaging monitors for healthcare facilities. High resolution displays for X-rays, MRI, ultrasound, and dental imaging.">
+  <!-- Breadcrumbs -->
+  <nav class="bg-gray-50 border-b border-gray-200">
+    <div class="container-default py-4">
+      <ol class="flex items-center space-x-2 text-sm">
+        <li>
+          <a href="/" class="text-gray-500 hover:text-primary">Home</a>
+        </li>
+        {breadcrumbs.map((crumb, index) => (
+          <li class="flex items-center">
+            <svg class="w-4 h-4 text-gray-400 mx-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+            {index === breadcrumbs.length - 1 ? (
+              <span class="text-gray-900 font-medium">{crumb.name}</span>
+            ) : (
+              <a href={crumb.href} class="text-gray-500 hover:text-primary">{crumb.name}</a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary to-primary-dark text-white py-16">
+    <div class="container-default">
+      <div class="max-w-3xl">
+        <span class="badge badge-primary bg-white/20 text-white mb-4">Pragmatic Healthcare</span>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Medical Displays</h1>
+        <p class="text-xl text-gray-200 mb-6">
+          DICOM calibrated medical imaging monitors designed for healthcare and dental facilities.
+          Crystal-clear display of X-rays, MRI, ultrasound, and dental imaging.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="/quote" class="btn-primary bg-accent hover:bg-accent-light">
+            Get a Quote
+          </a>
+          <a href="/documents/medical-displays/pim-21b/pim-21b-datasheet.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gray-300 hover:text-white text-sm transition-colors">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download Product Datasheet (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="bg-white border-b border-gray-200 py-4">
+    <div class="container-default">
+      <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-sm">
+        <div class="flex items-center gap-2 text-gray-700">
+          <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>DICOM Calibrated</span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-700">
+          <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>3-Year Warranty</span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-700">
+          <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>UL/CE/FCC Certified</span>
+        </div>
+        <div class="flex items-center gap-2 text-gray-700">
+          <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          <span>ENERGY STAR Compliant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section-padding">
+    <div class="container-default">
+      <!-- Search Bar -->
+      <ProductSearch />
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {products.map((product) => (
+          <a
+            href={`/products/medical-displays/${product.slug}`}
+            class="card group overflow-hidden"
+            data-product-card
+            data-search-text={`${product.name} ${product.title} medical dental imaging monitor DICOM ${product.description}`}
+          >
+            <div class="aspect-square bg-gray-100 flex items-center justify-center overflow-hidden">
+              <img
+                src={product.image}
+                alt={product.name}
+                class="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div class="card-body">
+              <h2 class="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                {product.name}
+              </h2>
+              <p class="text-gray-600 text-sm mb-4">
+                {product.description}
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="bg-gray-100 px-2 py-1 rounded">{product.specs.size}</span>
+                <span class="bg-gray-100 px-2 py-1 rounded">{product.specs.resolution}</span>
+                <span class="bg-gray-100 px-2 py-1 rounded">{product.specs.calibration}</span>
+              </div>
+            </div>
+          </a>
+        ))}
+
+      </div>
+
+      <!-- Need Different Size? -->
+      <div class="mt-10 bg-primary/5 border border-primary/20 rounded-xl p-6 max-w-2xl mx-auto text-center">
+        <p class="text-gray-700 mb-2">
+          <strong>Need a different size?</strong> We offer medical displays in multiple sizes.
+        </p>
+        <p class="text-gray-600 text-sm mb-4">
+          Available sizes: 20" (1600x900), 24" (1920x1080), 27" (2560x1440), 30" (2560x1600)
+        </p>
+        <a href="/quote" class="btn-primary">
+          Request a Quote for Other Sizes
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proven in Real Healthcare Environments -->
+  <section class="section-padding bg-white">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-4">Proven in Real Healthcare Environments</h2>
+      <p class="text-gray-600 text-center mb-10 max-w-3xl mx-auto">
+        Our medical displays are trusted by dental universities, clinics, and healthcare facilities across America
+        for critical imaging applications.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Dental University Simulation Labs</h3>
+              <p class="text-gray-600 text-sm">
+                PIM-21B monitors installed across simulation labs at dental universities, providing students with
+                crystal-clear imaging for training on X-rays and intraoral cameras.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-900 mb-2">Dental Operatories & Clinics</h3>
+              <p class="text-gray-600 text-sm">
+                Deployed in dental operatories at teaching facilities and private practices, enabling dentists to
+                review and discuss imaging with patients in real-time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Features -->
+  <section class="section-padding bg-gray-50">
+    <div class="container-default">
+      <h2 class="text-3xl font-bold text-center mb-4">Why Choose Pragmatic Medical Displays?</h2>
+      <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+        Best total cost of ownership with enterprise-grade features designed specifically for medical and dental imaging.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">DICOM Calibrated</h3>
+          <p class="text-gray-600">
+            Factory calibrated to DICOM standards for accurate grayscale reproduction. Ready out-of-the-box for viewing X-rays, MRI, sonographs, and dental imaging.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">178° Viewing Angles</h3>
+          <p class="text-gray-600">
+            Wide viewing angles ensure consistent image quality from any position—perfect for patient consultations when doctor and patient view together.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Five Star Service</h3>
+          <p class="text-gray-600">
+            3-year warranty with option to extend up to 5 years. Direct factory support from our Santa Clara, CA headquarters.
+          </p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Energy Efficient</h3>
+          <p class="text-gray-600">
+            ENERGY STAR compliant with LED backlighting for lower power consumption and reduced operating costs.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Easy to Clean</h3>
+          <p class="text-gray-600">
+            Durable housing designed for healthcare environments. Easy to sanitize and maintain infection control protocols.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Flexible Installation</h3>
+          <p class="text-gray-600">
+            Standard VESA 100mm x 100mm mount. Use with included base or wall/arm mount for space-saving operatory setups.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-secondary to-secondary-dark text-white section-padding">
+    <div class="container-default text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+      <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+        Contact our team to discuss your medical imaging display requirements.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/quote" class="btn-primary bg-white text-secondary hover:bg-gray-100">
+          Request a Quote
+        </a>
+        <a href="/contact" class="btn-outline-white">
+          Contact Sales
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

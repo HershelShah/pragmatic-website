@@ -1,38 +1,136 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
+interface Download {
+  name: string;
+  url: string;
+  type?: 'datasheet' | 'manual' | 'brochure' | 'other';
+}
+
 interface Props {
   title: string;
   description: string;
   category: string;
+  categorySlug: string;
   badge?: string;
   image?: string;
+  images?: Array<{ src: string; alt: string }>;
   specifications?: Record<string, string>;
   features?: string[];
   applications?: string[];
-  relatedProducts?: Array<{name: string, href: string, image?: string}>;
+  downloads?: Download[];
+  relatedProducts?: Array<{name: string, href: string, image?: string, comingSoon?: boolean}>;
+  sku?: string;
+  brand?: string;
 }
 
 const {
   title,
   description,
   category,
+  categorySlug,
   badge,
   image,
+  images = [],
   specifications = {},
   features = [],
   applications = [],
-  relatedProducts = []
+  downloads = [],
+  relatedProducts = [],
+  sku = '',
+  brand = 'Pragmatic Communications'
 } = Astro.props;
+
+// Use images array if provided, otherwise fall back to single image
+const productImages = images.length > 0 ? images : (image ? [{ src: image, alt: title }] : []);
 
 const breadcrumbs = [
   { name: 'Products', href: '/products' },
-  { name: category, href: `/products/${category.toLowerCase().replace(/\s+/g, '-')}` },
+  { name: category, href: `/products/${categorySlug}` },
   { name: title, href: '#' }
 ];
+
+// Generate canonical URL
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://www.wireless-experts.com';
+
+// Product Schema
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": title,
+  "description": description,
+  "image": productImages.map(img => `${siteUrl}${img.src}`),
+  "brand": {
+    "@type": "Brand",
+    "name": brand
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Pragmatic Communications Systems, Inc."
+  },
+  "category": category,
+  ...(sku && { "sku": sku }),
+  ...(Object.keys(specifications).length > 0 && {
+    "additionalProperty": Object.entries(specifications).map(([name, value]) => ({
+      "@type": "PropertyValue",
+      "name": name,
+      "value": value
+    }))
+  }),
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "USD",
+    "price": "0",
+    "priceValidUntil": new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().split('T')[0],
+    "seller": {
+      "@type": "Organization",
+      "name": "Pragmatic Communications Systems, Inc."
+    }
+  }
+};
+
+// Breadcrumb Schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteUrl
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": `${siteUrl}/products`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": category,
+      "item": `${siteUrl}/products/${categorySlug}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": title,
+      "item": canonicalURL.toString()
+    }
+  ]
+};
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={productImages[0]?.src}>
+  <!-- Product Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
   <!-- Breadcrumbs -->
   <nav class="bg-gray-50 border-b border-gray-200">
     <div class="container-default py-4">
@@ -60,12 +158,37 @@ const breadcrumbs = [
   <section class="section-padding bg-white">
     <div class="container-default">
       <div class="grid lg:grid-cols-2 gap-12 items-start">
-        <!-- Product Image -->
-        <div>
-          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center sticky top-20 overflow-hidden">
-            {image ? (
-              <img src={image} alt={title} class="w-full h-full object-contain p-8" />
-            ) : (
+        <!-- Product Images -->
+        <div class="sticky top-20">
+          {productImages.length > 0 ? (
+            <div>
+              <!-- Main Image -->
+              <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center overflow-hidden mb-4" id="main-image-container">
+                <img
+                  id="main-product-image"
+                  src={productImages[0].src}
+                  alt={productImages[0].alt}
+                  class="w-full h-full object-contain p-8"
+                />
+              </div>
+
+              <!-- Thumbnail Gallery -->
+              {productImages.length > 1 && (
+                <div class="grid grid-cols-6 gap-2">
+                  {productImages.map((img, index) => (
+                    <button
+                      class={`aspect-square bg-gray-100 rounded-lg overflow-hidden border-2 transition-colors hover:border-primary thumbnail-btn ${index === 0 ? 'border-primary' : 'border-transparent'}`}
+                      data-src={img.src}
+                      data-alt={img.alt}
+                    >
+                      <img src={img.src} alt={img.alt} class="w-full h-full object-contain p-2" />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          ) : (
+            <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center">
               <div class="text-center p-8">
                 <slot name="product-icon">
                   <svg class="w-24 h-24 text-gray-400 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -74,8 +197,8 @@ const breadcrumbs = [
                 </slot>
                 <p class="text-gray-500 text-sm mt-4">Product Image</p>
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         <!-- Product Info -->
@@ -93,9 +216,11 @@ const breadcrumbs = [
             <a href="/quote" class="btn-primary">
               Request a Quote
             </a>
-            <a href="/support/downloads" class="btn-secondary">
-              Download Specs
-            </a>
+            {downloads.length > 0 && (
+              <a href="#downloads" class="btn-secondary">
+                Download Specs
+              </a>
+            )}
             <a href="/contact" class="btn-secondary">
               Contact Sales
             </a>
@@ -167,6 +292,40 @@ const breadcrumbs = [
     </section>
   )}
 
+  <!-- Downloads Section -->
+  {downloads.length > 0 && (
+    <section id="downloads" class="section-padding bg-gray-50">
+      <div class="container-default">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center">Downloads</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            {downloads.map((download) => (
+              <a
+                href={download.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-4 bg-white rounded-lg p-4 border border-gray-200 hover:border-primary hover:shadow-md transition-all group"
+              >
+                <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                  <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z" />
+                  </svg>
+                </div>
+                <div class="flex-grow">
+                  <h4 class="font-semibold text-gray-900 group-hover:text-primary transition-colors">{download.name}</h4>
+                  <p class="text-sm text-gray-500">PDF Document</p>
+                </div>
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
   <!-- Additional Content Slot -->
   <slot />
 
@@ -177,18 +336,29 @@ const breadcrumbs = [
         <h2 class="text-3xl font-bold mb-8 text-center">Related Products</h2>
         <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {relatedProducts.map((product) => (
-            <a href={product.href} class="card group overflow-hidden">
+            <div class={`card group overflow-hidden ${product.comingSoon ? 'opacity-75' : ''}`}>
               {product.image && (
-                <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
+                <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden relative">
                   <img src={product.image} alt={product.name} class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+                  {product.comingSoon && (
+                    <div class="absolute inset-0 bg-gray-900/50 flex items-center justify-center">
+                      <span class="bg-white text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">Coming Soon</span>
+                    </div>
+                  )}
                 </div>
               )}
               <div class="card-body text-center">
-                <h3 class="font-semibold group-hover:text-primary transition-colors">
-                  {product.name}
-                </h3>
+                {product.comingSoon ? (
+                  <h3 class="font-semibold text-gray-500">
+                    {product.name}
+                  </h3>
+                ) : (
+                  <a href={product.href} class="font-semibold group-hover:text-primary transition-colors">
+                    {product.name}
+                  </a>
+                )}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
@@ -213,3 +383,27 @@ const breadcrumbs = [
     </div>
   </section>
 </BaseLayout>
+
+<script>
+  // Image gallery functionality
+  const thumbnails = document.querySelectorAll('.thumbnail-btn');
+  const mainImage = document.getElementById('main-product-image') as HTMLImageElement;
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const src = thumb.getAttribute('data-src');
+      const alt = thumb.getAttribute('data-alt');
+
+      if (mainImage && src) {
+        mainImage.src = src;
+        mainImage.alt = alt || '';
+      }
+
+      // Update active state
+      thumbnails.forEach(t => t.classList.remove('border-primary'));
+      thumbnails.forEach(t => t.classList.add('border-transparent'));
+      thumb.classList.remove('border-transparent');
+      thumb.classList.add('border-primary');
+    });
+  });
+</script>

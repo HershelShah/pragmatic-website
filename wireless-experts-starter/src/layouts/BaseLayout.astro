@@ -56,6 +56,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4 -->
+  <!-- To enable: Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Google Search Console verification -->
+  <!-- To enable: Replace VERIFICATION_CODE with your Search Console verification code -->
+  <!-- <meta name="google-site-verification" content="VERIFICATION_CODE" /> -->
   
   <!-- Organization Schema -->
   <script type="application/ld+json">
@@ -66,7 +80,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       "alternateName": "Wireless Experts",
       "url": "https://www.wireless-experts.com",
       "logo": "https://www.wireless-experts.com/images/logo.png",
-      "description": "Silicon Valley manufacturer of professional audio/video equipment including directional speakers, PA systems, and healthcare entertainment solutions since 1994.",
+      "description": "Silicon Valley manufacturer of professional audio/video equipment including laser projectors, digital signage solutions, and healthcare entertainment systems since 1994.",
       "foundingDate": "1994",
       "address": {
         "@type": "PostalAddress",
@@ -83,11 +97,48 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         "email": "sales@pragmatic1.com"
       },
       "knowsAbout": [
-        "Directional Speaker Systems",
-        "Distributed Audio Systems",
-        "Healthcare Entertainment Systems",
-        "Professional AV Equipment"
+        "Laser Projectors",
+        "Digital Signage Solutions",
+        "Professional AV Equipment",
+        "Commercial Display Systems"
       ]
+    }
+  </script>
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Pragmatic Communications Systems, Inc.",
+      "image": "https://www.wireless-experts.com/images/logo.png",
+      "url": "https://www.wireless-experts.com",
+      "telephone": "+1-408-748-1100",
+      "email": "sales@pragmatic1.com",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2340A Walsh Avenue",
+        "addressLocality": "Santa Clara",
+        "addressRegion": "CA",
+        "postalCode": "95051",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.3688,
+        "longitude": -121.9692
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      }
     }
   </script>
 

@@ -1,0 +1,92 @@
+---
+// Inline search component for products pages
+---
+
+<div class="product-search-container">
+  <div class="relative max-w-md mx-auto mb-8">
+    <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+    <input
+      type="text"
+      id="product-search-input"
+      placeholder="Search products..."
+      class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+      autocomplete="off"
+    />
+    <button
+      id="product-search-clear"
+      class="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-600 hidden"
+      aria-label="Clear search"
+    >
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- No results message (shown via JS) -->
+  <div id="product-search-empty" class="hidden text-center py-12">
+    <svg class="w-16 h-16 text-gray-300 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    <p class="text-gray-500 text-lg mb-2">No products found</p>
+    <p class="text-gray-400">Try adjusting your search terms</p>
+  </div>
+</div>
+
+<script>
+  const searchInput = document.getElementById('product-search-input') as HTMLInputElement;
+  const clearButton = document.getElementById('product-search-clear');
+  const emptyState = document.getElementById('product-search-empty');
+  const productCards = document.querySelectorAll('[data-product-card]');
+
+  function performSearch(query: string) {
+    const terms = query.toLowerCase().trim().split(/\s+/);
+
+    if (!query.trim()) {
+      // Show all products
+      productCards.forEach(card => {
+        (card as HTMLElement).style.display = '';
+      });
+      clearButton?.classList.add('hidden');
+      emptyState?.classList.add('hidden');
+      return;
+    }
+
+    clearButton?.classList.remove('hidden');
+    let visibleCount = 0;
+
+    productCards.forEach(card => {
+      const el = card as HTMLElement;
+      const searchableText = el.dataset.searchText?.toLowerCase() || '';
+
+      const matches = terms.every(term => searchableText.includes(term));
+
+      if (matches) {
+        el.style.display = '';
+        visibleCount++;
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState?.classList.remove('hidden');
+    } else {
+      emptyState?.classList.add('hidden');
+    }
+  }
+
+  searchInput?.addEventListener('input', (e) => {
+    performSearch((e.target as HTMLInputElement).value);
+  });
+
+  clearButton?.addEventListener('click', () => {
+    if (searchInput) {
+      searchInput.value = '';
+      searchInput.focus();
+    }
+    performSearch('');
+  });
+</script>

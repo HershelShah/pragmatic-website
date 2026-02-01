@@ -1,0 +1,80 @@
+---
+import ProductLayout from '../../../layouts/ProductLayout.astro';
+
+const images = [
+  { src: '/images/products/laser-projectors/plp-hd63/plp-hd63-front.webp', alt: 'PLP-HD63 Front View' },
+  { src: '/images/products/laser-projectors/plp-hd63/plp-hd63-rear.webp', alt: 'PLP-HD63 Rear View' },
+  { src: '/images/products/laser-projectors/plp-hd63/plp-hd63-rear-profile.webp', alt: 'PLP-HD63 Rear Profile' },
+  { src: '/images/products/laser-projectors/plp-hd63/plp-hd63-right-profile.webp', alt: 'PLP-HD63 Right Profile' },
+  { src: '/images/products/laser-projectors/plp-hd63/plp-hd63-cooling-fan-side.webp', alt: 'PLP-HD63 Cooling Fan Side' },
+  { src: '/images/products/laser-projectors/plp-hd63/plp-hd63-filter-side.webp', alt: 'PLP-HD63 Filter Side' },
+];
+
+const specifications = {
+  'Display Technology': '3-LCD TFT Active Matrix',
+  'Native Resolution': 'WUXGA (1920 x 1200) @ 60Hz',
+  'Light Source': 'Laser light source',
+  'Brightness': '6200 ANSI lumens',
+  'Contrast Ratio': '5,000,000:1',
+  'Lamp Life': '20,000 hours',
+  'Operation': '24/7 continuous operation capable',
+  'Throw Ratio': '1.22-1.98 (optional lenses: 1.4-2.52, 2.9-4.7)',
+  'Screen Rotation': 'Landscape, Portrait (+90°, -90°)',
+  'Keystone Correction': 'Horizontal & Vertical ±30°',
+  'Video Inputs': 'HDMI (x2), VGA, HDBaseT (optional), USB',
+  'Control': 'RS-232, RJ-45 LAN, IR',
+  'Power': '100V-240V AC, 360W active, <0.5W standby',
+  'Dimensions': '15.9" x 14.1" x 5.4" (405 x 358 x 136mm)',
+  'Weight': '16.98 lbs (7.7 kg)',
+  'Certifications': 'CE, RoHS',
+  'Warranty': '1 year limited warranty',
+};
+
+const features = [
+  '6200 ANSI lumens brightness for vivid images even in ambient light',
+  'WUXGA (1920x1200) native resolution for sharp detail',
+  '3-LCD TFT Active Matrix display for accurate color reproduction',
+  '20,000 hour laser light source - no lamp replacements',
+  '24/7 continuous operation capability for digital signage',
+  'Portrait and landscape orientation support (+90°, -90°)',
+  'Interchangeable lens system with multiple throw ratio options',
+  'HDBaseT input option for long-distance cable runs',
+  '5,000,000:1 dynamic contrast ratio for deep blacks',
+  'Horizontal and vertical keystone correction ±30°',
+  'Multiple video inputs: HDMI (x2), VGA, USB',
+  'Network and RS-232 control options',
+  'Energy-efficient design with <0.5W standby power',
+  'CE and RoHS compliant',
+];
+
+const applications = [
+  'Digital signage in shopping malls and retail environments',
+  'Hospital and healthcare facility wayfinding displays',
+  'Hotel lobby and conference center presentations',
+  'Museum and gallery exhibitions',
+  'Corporate lobbies and reception areas',
+  'Airport and transportation terminal displays',
+  'Houses of worship and large venue projection',
+  'Education facilities and lecture halls',
+];
+
+const downloads = [
+  { name: 'PLP-HD63 Datasheet', url: '/documents/laser-projectors/plp-hd63/plp-hd63-datasheet.pdf', type: 'datasheet' as const },
+  { name: 'Lens Projection Table', url: '/documents/laser-projectors/plp-hd63/plp-hd63-lens-projection-table.pdf', type: 'datasheet' as const },
+];
+---
+
+<ProductLayout
+  title="PLP-HD63 Laser Projector"
+  description="Professional 6200 lumen WUXGA laser projector designed for digital signage applications. Features 20,000 hour lifespan, 24/7 operation capability, and flexible installation options including portrait mode."
+  category="Laser Projectors"
+  categorySlug="laser-projectors"
+  badge="Pragmatic Signage"
+  images={images}
+  specifications={specifications}
+  features={features}
+  applications={applications}
+  downloads={downloads}
+  sku="PLP-HD63"
+  brand="Pragmatic Signage"
+/>

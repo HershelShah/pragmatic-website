@@ -1,17 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const industries = [
-  { name: 'Government', href: '/industries/government', image: '/images/industries/government.jpg', description: 'Defense, federal & municipal solutions' },
-  { name: 'Healthcare', href: '/industries/healthcare', image: '/images/industries/healthcare.jpg', description: 'Patient entertainment & clinical audio' },
-  { name: 'Education', href: '/industries/education', image: '/images/industries/education.jpg', description: 'Campus-wide audio systems' },
-  { name: 'Corporate', href: '/industries/corporate', image: '/images/industries/corporate.jpg', description: 'Conference & office solutions' },
-  { name: 'Hospitality', href: '/industries/hospitality', image: '/images/industries/hospitality.jpg', description: 'Guest experience enhancement' },
-  { name: 'Houses of Worship', href: '/industries/houses-of-worship', image: '/images/industries/houses-of-worship.jpg', description: 'Clear audio for every seat' },
-  { name: 'Cultural & Events', href: '/industries/events', image: '/images/industries/events.jpg', description: 'Museums, galleries & venues' },
-  { name: 'Residential', href: '/industries/residential', image: '/images/industries/residential.jpg', description: 'High-end home installations' },
-];
-
 const features = [
   {
     title: 'Silicon Valley Engineering',
@@ -31,17 +20,17 @@ const features = [
 ];
 ---
 
-<BaseLayout title="Professional Audio Solutions">
+<BaseLayout title="Professional AV Solutions for Digital Signage">
   <!-- Hero Section -->
   <section class="relative bg-gradient-to-br from-primary to-primary-dark text-white overflow-hidden">
     <div class="absolute inset-0 bg-[url('/images/hero-pattern.svg')] opacity-10"></div>
     <div class="container-default section-padding relative">
       <div class="max-w-3xl">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-          Professional Audio Solutions for Every Environment
+          Professional AV Solutions for Digital Signage
         </h1>
         <p class="text-xl text-gray-200 mb-8 leading-relaxed">
-          From NASA research projects to healthcare facilities worldwide, we've been engineering 
+          From NASA research projects to healthcare facilities worldwide, we've been engineering
           precision audio and video solutions for over 30 years.
         </p>
         <div class="flex flex-wrap gap-4">
@@ -94,109 +83,124 @@ const features = [
       <div class="text-center max-w-2xl mx-auto mb-12">
         <h2 class="mb-4">Our Solutions</h2>
         <p class="text-gray-600 text-lg">
-          Precision-engineered audio and video products designed for demanding professional environments.
+          Precision-engineered AV products designed for demanding professional environments.
         </p>
       </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Product Card: Directional Speakers -->
-        <a href="/products/directional-speakers" class="card group">
+
+      <!-- Featured Product: PLP-HD63 -->
+      <div class="bg-gray-50 rounded-2xl p-8 md:p-12 mb-12">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="order-2 md:order-1">
+            <span class="badge badge-primary mb-4">Pragmatic Signage</span>
+            <h3 class="text-3xl font-bold mb-4">PLP-HD63 Laser Projector</h3>
+            <p class="text-gray-600 mb-6">
+              Professional 6200 lumen WUXGA laser projector designed for digital signage. Features 20,000 hour lifespan, 24/7 operation capability, and flexible installation options.
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                6200 lumens brightness
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                WUXGA (1920x1200) resolution
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                20,000 hour laser lifespan
+              </li>
+              <li class="flex items-center text-gray-700">
+                <svg class="w-5 h-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                24/7 continuous operation
+              </li>
+            </ul>
+            <a href="/products/laser-projectors/plp-hd63" class="btn-primary">
+              View Product Details
+            </a>
+          </div>
+          <div class="order-1 md:order-2">
+            <div class="bg-white rounded-xl p-8 shadow-sm">
+              <img
+                src="/images/products/laser-projectors/plp-hd63/plp-hd63-front.webp"
+                alt="PLP-HD63 Laser Projector"
+                class="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Categories -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Medical Displays -->
+        <a href="/products/medical-displays" class="card group overflow-hidden">
           <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
-            <img src="/images/products/directional-speakers/pads-gold.jpg" alt="PADS Directional Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <img
+              src="/images/products/medical-displays/pim-21b/pim-21b-front.webp"
+              alt="PIM-21B Medical Display"
+              class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <div class="card-body">
-            <span class="badge badge-primary mb-2">PADS™ Technology</span>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-              Directional Speakers
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Focused audio that's heard only where you want it. Perfect for museums, retail, and healthcare.
-            </p>
+            <span class="badge badge-primary mb-2">Pragmatic Healthcare</span>
+            <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Medical Displays</h3>
+            <p class="text-gray-600 text-sm">DICOM calibrated monitors for dental and medical imaging.</p>
           </div>
         </a>
 
-        <!-- Product Card: PA Systems -->
-        <a href="/products/pa-systems" class="card group">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
-            <img src="/images/products/pa-systems/pts-4077f.png" alt="PTS-4077F PA System" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+        <!-- Line Array Speakers -->
+        <a href="/products/line-array-speakers" class="card group overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center relative overflow-hidden">
+            <!-- Stylized speaker array visualization -->
+            <div class="flex flex-col gap-1 items-center">
+              <div class="flex gap-1">
+                <div class="w-8 h-8 bg-primary/20 rounded"></div>
+                <div class="w-8 h-8 bg-primary/30 rounded"></div>
+                <div class="w-8 h-8 bg-primary/20 rounded"></div>
+              </div>
+              <div class="w-2 h-24 bg-gradient-to-b from-primary/40 to-primary/10 rounded-full"></div>
+            </div>
+            <div class="absolute bottom-4 left-0 right-0 text-center">
+              <div class="text-2xl font-bold text-primary">2" x 2"</div>
+              <p class="text-gray-500 text-xs">Ultra-Compact Footprint</p>
+            </div>
           </div>
           <div class="card-body">
-            <span class="badge badge-secondary mb-2">Professional Grade</span>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-              PA Systems
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Commercial paging and announcement systems for facilities of any size.
-            </p>
+            <span class="badge badge-primary mb-2">PHA Series</span>
+            <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Line Array Speakers</h3>
+            <p class="text-gray-600 text-sm">High-performance compact speakers with Defined Acoustical Coverage.</p>
           </div>
         </a>
 
-        <!-- Product Card: Audio Distribution -->
-        <a href="/products/audio-distribution" class="card group">
+        <!-- Laser Projectors -->
+        <a href="/products/laser-projectors" class="card group overflow-hidden">
           <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
-            <img src="/images/products/audio-distribution/cats-mx4.png" alt="CATS Audio Distribution" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+            <img
+              src="/images/products/laser-projectors/pvp-72a/pvp-72a-front.webp"
+              alt="PVP-72A Laser Projector"
+              class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+            />
           </div>
           <div class="card-body">
-            <span class="badge badge-primary mb-2">CATS™ Technology</span>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-              Audio Distribution
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Distribute audio over standard Cat5 cables up to 300ft with perfect clarity.
-            </p>
-          </div>
-        </a>
-
-        <!-- Product Card: Healthcare -->
-        <a href="/products/healthcare" class="card group">
-          <div class="aspect-video bg-gray-100 flex items-center justify-center overflow-hidden">
-            <img src="/images/products/healthcare/hc-24.png" alt="Healthcare Solutions" class="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="card-body">
-            <span class="badge badge-secondary mb-2">Patient-Focused</span>
-            <h3 class="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-              Healthcare Solutions
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Patient entertainment and clinical audio systems designed for medical environments.
-            </p>
+            <span class="badge badge-primary mb-2">Pragmatic Signage</span>
+            <h3 class="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Laser Projectors</h3>
+            <p class="text-gray-600 text-sm">Professional-grade laser projectors for 24/7 digital signage.</p>
           </div>
         </a>
       </div>
-      
+
       <div class="text-center mt-10">
         <a href="/products" class="btn-secondary">
-          View All Products →
+          View All Products
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industries Section -->
-  <section class="section-padding bg-gray-50">
-    <div class="container-default">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="mb-4">Industries We Serve</h2>
-        <p class="text-gray-600 text-lg">
-          From government facilities to houses of worship, our solutions are trusted 
-          in the most demanding environments.
-        </p>
-      </div>
-      
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {industries.map((industry) => (
-          <a href={industry.href} class="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-100 group">
-            <div class="aspect-video overflow-hidden">
-              <img src={industry.image} alt={industry.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors mb-1">
-                {industry.name}
-              </h3>
-              <p class="text-sm text-gray-500">{industry.description}</p>
-            </div>
-          </a>
-        ))}
       </div>
     </div>
   </section>
@@ -300,8 +304,8 @@ const features = [
         Ready to Discuss Your Project?
       </h2>
       <p class="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-        Whether you need a single directional speaker or a complete facility-wide audio system, 
-        our team is ready to help design the perfect solution.
+        Whether you need a laser projector for digital signage, medical displays for your clinic,
+        or line array speakers for your venue, our team is ready to help.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="/quote" class="btn-primary bg-white text-secondary hover:bg-gray-100">
