@@ -1,0 +1,101 @@
+{
+  "name": "CATS-HDMI-MX4",
+  "title": "4x4 HDMI over Cat5 Matrix with IR Pass-through",
+  "category": "Audio/Video Distribution",
+  "categorySlug": "audio-video-distribution",
+  "description": "4x4 HDMI matrix switcher over Cat5e/Cat6 with IR pass-through. Extends 1080p video up to 130 feet.",
+  "image": "/images/products/audio-video-distribution/cats-hdmi-mx4.webp",
+  "url": "/products/audio-video-distribution/cats-hdmi-mx4",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Matrix",
+      "value": "4x4 HDMI"
+    },
+    {
+      "key": "Range",
+      "value": "130 ft (Cat6)"
+    },
+    {
+      "key": "Resolution",
+      "value": "1080p60"
+    }
+  ],
+  "keywords": [
+    "HDMI",
+    "matrix",
+    "cat5",
+    "4x4",
+    "video distribution",
+    "IR pass-through"
+  ],
+  "detailTitle": "CATS-HDMI-MX4 HDMI Over Cat5 Matrix",
+  "detailDescription": "The CATS-HDMI-MX4 is a true 4x4 HDMI matrix switcher that distributes HDMI signals over Cat5e/Cat6 cables to up to four remote displays. Supports 1080p60 video with up to 7.1 channel digital audio and IR pass-through for source control.",
+  "sku": "CATS-HDMI-MX4",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "HDMI Compliance",
+      "value": "HDMI 1.3"
+    },
+    {
+      "key": "HDCP Compliance",
+      "value": "Yes"
+    },
+    {
+      "key": "Video Bandwidth",
+      "value": "225MHz (6.75Gbps)"
+    },
+    {
+      "key": "Video Support",
+      "value": "480i/480p/720p/1080i/1080p60, 36-bit color"
+    },
+    {
+      "key": "Audio Support",
+      "value": "Up to 7.1ch surround or stereo digital"
+    },
+    {
+      "key": "Range (1080p)",
+      "value": "115 ft (Cat5e) / 130 ft (Cat6)"
+    },
+    {
+      "key": "Range (720p/1080i)",
+      "value": "165 ft (Cat5e) / 180 ft (Cat6)"
+    },
+    {
+      "key": "TX Dimensions",
+      "value": "4.3\" x 13\" x 1.7\""
+    },
+    {
+      "key": "TX Weight",
+      "value": "2.7 lbs"
+    }
+  ],
+  "features": [
+    "True 4x4 matrix switching to any HDMI input",
+    "Extends video up to 130 feet over Cat6 at 1080p",
+    "Supports up to 7.1 channel digital audio",
+    "IR pass-through for remote source control",
+    "Control via push button, IR remote, or RS-232",
+    "Single power design at source site",
+    "Scalable up to 16 screens"
+  ],
+  "applications": [
+    "Commercial buildings",
+    "Digital signage",
+    "Corporate offices",
+    "Stadiums",
+    "Healthcare facilities"
+  ],
+  "downloads": [
+    {
+      "name": "CATS-HDMI-MX4 Datasheet",
+      "url": "/documents/audio-video-distribution/cats-hdmi-mx4-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

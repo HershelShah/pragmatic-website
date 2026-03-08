@@ -1,0 +1,93 @@
+{
+  "name": "PAS-5125-S8M4",
+  "title": "PAS-5125 Complete PA System",
+  "category": "PA Systems",
+  "categorySlug": "pa-systems",
+  "description": "Complete PA system with PHA-5125 line array (240W), PSUB-81 subwoofer, and PMA-4 mixer/amplifier.",
+  "image": "/images/products/pa-systems/pas-5125.webp",
+  "url": "/products/pa-systems/pas-5125",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Speaker",
+      "value": "PHA-5125 (240W)"
+    },
+    {
+      "key": "Subwoofer",
+      "value": "8\" active"
+    },
+    {
+      "key": "Mixer",
+      "value": "4-channel"
+    },
+    {
+      "key": "Battery",
+      "value": "12+ hours optional"
+    }
+  ],
+  "keywords": [
+    "PA system",
+    "public address",
+    "portable",
+    "line array",
+    "subwoofer",
+    "mixer",
+    "gymnasium",
+    "sports",
+    "fitness",
+    "conference",
+    "outdoor"
+  ],
+  "detailTitle": "PAS-5125 Professional PA System",
+  "detailDescription": "The PAS-5125 is a professional PA system combining an 8-channel mixer, a dual-channel amplifier, and PHA-5125 line array speakers. Designed for permanent installations in schools, houses of worship, corporate facilities, and performance venues.",
+  "sku": "PAS-5125-S8M4",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Mixer",
+      "value": "8-channel"
+    },
+    {
+      "key": "Amplifier",
+      "value": "Dual-channel"
+    },
+    {
+      "key": "Speaker",
+      "value": "PHA-5125 line array"
+    },
+    {
+      "key": "Microphone Inputs",
+      "value": "4"
+    },
+    {
+      "key": "Line Inputs",
+      "value": "4"
+    }
+  ],
+  "features": [
+    "Complete PA system with mixer, amplifier, and speakers",
+    "8-channel mixer with 4 mic and 4 line inputs",
+    "Dual-channel high-efficiency amplifier",
+    "PHA-5125 line array speakers for 360-degree coverage",
+    "Professional grade for permanent installations",
+    "Made in USA"
+  ],
+  "applications": [
+    "Schools and auditoriums",
+    "Houses of worship",
+    "Corporate facilities",
+    "Performance venues",
+    "Conference rooms"
+  ],
+  "downloads": [
+    {
+      "name": "PAS-5125 Datasheet",
+      "url": "/documents/pa-systems/pas-5125-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

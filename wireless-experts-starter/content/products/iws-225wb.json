@@ -1,0 +1,104 @@
+{
+  "name": "IWS-225WB",
+  "title": "IWS-225WB In-Wall Network Streamer",
+  "category": "Streaming Audio",
+  "categorySlug": "streaming-audio",
+  "description": "In-wall network audio streamer with 2x25W amplifier. Spotify, AirPlay, Bluetooth support.",
+  "image": "/images/products/streaming-audio/iws-225wb.webp",
+  "url": "/products/streaming-audio/iws-225wb",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "2x25W"
+    },
+    {
+      "key": "Streaming",
+      "value": "Spotify, AirPlay, BT"
+    },
+    {
+      "key": "Mounting",
+      "value": "In-wall"
+    },
+    {
+      "key": "Control",
+      "value": "App controlled"
+    }
+  ],
+  "keywords": [
+    "streaming",
+    "in-wall",
+    "network audio",
+    "Spotify",
+    "AirPlay",
+    "Bluetooth",
+    "amplifier",
+    "smart home",
+    "keypad"
+  ],
+  "detailTitle": "IWS-225WB In-Wall WiFi Streamer Amplifier",
+  "detailDescription": "The IWS-225WB is a high-performance single-gang in-wall WiFi network streamer with built-in Bluetooth, 2x1 digital switch, and integrated stereo amplifier delivering 2x25W per channel. Supports Spotify, Tidal, AirPlay, and more for multi-room audio.",
+  "sku": "IWS-225WB",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Speaker Output",
+      "value": "2x25W per channel @ 4 Ohms"
+    },
+    {
+      "key": "Network",
+      "value": "WiFi, Bluetooth"
+    },
+    {
+      "key": "Streaming Services",
+      "value": "Spotify, Tidal, Deezer, Qobuz, AirPlay, Pandora, Amazon Music"
+    },
+    {
+      "key": "Control",
+      "value": "Android/iOS apps"
+    },
+    {
+      "key": "Power Supply",
+      "value": "12-24 VDC"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2.75\"H x 1.875\"W x 2.5\"D"
+    },
+    {
+      "key": "Form Factor",
+      "value": "Standard 1-gang junction box"
+    },
+    {
+      "key": "Weight",
+      "value": "10.5 oz."
+    }
+  ],
+  "features": [
+    "Compatible with all Pragmatic PHA speakers",
+    "Fits in standard 1-gang junction box",
+    "Built-in Bluetooth receiver and 2x1 digital switch",
+    "Multi-room synchronized playback or independent per-room",
+    "Supports Spotify Connect, AirPlay, DLNA, UPnP",
+    "Simple operation with WiiM, 4Stream, AudioCast apps",
+    "Energy efficient and easily expandable",
+    "Minimal installation labor for upgrading legacy systems"
+  ],
+  "applications": [
+    "Multi-room whole house audio",
+    "Restaurants, hotels, offices",
+    "Flat screen TV audio with Bluetooth",
+    "Hospitality and reception areas"
+  ],
+  "downloads": [
+    {
+      "name": "IWS-225WB Datasheet",
+      "url": "/documents/streaming-audio/iws-225wb-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,50 @@
+---
+import { reader } from '../../../lib/keystatic';
+import ProductLayout from '../../../layouts/ProductLayout.astro';
+
+export async function getStaticPaths() {
+  const allProducts = await reader.collections.products.all();
+
+  // Generate detail pages for products with their own slug-level URL
+  // (skip products whose URL is just the category index, e.g. PHA speakers)
+  return allProducts
+    .filter(({ slug, entry }) => entry.url !== `/products/${entry.categorySlug}`)
+    .map(({ slug, entry }) => ({
+      params: {
+        category: entry.categorySlug,
+        slug,
+      },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+
+// Convert specs array to Record<string, string> for ProductLayout
+const specificationsRecord: Record<string, string> = {};
+for (const spec of (entry.specifications ?? [])) {
+  specificationsRecord[spec.key] = spec.value;
+}
+
+const downloads = (entry.downloads ?? []).map((d) => ({
+  name: d.name,
+  url: d.url,
+  type: d.type as 'datasheet' | 'manual' | 'brochure' | 'other',
+}));
+---
+
+<ProductLayout
+  title={entry.detailTitle || entry.title}
+  description={entry.detailDescription || entry.description}
+  category={entry.category}
+  categorySlug={entry.categorySlug}
+  badge={entry.badge ?? undefined}
+  images={entry.images ?? []}
+  specifications={specificationsRecord}
+  features={entry.features ?? []}
+  applications={entry.applications ?? []}
+  downloads={downloads}
+  relatedProducts={entry.relatedProducts ?? []}
+  sku={entry.sku ?? undefined}
+  brand={entry.brand ?? undefined}
+/>

@@ -1,0 +1,98 @@
+{
+  "name": "PAS*Port",
+  "title": "Portable Public Address System",
+  "category": "PA Systems",
+  "categorySlug": "pa-systems",
+  "description": "Fully self-contained, portable PA system with 20W amplifier, 4-channel mixer, rechargeable battery, and telescopic tripod.",
+  "image": "/images/products/pa-systems/pas-port.webp",
+  "url": "/products/pa-systems/pas-port",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "20W amplifier"
+    },
+    {
+      "key": "Battery",
+      "value": "8+ hours"
+    },
+    {
+      "key": "Inputs",
+      "value": "4-channel mixer"
+    }
+  ],
+  "keywords": [
+    "portable",
+    "PA system",
+    "public address",
+    "battery",
+    "wireless",
+    "classroom",
+    "meeting room"
+  ],
+  "detailTitle": "PAS*Port Portable Public Address System",
+  "detailDescription": "The PAS*Port is a fully self-contained, integrated, and lightweight portable PA system. It offers high performance, uniform and well-defined dispersion pattern, excellent speech intelligibility and music clarity. Fully self-contained in a carrying case of 13\" x 11\" x 4\".",
+  "sku": "PAS-PORT",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Amplifier Power",
+      "value": "20 Watts"
+    },
+    {
+      "key": "Mixer",
+      "value": "4-channel active"
+    },
+    {
+      "key": "Mic Inputs",
+      "value": "2 high-gain, 1 low-gain"
+    },
+    {
+      "key": "Line Input",
+      "value": "1"
+    },
+    {
+      "key": "Line Output",
+      "value": "1"
+    },
+    {
+      "key": "Battery Life",
+      "value": "8+ hours"
+    },
+    {
+      "key": "Dimensions",
+      "value": "13\" x 11\" x 4\" (carrying case)"
+    }
+  ],
+  "features": [
+    "Fully self-contained portable PA system",
+    "Portable and lightweight design",
+    "4-channel active mixer",
+    "2 high-gain and 1 low-gain microphone inputs",
+    "20W integrated amplifier",
+    "Rechargeable battery with 8+ hours operation",
+    "Built-in battery charger",
+    "Telescopic tripod for quick setup",
+    "Treble and bass control",
+    "Includes handheld and headset microphones"
+  ],
+  "applications": [
+    "Classrooms",
+    "Meeting rooms",
+    "Trade show booths",
+    "Street performers",
+    "Dance instructors",
+    "Portable public address"
+  ],
+  "downloads": [
+    {
+      "name": "PAS*Port Datasheet",
+      "url": "/documents/pa-systems/pas-port-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

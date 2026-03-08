@@ -1,0 +1,200 @@
+{
+  "name": "PVP-72A",
+  "title": "PVP-72A Laser Projector with Android",
+  "category": "Laser Projectors",
+  "categorySlug": "laser-projectors",
+  "description": "Smart 7200 lumen WUXGA laser projector with built-in Android OS. WiFi, Bluetooth, 20,000 hour lifespan.",
+  "image": "/images/products/laser-projectors/pvp-72a/pvp-72a-front.webp",
+  "url": "/products/laser-projectors/pvp-72a",
+  "badge": "Pragmatic Signage",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Brightness",
+      "value": "7200 lumens"
+    },
+    {
+      "key": "Resolution",
+      "value": "WUXGA (1920x1200)"
+    },
+    {
+      "key": "Lifespan",
+      "value": "20,000 hours"
+    },
+    {
+      "key": "Os",
+      "value": "Android Built-in"
+    }
+  ],
+  "keywords": [
+    "laser",
+    "projector",
+    "digital signage",
+    "WUXGA",
+    "7200 lumens",
+    "DLP",
+    "android",
+    "smart",
+    "wifi",
+    "bluetooth",
+    "wireless",
+    "signage",
+    "display",
+    "video",
+    "standalone"
+  ],
+  "detailTitle": "PVP-72A Laser Projector",
+  "detailDescription": "Smart 7200 lumen WUXGA laser projector with built-in Android OS for standalone digital signage. Features WiFi, Bluetooth, 20,000 hour lifespan, and 24/7 operation capability.",
+  "sku": "PVP-72A",
+  "brand": "Pragmatic Signage",
+  "images": [
+    {
+      "src": "/images/products/laser-projectors/pvp-72a/pvp-72a-front.webp",
+      "alt": "PVP-72A Front View"
+    },
+    {
+      "src": "/images/products/laser-projectors/pvp-72a/pvp-72a-rear.webp",
+      "alt": "PVP-72A Rear View"
+    },
+    {
+      "src": "/images/products/laser-projectors/pvp-72a/pvp-72a-front-profile.webp",
+      "alt": "PVP-72A Front Profile"
+    },
+    {
+      "src": "/images/products/laser-projectors/pvp-72a/pvp-72a-rear-profile.webp",
+      "alt": "PVP-72A Rear Profile"
+    },
+    {
+      "src": "/images/products/laser-projectors/pvp-72a/pvp-72a-exhaust-fans.webp",
+      "alt": "PVP-72A Exhaust Fans"
+    },
+    {
+      "src": "/images/products/laser-projectors/pvp-72a/pvp-72a-intake-fans.webp",
+      "alt": "PVP-72A Intake Fans"
+    }
+  ],
+  "specifications": [
+    {
+      "key": "Display Technology",
+      "value": "0.8\" DLP chip display engine"
+    },
+    {
+      "key": "Native Resolution",
+      "value": "WUXGA (1920 x 1200) @ 60Hz"
+    },
+    {
+      "key": "Brightness",
+      "value": "7200 ANSI lumens"
+    },
+    {
+      "key": "Contrast Ratio",
+      "value": "5,000,000:1"
+    },
+    {
+      "key": "Light Source",
+      "value": "Laser light source"
+    },
+    {
+      "key": "Lamp Life",
+      "value": "20,000 hours"
+    },
+    {
+      "key": "Operating System",
+      "value": "Android OS built-in"
+    },
+    {
+      "key": "Memory",
+      "value": "2GB RAM / 16GB Storage"
+    },
+    {
+      "key": "Wireless",
+      "value": "WiFi 2.4GHz/5GHz, Bluetooth 5.0"
+    },
+    {
+      "key": "Throw Ratio",
+      "value": "1.2-1.56:1 (interchangeable lenses)"
+    },
+    {
+      "key": "Projection Size",
+      "value": "40 - 400 inches"
+    },
+    {
+      "key": "Screen Rotation",
+      "value": "Landscape, Portrait (+90\u00b0, -90\u00b0)"
+    },
+    {
+      "key": "Video Inputs",
+      "value": "HDMI 2x, VGA, HDBaseT (optional), USB"
+    },
+    {
+      "key": "Control",
+      "value": "RS-232, RJ-45 LAN, IR"
+    },
+    {
+      "key": "Keystone Correction",
+      "value": "Horizontal & Vertical \u00b130\u00b0"
+    },
+    {
+      "key": "Power",
+      "value": "100V-240V AC, 360W active"
+    },
+    {
+      "key": "Dimensions",
+      "value": "16.53\" x 13.38\" x 5.4\" (420 x 340 x 137.5mm)"
+    },
+    {
+      "key": "Weight",
+      "value": "26.46 lbs (12 kg)"
+    },
+    {
+      "key": "Certifications",
+      "value": "CE, RoHS"
+    },
+    {
+      "key": "Warranty",
+      "value": "1 year limited warranty"
+    }
+  ],
+  "features": [
+    "7200 ANSI lumens for bright, vivid images in any environment",
+    "Built-in Android OS for standalone digital signage operation",
+    "WiFi and Bluetooth 5.0 for wireless content delivery",
+    "20,000 hour laser light source - no lamp replacements",
+    "24/7 continuous operation capability for digital signage",
+    "5,000,000:1 dynamic contrast ratio for deep blacks",
+    "Portrait and landscape orientation support",
+    "Interchangeable lens system for flexible throw ratios",
+    "HDBaseT input option for long-distance cable runs",
+    "Horizontal and vertical keystone correction \u00b130\u00b0",
+    "Multiple video inputs: HDMI, VGA, USB",
+    "Network and RS-232 control options",
+    "Compact design with energy-efficient operation",
+    "CE and RoHS compliant"
+  ],
+  "applications": [
+    "Digital signage in shopping malls and retail stores",
+    "Hospital and pharmacy information displays",
+    "Hotel lobbies and restaurant menus",
+    "College campus wayfinding and announcements",
+    "Sports bars and entertainment venues",
+    "Health and fitness club displays",
+    "Casino and gaming floor signage",
+    "Corporate lobby and reception areas"
+  ],
+  "downloads": [
+    {
+      "name": "PVP-72A Datasheet",
+      "url": "/documents/laser-projectors/pvp-72a/pvp-72a-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "name": "PLP-HD63",
+      "href": "/products/laser-projectors/plp-hd63",
+      "image": "/images/products/laser-projectors/plp-hd63/plp-hd63-front.webp",
+      "comingSoon": false
+    }
+  ]
+}

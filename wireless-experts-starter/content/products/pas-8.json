@@ -1,0 +1,93 @@
+{
+  "name": "PAS-8-S8M4",
+  "title": "PAS-8 Compact PA System",
+  "category": "PA Systems",
+  "categorySlug": "pa-systems",
+  "description": "Compact portable PA system with PHA-8 line array (75W), PSUB-81 subwoofer, and PMA-4 mixer. Includes carrying bag.",
+  "image": "/images/products/pa-systems/pas-8.webp",
+  "url": "/products/pa-systems/pas-8",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Speaker",
+      "value": "PHA-8 (75W)"
+    },
+    {
+      "key": "Subwoofer",
+      "value": "8\" active"
+    },
+    {
+      "key": "Mixer",
+      "value": "4-channel"
+    },
+    {
+      "key": "Weight",
+      "value": "7.5 lbs"
+    }
+  ],
+  "keywords": [
+    "PA system",
+    "portable",
+    "compact",
+    "line array",
+    "subwoofer",
+    "mixer",
+    "classroom",
+    "conference",
+    "DJ",
+    "singer",
+    "performer"
+  ],
+  "detailTitle": "PAS-8 Compact PA System",
+  "detailDescription": "The PAS-8 is a compact PA system combining an 8-channel mixer, amplifier, and PHA-8 line array speakers. Ideal for smaller venues, classrooms, and meeting rooms requiring professional-quality sound reinforcement.",
+  "sku": "PAS-8-S8M4",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Mixer",
+      "value": "8-channel"
+    },
+    {
+      "key": "Amplifier",
+      "value": "Integrated"
+    },
+    {
+      "key": "Speaker",
+      "value": "PHA-8 line array"
+    },
+    {
+      "key": "Microphone Inputs",
+      "value": "4"
+    },
+    {
+      "key": "Line Inputs",
+      "value": "4"
+    }
+  ],
+  "features": [
+    "Complete compact PA system",
+    "8-channel mixer with mic and line inputs",
+    "Integrated high-efficiency amplifier",
+    "PHA-8 line array speakers for wide coverage",
+    "Compact form factor for smaller venues",
+    "Made in USA"
+  ],
+  "applications": [
+    "Classrooms and meeting rooms",
+    "Small performance venues",
+    "Corporate presentations",
+    "Houses of worship",
+    "Community events"
+  ],
+  "downloads": [
+    {
+      "name": "PAS-8 Datasheet",
+      "url": "/documents/pa-systems/pas-8-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -5,20 +5,11 @@ const speakers = [
   {
     model: 'PHA-4',
     power: '48W max',
-    sensitivity: '83dB @ 1W/1m',
+    sensitivity: '87dB @ 1W/1m',
     dimensions: '9" x 2" x 2"',
     weight: '1 lb',
     finish: 'Black or White',
     datasheet: '/documents/line-array-speakers/pha-4-datasheet.pdf'
-  },
-  {
-    model: 'PHA-8',
-    power: '96W max',
-    sensitivity: '87dB @ 1W/1m',
-    dimensions: '18.5" x 2" x 2"',
-    weight: '1.5 lbs',
-    finish: 'Black',
-    datasheet: '/documents/line-array-speakers/pha-8-datasheet.pdf'
   },
   {
     model: 'PHA-184',
@@ -28,6 +19,24 @@ const speakers = [
     weight: '1.5 lbs',
     finish: 'Black',
     datasheet: '/documents/line-array-speakers/pha-184-datasheet.pdf'
+  },
+  {
+    model: 'PHA-264',
+    power: '48W max',
+    sensitivity: '84dB @ 1W/1m',
+    dimensions: '26" x 2" x 2"',
+    weight: '2.25 lbs',
+    finish: 'Black',
+    datasheet: '/documents/line-array-speakers/pha-264-datasheet.pdf'
+  },
+  {
+    model: 'PHA-8',
+    power: '96W max',
+    sensitivity: '91dB @ 1W/1m',
+    dimensions: '18.5" x 2" x 2"',
+    weight: '1.5 lbs',
+    finish: 'Black or White',
+    datasheet: '/documents/line-array-speakers/pha-8-datasheet.pdf'
   },
   {
     model: 'PHA-16',
@@ -48,15 +57,6 @@ const speakers = [
     datasheet: '/documents/line-array-speakers/pha-25-datasheet.pdf'
   },
   {
-    model: 'PHA-264',
-    power: '48W max',
-    sensitivity: '84dB @ 1W/1m',
-    dimensions: '26" x 2" x 2"',
-    weight: '2.25 lbs',
-    finish: 'Black',
-    datasheet: '/documents/line-array-speakers/pha-264-datasheet.pdf'
-  },
-  {
     model: 'PHA-5125',
     power: '288W max',
     sensitivity: '94dB @ 1W/1m',
@@ -64,6 +64,15 @@ const speakers = [
     weight: '7.5 lbs',
     finish: 'Black, White, Silver (custom)',
     datasheet: '/documents/line-array-speakers/pha-5125-datasheet.pdf'
+  },
+  {
+    model: 'PHA-48',
+    power: '100W RMS / 300W peak',
+    sensitivity: '—',
+    dimensions: '72" x 2" x 2"',
+    weight: '—',
+    finish: 'Black, White, Silver (custom)',
+    datasheet: '/documents/line-array-speakers/pha-48-datasheet.pdf'
   },
 ];
 
@@ -227,21 +236,21 @@ const breadcrumbs = [
         <div class="bg-white rounded-xl p-6 border border-gray-200 text-center">
           <div class="text-2xl font-bold text-primary mb-2">Small Spaces</div>
           <p class="text-gray-600 text-sm mb-3">Kiosks, displays, small rooms</p>
-          <div class="font-semibold">PHA-4 or PHA-8</div>
-          <p class="text-xs text-gray-500 mt-1">9" - 18.5" length</p>
+          <div class="font-semibold">PHA-4, PHA-184, PHA-264</div>
+          <p class="text-xs text-gray-500 mt-1">9" - 26" length</p>
         </div>
         <div class="bg-white rounded-xl p-6 border-2 border-primary text-center relative">
           <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs px-2 py-1 rounded-full">Most Popular</span>
           <div class="text-2xl font-bold text-primary mb-2">Medium Spaces</div>
           <p class="text-gray-600 text-sm mb-3">Conference rooms, lobbies, retail</p>
-          <div class="font-semibold">PHA-16 or PHA-25</div>
-          <p class="text-xs text-gray-500 mt-1">25" - 42" length</p>
+          <div class="font-semibold">PHA-8, PHA-16, PHA-25</div>
+          <p class="text-xs text-gray-500 mt-1">18.5" - 42" length</p>
         </div>
         <div class="bg-white rounded-xl p-6 border border-gray-200 text-center">
           <div class="text-2xl font-bold text-primary mb-2">Large Venues</div>
           <p class="text-gray-600 text-sm mb-3">Stadiums, arenas, auditoriums</p>
-          <div class="font-semibold">PHA-264 or PHA-5125</div>
-          <p class="text-xs text-gray-500 mt-1">26" - 51" length</p>
+          <div class="font-semibold">PHA-5125, PHA-48</div>
+          <p class="text-xs text-gray-500 mt-1">51" - 72" length</p>
         </div>
       </div>
 
@@ -284,6 +293,30 @@ const breadcrumbs = [
       <p class="text-sm text-gray-500 mt-4 text-center">
         All models: 4-ohm impedance, 120Hz - 20kHz frequency response
       </p>
+
+      <!-- Compatible Subwoofer -->
+      <div class="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-5 max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+          <svg class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M12 9.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM6.343 6.343a8 8 0 000 11.314" />
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <p class="font-semibold text-blue-900 mb-1">Compatible Subwoofer: PSUB-10.2WB</p>
+          <p class="text-blue-800 text-sm">
+            All PHA Series speakers pair seamlessly with the
+            <a href="/products/streaming-audio/psub-102wb" class="font-semibold underline hover:text-blue-600">PSUB-10.2WB Wireless Subwoofer</a>
+            — a 10" active 200W subwoofer with Spotify, AirPlay, and Bluetooth streaming built in.
+          </p>
+        </div>
+        <a href="/documents/streaming-audio/psub-102wb-datasheet.pdf" target="_blank" rel="noopener noreferrer"
+           class="flex-shrink-0 inline-flex items-center gap-1 text-blue-700 hover:text-blue-900 text-sm font-medium whitespace-nowrap">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Datasheet
+        </a>
+      </div>
 
       <!-- Inline CTA -->
       <div class="mt-10 bg-primary/5 border border-primary/20 rounded-xl p-6 max-w-2xl mx-auto text-center">

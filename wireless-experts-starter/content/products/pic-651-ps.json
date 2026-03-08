@@ -1,0 +1,101 @@
+{
+  "name": "PIC-651-PS",
+  "title": "PIC-651-PS 6.5\" Polypropylene In-Ceiling Speaker",
+  "category": "In-Ceiling Speakers",
+  "categorySlug": "in-ceiling-speakers",
+  "description": "6.5\" polypropylene woofer, fluid-cooled tweeter. 100W RMS, 92dB sensitivity. High-performance.",
+  "image": "/images/products/in-ceiling-speakers/pic-651-ps.webp",
+  "url": "/products/in-ceiling-speakers/pic-651-ps",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Woofer",
+      "value": "6.5\" Polypropylene"
+    },
+    {
+      "key": "Power",
+      "value": "100W RMS"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "92dB @ 1W/1m"
+    },
+    {
+      "key": "Frequency",
+      "value": "50Hz-20kHz"
+    }
+  ],
+  "keywords": [
+    "in-ceiling",
+    "speaker",
+    "polypropylene",
+    "fluid-cooled",
+    "high-power",
+    "home theater",
+    "whole-home audio",
+    "residential"
+  ],
+  "detailTitle": "PIC-651-PS In-Ceiling Point Source Speaker",
+  "detailDescription": "The PIC-651-PS is a high-performance in-ceiling point source speaker with pivoting tweeter for aimed directional sound. Features a 6.5\" polypropylene woofer and 0.75\" silk dome tweeter for smooth, natural audio reproduction.",
+  "sku": "PIC-651-PS",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Woofer",
+      "value": "6.5\" Polypropylene cone"
+    },
+    {
+      "key": "Tweeter",
+      "value": "0.75\" Silk dome (pivoting)"
+    },
+    {
+      "key": "Power",
+      "value": "60 Watts RMS"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "88 dBSPL @ 1W/1m"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "55Hz - 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "9.25\" x 3.54\""
+    },
+    {
+      "key": "Weight",
+      "value": "3.5 lbs"
+    }
+  ],
+  "features": [
+    "Pivoting tweeter for aimed directional sound",
+    "6.5\" polypropylene woofer",
+    "0.75\" silk dome tweeter for smooth highs",
+    "60 Watts RMS power handling",
+    "Point source design for focused coverage",
+    "Easy ceiling installation"
+  ],
+  "applications": [
+    "Residential multi-room audio",
+    "Directed sound applications",
+    "Commercial background music",
+    "Retail and hospitality"
+  ],
+  "downloads": [
+    {
+      "name": "PIC-651-PS Datasheet",
+      "url": "/documents/in-ceiling-speakers/pic-651-ps-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,90 @@
+{
+  "name": "HazCam",
+  "title": "Wireless Video Camera System",
+  "category": "Life Safety",
+  "categorySlug": "life-safety",
+  "description": "Ultra-compact, self-contained wireless video system with integrated battery-powered camera and 1000 ft transmission range.",
+  "image": "/images/products/life-safety/hazcam.webp",
+  "url": "/products/life-safety/hazcam",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Range",
+      "value": "1000 ft"
+    },
+    {
+      "key": "Battery",
+      "value": "2 hours"
+    },
+    {
+      "key": "Weight",
+      "value": "3 lbs"
+    }
+  ],
+  "keywords": [
+    "wireless camera",
+    "video",
+    "security",
+    "surveillance",
+    "portable",
+    "law enforcement"
+  ],
+  "detailTitle": "HazCam Wireless Video Camera System",
+  "detailDescription": "The HazCam is an ultra-compact, fully self-contained wireless video system with integrated battery-powered camera, wireless video transmitter, and receiver in a rugged Pelican case. Provides 1000 feet transmission range with 2 hours of battery life.",
+  "sku": "HAZCAM",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Transmission Range",
+      "value": "1000 feet"
+    },
+    {
+      "key": "Battery Life",
+      "value": "2 hours"
+    },
+    {
+      "key": "Transmitter Dimensions",
+      "value": "3\" diameter x 9.5\" D"
+    },
+    {
+      "key": "Transmitter Weight",
+      "value": "3 lbs"
+    },
+    {
+      "key": "Power",
+      "value": "Integrated battery"
+    },
+    {
+      "key": "Receiver",
+      "value": "Pelican case with LCD monitor"
+    }
+  ],
+  "features": [
+    "Self-contained camera with no external connections",
+    "No external battery pack required",
+    "1000 feet wireless transmission range",
+    "High-performance low-light sensitivity camera",
+    "Ergonomic handle design",
+    "Receiver in rugged Pelican case with LCD monitor",
+    "Mountable on tripod or roving robots",
+    "Available to authorized government and law enforcement"
+  ],
+  "applications": [
+    "Evidence acquisition",
+    "Security surveillance",
+    "Remote video recording",
+    "Hazardous environment monitoring",
+    "Law enforcement operations"
+  ],
+  "downloads": [
+    {
+      "name": "HazCam Datasheet",
+      "url": "/documents/life-safety/hazcam-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,5 +1,19 @@
 ---
-import { products } from '../data/products';
+import { reader } from '../lib/keystatic';
+
+const allProducts = await reader.collections.products.all();
+const products = allProducts
+  .filter(({ entry }) => entry.available)
+  .map(({ slug, entry }) => ({
+    name: entry.name,
+    title: entry.title,
+    category: entry.category,
+    description: entry.description,
+    image: entry.image,
+    url: entry.url,
+    badge: entry.badge ?? '',
+    keywords: entry.keywords ?? [],
+  }));
 ---
 
 <!-- Search Trigger Button (for header) -->

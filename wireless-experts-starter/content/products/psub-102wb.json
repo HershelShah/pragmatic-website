@@ -1,0 +1,111 @@
+{
+  "name": "PSUB-10.2WB",
+  "title": "PSUB-10.2WB Wireless Subwoofer",
+  "category": "Streaming Audio",
+  "categorySlug": "streaming-audio",
+  "description": "10\" wireless subwoofer with network streaming. Spotify, AirPlay, Bluetooth. 200W amplifier. Compatible with all PHA Series line array speakers.",
+  "image": "/images/products/streaming-audio/psub-102wb.webp",
+  "url": "/products/streaming-audio/psub-102wb",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Driver",
+      "value": "10\" woofer"
+    },
+    {
+      "key": "Power",
+      "value": "200W amplifier"
+    },
+    {
+      "key": "Streaming",
+      "value": "Spotify, AirPlay, BT"
+    },
+    {
+      "key": "Wireless",
+      "value": "WiFi + Bluetooth"
+    }
+  ],
+  "keywords": [
+    "subwoofer",
+    "wireless",
+    "streaming",
+    "Spotify",
+    "AirPlay",
+    "Bluetooth",
+    "bass",
+    "home theater",
+    "network audio",
+    "PHA",
+    "line array",
+    "compatible"
+  ],
+  "detailTitle": "PSUB-10.2WB Network Audio Streamer 2.1 System",
+  "detailDescription": "The PSUB-10.2WB is a high-performance network audio streamer 2.1 system with 10\" subwoofer (180W), stereo amplified outputs (2x150W), WiFi, Bluetooth, and Ethernet connectivity. Crossover designed to match all Pragmatic PHA speakers.",
+  "sku": "PSUB-10.2WB",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Subwoofer",
+      "value": "10\" dual voice coil, 180W"
+    },
+    {
+      "key": "Stereo Outputs",
+      "value": "2x150W @ 4 Ohms"
+    },
+    {
+      "key": "Subwoofer Response",
+      "value": "40Hz - 160Hz"
+    },
+    {
+      "key": "Stereo Response",
+      "value": "40Hz - 20kHz"
+    },
+    {
+      "key": "Inputs",
+      "value": "WiFi, Bluetooth, 3.5mm, Ethernet, USB"
+    },
+    {
+      "key": "Controls",
+      "value": "Master volume, bass, crossover, phase"
+    },
+    {
+      "key": "Power",
+      "value": "100-240VAC, 50/60 Hz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "15\"H x 12.2\"W x 14.4\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "23.4 lbs"
+    }
+  ],
+  "features": [
+    "All-in-one 2.1 system with no additional electronics needed",
+    "10\" dual voice coil long-excursion subwoofer (180W)",
+    "2x150W amplified stereo outputs for external speakers",
+    "Crossover matched for all Pragmatic PHA speakers",
+    "WiFi, Bluetooth, Ethernet, USB, and AUX inputs",
+    "Crossover frequency and phase adjustment",
+    "Supports all major streaming services",
+    "IR remote control and smartphone app control"
+  ],
+  "applications": [
+    "Multi-room WiFi audio streaming",
+    "Living room / flat screen TV 2.1 systems",
+    "Restaurants, hotels, offices, classrooms",
+    "Standalone Bluetooth TV audio"
+  ],
+  "downloads": [
+    {
+      "name": "PSUB-10.2WB Datasheet",
+      "url": "/documents/streaming-audio/psub-102wb-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

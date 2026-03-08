@@ -1,0 +1,119 @@
+{
+  "name": "TUNRF-1",
+  "title": "TUNRF-1 Mini FM/TV/CATV Tuner",
+  "category": "Tuners",
+  "categorySlug": "tuners",
+  "description": "Compact FM/TV/CATV tuner for VHF, UHF, CATV channels, and FM radio. Ideal for kiosks and digital signage.",
+  "image": "/images/products/tuners/tunrf-1.webp",
+  "url": "/products/tuners/tunrf-1",
+  "badge": "Pragmatic",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Vhf",
+      "value": "Ch 2-13"
+    },
+    {
+      "key": "Uhf",
+      "value": "Ch 14-69"
+    },
+    {
+      "key": "Catv",
+      "value": "Ch 1-125"
+    },
+    {
+      "key": "Fm",
+      "value": "88-108 MHz"
+    }
+  ],
+  "keywords": [
+    "tuner",
+    "FM",
+    "TV",
+    "CATV",
+    "VHF",
+    "UHF",
+    "radio",
+    "compact",
+    "kiosk",
+    "digital signage",
+    "mini"
+  ],
+  "detailTitle": "TUNRF-1 HideAway Mini FM/TV/CATV Tuner",
+  "detailDescription": "The TUNRF-1 HideAway Mini Tuner receives broadcast FM/TV signals from antenna and CATV signals from cable systems. It translates the signal in close proximity to audio amplifiers, monitors, or projectors, eliminating noise and interference from long cable runs.",
+  "sku": "TUNRF-1",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "VHF Channels",
+      "value": "2 thru 13"
+    },
+    {
+      "key": "UHF Channels",
+      "value": "14 thru 69"
+    },
+    {
+      "key": "CATV Channels",
+      "value": "1 thru 125"
+    },
+    {
+      "key": "FM Radio",
+      "value": "88 thru 108 MHz"
+    },
+    {
+      "key": "Video Signal-to-Noise",
+      "value": "40 dB"
+    },
+    {
+      "key": "Video Bandwidth",
+      "value": "4.2 MHz"
+    },
+    {
+      "key": "Audio Signal-to-Noise",
+      "value": "38 dB"
+    },
+    {
+      "key": "Antenna Sensitivity",
+      "value": "20 dBuV"
+    },
+    {
+      "key": "Power",
+      "value": "12V DC"
+    },
+    {
+      "key": "Dimensions (WxHxD)",
+      "value": "5.5\" x 1.75\" x 6.5\""
+    },
+    {
+      "key": "Weight",
+      "value": "1.2 lbs"
+    }
+  ],
+  "features": [
+    "Compact HideAway form factor",
+    "Receives FM, TV, and CATV signals",
+    "LCD display with IR remote control",
+    "Signal translation close to amplifier/monitor eliminates long cable noise",
+    "Antenna sensitivity of 20 dBuV",
+    "Optional S-Video output and MTS stereo",
+    "Optional RS-485 serial control for networking",
+    "12V DC powered"
+  ],
+  "applications": [
+    "High-end projection systems accessing cable TV or antenna",
+    "High performance FM radio receiver",
+    "Broadcast studios with multiple monitors",
+    "Health and fitness clubs",
+    "Commercial audio/video installations"
+  ],
+  "downloads": [
+    {
+      "name": "TUNRF-1 Datasheet",
+      "url": "/documents/tuners/tunrf-1-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,106 @@
+{
+  "name": "PHA-8",
+  "title": "PHA-8 Line Array Speaker",
+  "category": "Line Array Speakers",
+  "categorySlug": "line-array-speakers",
+  "description": "18.5\" line array speaker with 96W max power. High sensitivity 87dB for medium coverage.",
+  "image": "/images/products/line-array-speakers/pha-8.webp",
+  "url": "/products/line-array-speakers",
+  "badge": "PHA Series",
+  "available": true,
+  "showInGrid": false,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "96W max"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "91dB @ 1W/1m"
+    },
+    {
+      "key": "Dimensions",
+      "value": "18-1/2\" x 2\" x 2\""
+    }
+  ],
+  "keywords": [
+    "speaker",
+    "line array",
+    "audio",
+    "PA",
+    "sound",
+    "DAC",
+    "directional",
+    "commercial",
+    "conference",
+    "worship"
+  ],
+  "detailTitle": "PHA-8 Medium Line Array Speaker",
+  "detailDescription": "The PHA-8 is a medium line array speaker with 8 full-range drivers delivering 20W RMS. Ideal for medium-sized rooms requiring clear, articulate sound with excellent 360-degree dispersion.",
+  "sku": "PHA-8",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Drivers",
+      "value": "8 full-range"
+    },
+    {
+      "key": "Power Handling",
+      "value": "5 - 96 watts"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "91dB @ 1W/1M"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "120Hz - 20kHz"
+    },
+    {
+      "key": "Impedance",
+      "value": "4 Ohms"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "18-1/2\" x 2\" x 2\""
+    },
+    {
+      "key": "Weight",
+      "value": "1.5 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "White or Black anodized aluminum"
+    },
+    {
+      "key": "Grille",
+      "value": "Perforated aluminum"
+    }
+  ],
+  "features": [
+    "360-degree well-defined sound dispersion",
+    "Off-axis sound cancelling reduces noise bleed",
+    "Ultra-compact line array design",
+    "High efficiency full-range drivers",
+    "Excellent speech intelligibility and music clarity",
+    "Multiple mounting options available",
+    "4 Ohm impedance"
+  ],
+  "applications": [
+    "Houses of worship",
+    "Schools and classrooms",
+    "Corporate boardrooms and conference rooms",
+    "Restaurants, hotels, fitness clubs",
+    "Museums and retail spaces",
+    "Healthcare facilities"
+  ],
+  "downloads": [
+    {
+      "name": "PHA-8 Datasheet",
+      "url": "/documents/line-array-speakers/pha-8-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

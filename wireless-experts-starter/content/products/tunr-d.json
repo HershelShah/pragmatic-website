@@ -1,0 +1,116 @@
+{
+  "name": "TUNR-D",
+  "title": "TUNR-D Professional HDTV Tuner",
+  "category": "Tuners",
+  "categorySlug": "tuners",
+  "description": "Professional ATSC/Clear-QAM/NTSC/CATV tuner with HDMI, component, and composite outputs. RS-232 control.",
+  "image": "/images/products/tuners/tunr-d.webp",
+  "url": "/products/tuners/tunr-d",
+  "badge": "Pragmatic",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Formats",
+      "value": "ATSC, Clear-QAM, NTSC, CATV"
+    },
+    {
+      "key": "Resolution",
+      "value": "1080i/720p/480p/480i"
+    },
+    {
+      "key": "Outputs",
+      "value": "HDMI, RGBHV, Composite"
+    },
+    {
+      "key": "Control",
+      "value": "RS-232C, IR"
+    }
+  ],
+  "keywords": [
+    "tuner",
+    "HDTV",
+    "ATSC",
+    "Clear-QAM",
+    "NTSC",
+    "CATV",
+    "cable",
+    "antenna",
+    "digital signage",
+    "hotel",
+    "hospital",
+    "RS-232"
+  ],
+  "detailTitle": "TUNR-D Professional ATSC/Clear-QAM/NTSC/CATV Tuner",
+  "detailDescription": "The TUNR-D is a compact high-performance HDTV receiver/demodulator designed for professional systems integrators. It receives RF signals from antenna or cable and demodulates ATSC, Clear-QAM, and NTSC signals with simultaneous HDMI, RGBHV, and component video outputs.",
+  "sku": "TUNR-D",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Television Systems",
+      "value": "Digital ATSC, Clear-QAM, NTSC, analog CATV"
+    },
+    {
+      "key": "DTV Standards",
+      "value": "1080i/720p/720i/480p/480i"
+    },
+    {
+      "key": "Video Connectors",
+      "value": "HDMI, RGBHV, YPrPb, Composite SD"
+    },
+    {
+      "key": "Audio Connectors",
+      "value": "Unbalanced L/R, Coaxial Digital Audio"
+    },
+    {
+      "key": "Control Protocols",
+      "value": "RS-232, IR remote"
+    },
+    {
+      "key": "RF Connector",
+      "value": "75 Ohms, F-type"
+    },
+    {
+      "key": "Power",
+      "value": "DC 12V (max), 2A"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "1.75\" x 8.1\" x 7.5\""
+    },
+    {
+      "key": "Weight",
+      "value": "1.56 lb"
+    },
+    {
+      "key": "Regulations",
+      "value": "UL, cUL, FCC, TUV, RoHS, CE, GS"
+    }
+  ],
+  "features": [
+    "High-performance ATSC/C-QAM/NTSC demodulation from antenna and CATV cable",
+    "Simultaneous HDMI, RGBHV, and HD component video outputs",
+    "Simultaneous digital audio and analog stereo audio outputs",
+    "RS-232C serial port and remote IR input for flexible control",
+    "Multi-function on-screen display with IR remote control",
+    "Closed caption decoding and on-screen control",
+    "1RU half-rack form factor",
+    "Non-volatile memory retains settings after power loss"
+  ],
+  "applications": [
+    "Flat panel displays and video projectors",
+    "Schools and corporate boardrooms",
+    "Digital signage",
+    "Hospital lobbies, hotels, restaurants, casinos",
+    "Broadcast studios with multiple monitors"
+  ],
+  "downloads": [
+    {
+      "name": "TUNR-D Datasheet",
+      "url": "/documents/tuners/tunr-d-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,107 @@
+{
+  "name": "PHA-16",
+  "title": "PHA-16 Line Array Speaker",
+  "category": "Line Array Speakers",
+  "categorySlug": "line-array-speakers",
+  "description": "25\" line array speaker with 192W max power. Available in black, white, or silver.",
+  "image": "/images/products/line-array-speakers/pha-16.webp",
+  "url": "/products/line-array-speakers",
+  "badge": "PHA Series",
+  "available": true,
+  "showInGrid": false,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "192W max"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "94dB @ 1W/1m"
+    },
+    {
+      "key": "Dimensions",
+      "value": "25\" x 2\" x 2\""
+    }
+  ],
+  "keywords": [
+    "speaker",
+    "line array",
+    "audio",
+    "PA",
+    "sound",
+    "high power",
+    "DAC",
+    "directional",
+    "stadium",
+    "arena",
+    "theater"
+  ],
+  "detailTitle": "PHA-16 Medium Line Array Speaker",
+  "detailDescription": "The PHA-16 is a medium line array speaker with 16 full-range drivers delivering 40W RMS. Provides powerful, clear sound coverage for medium to large spaces.",
+  "sku": "PHA-16",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Drivers",
+      "value": "16 full-range"
+    },
+    {
+      "key": "Power Handling",
+      "value": "10 - 192 watts"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "94dB @ 1W/1M"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "120Hz - 20kHz"
+    },
+    {
+      "key": "Impedance",
+      "value": "4 Ohms"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "25\" x 2\" x 2\""
+    },
+    {
+      "key": "Weight",
+      "value": "2.25 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "White or Black anodized aluminum"
+    },
+    {
+      "key": "Grille",
+      "value": "Perforated aluminum"
+    }
+  ],
+  "features": [
+    "360-degree well-defined sound dispersion",
+    "Off-axis sound cancelling reduces noise bleed",
+    "Ultra-compact line array design",
+    "High efficiency full-range drivers",
+    "Excellent speech intelligibility and music clarity",
+    "Multiple mounting options available",
+    "4 Ohm impedance"
+  ],
+  "applications": [
+    "Houses of worship",
+    "Schools and classrooms",
+    "Corporate boardrooms and conference rooms",
+    "Restaurants, hotels, fitness clubs",
+    "Museums and retail spaces",
+    "Healthcare facilities"
+  ],
+  "downloads": [
+    {
+      "name": "PHA-16 Datasheet",
+      "url": "/documents/line-array-speakers/pha-16-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

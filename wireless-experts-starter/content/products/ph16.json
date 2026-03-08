@@ -1,0 +1,113 @@
+{
+  "name": "PH16",
+  "title": "PADS 16-Port Active Hub",
+  "category": "Directional Speakers",
+  "categorySlug": "directional-speakers",
+  "description": "16-port active hub for PADS audio distribution. Distributes stereo audio, power, and control signals over Cat5 to up to 16 room endpoints.",
+  "image": "/images/products/directional-speakers/ph16.webp",
+  "url": "/products/directional-speakers/ph16",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Ports",
+      "value": "16 Room Outputs"
+    },
+    {
+      "key": "Range",
+      "value": "300 ft / 100m"
+    },
+    {
+      "key": "SNR",
+      "value": ">100 dB"
+    }
+  ],
+  "keywords": [
+    "PADS",
+    "hub",
+    "16-port",
+    "audio distribution",
+    "cat5",
+    "multi-room",
+    "commercial"
+  ],
+  "detailTitle": "PH16 PADS 16-Port Active Distribution Hub",
+  "detailDescription": "The PH16 is a 16-port active hub for the PADS audio distribution system. It carries stereo audio, power, and control signals on a single Cat5 cable to up to 16 room endpoints. Ideal for larger commercial installations with a loop output for cascading additional hubs to scale the system infinitely.",
+  "sku": "PH16",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Audio Input",
+      "value": "RJ-45, 3.5mm stereo jack"
+    },
+    {
+      "key": "Audio Output",
+      "value": "16x RJ-45 + 1x Loop RJ-45"
+    },
+    {
+      "key": "Distortion",
+      "value": "<0.01% typical"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": ">100 dB"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": ">100 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Power",
+      "value": "DC 12V (typ.) 15V (max), @ 5A max"
+    },
+    {
+      "key": "Transmission Distance",
+      "value": "300 ft / 100m"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "4.5\" x 7.75\" x 1\""
+    },
+    {
+      "key": "Weight",
+      "value": "13.8 oz"
+    },
+    {
+      "key": "Operating Temperature",
+      "value": "50°-104°F (10°-40°C)"
+    }
+  ],
+  "features": [
+    "16 room outputs plus loop output for cascading",
+    "Stereo audio, power, and control on single Cat5 cable",
+    "300 ft / 100m transmission distance",
+    "Point-to-point, daisy-chain, or star distribution",
+    "<0.01% distortion, >100 dB dynamic range",
+    "3.5mm stereo jack and RJ-45 audio inputs",
+    "Infinitely expandable by cascading additional hubs",
+    "Energy efficient and very low power consumption",
+    "Made in USA"
+  ],
+  "applications": [
+    "Commercial background music systems",
+    "Large multi-room audio installations",
+    "School and college campuses",
+    "Hospitals and healthcare facilities",
+    "Theme parks and outdoor events",
+    "Hotels and restaurant chains"
+  ],
+  "downloads": [
+    {
+      "name": "PH16 Datasheet",
+      "url": "/documents/directional-speakers/ph16-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

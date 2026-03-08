@@ -1,9 +1,34 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProductSearch from '../../components/ProductSearch.astro';
-import { products, categories } from '../../data/products';
+import { reader, specsToRecord } from '../../lib/keystatic';
 
-const availableProducts = products.filter(p => p.available && p.showInGrid !== false);
+const allProducts = await reader.collections.products.all();
+const allCategories = await reader.collections.categories.all();
+
+const availableProducts = allProducts
+  .filter(({ entry }) => entry.available && entry.showInGrid !== false)
+  .map(({ slug, entry }) => ({
+    id: slug,
+    name: entry.name,
+    title: entry.title,
+    category: entry.category,
+    categorySlug: entry.categorySlug,
+    description: entry.description,
+    image: entry.image,
+    url: entry.url,
+    badge: entry.badge ?? '',
+    specs: specsToRecord(entry.specs),
+    keywords: entry.keywords ?? [],
+    available: entry.available,
+  }));
+
+const categories = allCategories.map(({ entry }) => ({
+  name: entry.name,
+  slug: entry.slug,
+  description: entry.description,
+  badge: entry.badge ?? '',
+}));
 ---
 
 <BaseLayout title="Products" description="Professional AV solutions for digital signage, large venue displays, and commercial applications.">

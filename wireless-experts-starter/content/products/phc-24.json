@@ -1,0 +1,82 @@
+{
+  "name": "PHC-24",
+  "title": "Healthcare Room Control Hub",
+  "category": "Healthcare Solutions",
+  "categorySlug": "healthcare",
+  "description": "Room control hub for healthcare facilities. Controls lighting, shades, temperature, and ceiling speakers from a single interface.",
+  "image": "/images/products/healthcare/phc-24.webp",
+  "url": "/products/healthcare/phc-24",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Controls",
+      "value": "Lighting, shades, temp, audio"
+    },
+    {
+      "key": "Interface",
+      "value": "Pillow speaker"
+    },
+    {
+      "key": "Dimensions",
+      "value": "7.09\" x 7.09\" x 1.73\""
+    }
+  ],
+  "keywords": [
+    "healthcare",
+    "room control",
+    "hospital",
+    "patient room",
+    "lighting",
+    "pillow speaker"
+  ],
+  "detailTitle": "PHC-24 Healthcare Room Control Hub",
+  "detailDescription": "The PHC-24 is a comprehensive room control hub designed for healthcare facilities. It integrates control of lighting, shades, temperature, and ceiling speakers into a single compact unit with pillow speaker interface for patient convenience.",
+  "sku": "PHC-24",
+  "brand": "Pragmatic Healthcare",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Controllable Items",
+      "value": "Shades, lighting, temperature, ceiling speaker"
+    },
+    {
+      "key": "Interface",
+      "value": "Pillow speaker control"
+    },
+    {
+      "key": "Dimensions (WxDxH)",
+      "value": "7.09\" x 1.73\" x 7.09\""
+    },
+    {
+      "key": "Housing",
+      "value": "Flame retardant"
+    },
+    {
+      "key": "Warranty",
+      "value": "1 year (extendable to 5 years)"
+    }
+  ],
+  "features": [
+    "Full room integration in a single compact box",
+    "Pillow speaker control for all room functions",
+    "Flame retardant housing",
+    "Eco-friendly design",
+    "Slim profile with horizontal or vertical positioning",
+    "Five Star Service warranty program"
+  ],
+  "applications": [
+    "Hospital patient rooms",
+    "Healthcare facility room control",
+    "Medical office environments"
+  ],
+  "downloads": [
+    {
+      "name": "PHC-24 Datasheet",
+      "url": "/documents/healthcare/phc-24-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

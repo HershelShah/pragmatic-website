@@ -1,0 +1,107 @@
+{
+  "name": "PIC-651-KT",
+  "title": "PIC-651-KT 6\" Kevlar In-Ceiling Speaker",
+  "category": "In-Ceiling Speakers",
+  "categorySlug": "in-ceiling-speakers",
+  "description": "6\" Kevlar woofer, 1\" titanium tweeter. 60W RMS, 90dB sensitivity. Rimless thin-bezel design.",
+  "image": "/images/products/in-ceiling-speakers/pic-651-kt.webp",
+  "url": "/products/in-ceiling-speakers/pic-651-kt",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Woofer",
+      "value": "6\" Kevlar"
+    },
+    {
+      "key": "Power",
+      "value": "60W RMS"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "90dB @ 1W/1m"
+    },
+    {
+      "key": "Frequency",
+      "value": "50Hz-20kHz"
+    }
+  ],
+  "keywords": [
+    "in-ceiling",
+    "speaker",
+    "Kevlar",
+    "titanium",
+    "rimless",
+    "architectural",
+    "home theater",
+    "whole-home audio",
+    "residential",
+    "commercial"
+  ],
+  "detailTitle": "PIC-651-KT High-Performance In-Ceiling Speaker",
+  "detailDescription": "The PIC-651-KT is a high-performance rimless thin-bezel architectural in-ceiling speaker featuring a 6\" Kevlar woofer and 1\" titanium tweeter for exceptional audio clarity. Delivers 60 watts RMS with 90 dB sensitivity.",
+  "sku": "PIC-651-KT",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Woofer",
+      "value": "6\" Kevlar cone"
+    },
+    {
+      "key": "Tweeter",
+      "value": "1\" Titanium dome"
+    },
+    {
+      "key": "Power",
+      "value": "60 Watts RMS"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "90 dBSPL @ 1W/1m"
+    },
+    {
+      "key": "Maximum Output",
+      "value": "103 dBSPL @ 1m"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "50Hz - 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "9.25\" x 3.54\""
+    },
+    {
+      "key": "Weight",
+      "value": "3.96 lbs"
+    }
+  ],
+  "features": [
+    "High-performance rimless thin-bezel architectural design",
+    "6\" Kevlar woofer for rich, detailed bass",
+    "1\" Titanium dome tweeter for crystal-clear highs",
+    "60 Watts RMS power handling",
+    "90 dB sensitivity for high efficiency",
+    "Easy ceiling installation"
+  ],
+  "applications": [
+    "Residential multi-room audio",
+    "Home theater surround sound",
+    "Commercial background music",
+    "Corporate boardrooms"
+  ],
+  "downloads": [
+    {
+      "name": "PIC-651-KT Datasheet",
+      "url": "/documents/in-ceiling-speakers/pic-651-kt-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

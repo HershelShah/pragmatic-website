@@ -1,0 +1,89 @@
+{
+  "name": "PAT-15",
+  "title": "Audio Transformer for 70V Systems",
+  "category": "Audio Transformers",
+  "categorySlug": "audio-transformers",
+  "description": "High-quality audio transformer for 70V distribution systems with primary taps of 5W, 7.5W, 10W, and 15W.",
+  "image": "/images/products/audio-transformers/pat-15.webp",
+  "url": "/products/audio-transformers/pat-15",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Primary Taps",
+      "value": "5W / 7.5W / 10W / 15W"
+    },
+    {
+      "key": "Impedance",
+      "value": "4 and 8 Ohms"
+    },
+    {
+      "key": "System",
+      "value": "70V"
+    }
+  ],
+  "keywords": [
+    "transformer",
+    "70V",
+    "audio distribution",
+    "commercial",
+    "impedance matching"
+  ],
+  "detailTitle": "PAT-15 Audio Transformer for 70V Systems",
+  "detailDescription": "The PAT-15 is a high-quality audio transformer that can step up/step down signal voltage or impedance of a circuit. It can also convert unbalanced circuits to balanced and block DC current. Designed for 70V audio distribution systems.",
+  "sku": "PAT-15",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Primary Taps",
+      "value": "5W, 7.5W, 10W, 15 Watts"
+    },
+    {
+      "key": "Secondary Impedance",
+      "value": "4 Ohms, 8 Ohms"
+    },
+    {
+      "key": "System Voltage",
+      "value": "70V"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\"W x 2\"H x 3.75\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "17.083 oz."
+    },
+    {
+      "key": "Finish",
+      "value": "Black"
+    }
+  ],
+  "features": [
+    "Reduces installation labor costs",
+    "Very quick and easy to install",
+    "Easy to customize and reconfigure",
+    "Retrofit friendly",
+    "Primary taps of 5W, 7.5W, 10W, and 15 watts",
+    "Secondary impedance of 4 Ohms and 8 Ohms",
+    "Mounting flanges included"
+  ],
+  "applications": [
+    "Medical and secure facilities",
+    "Healthcare waiting areas",
+    "Collaborative educational spaces",
+    "Hotels, fitness clubs, restaurants",
+    "Theme parks, shopping malls, retail",
+    "Entertainment venues"
+  ],
+  "downloads": [
+    {
+      "name": "PAT-15 Datasheet",
+      "url": "/documents/audio-transformers/pat-15-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

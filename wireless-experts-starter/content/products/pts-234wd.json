@@ -1,0 +1,105 @@
+{
+  "name": "PTS-234WD",
+  "title": "PTS-234WD Wide Dispersion Tile Speaker",
+  "category": "Ceiling Tile Speakers",
+  "categorySlug": "ceiling-tile-speakers",
+  "description": "2x2 ceiling tile speaker with wide dispersion. 30W, 86dB sensitivity, full-range 20Hz-20kHz.",
+  "image": "/images/products/ceiling-tile-speakers/pts-234wd.webp",
+  "url": "/products/ceiling-tile-speakers/pts-234wd",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "30W"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "86dB @ 1W/1m"
+    },
+    {
+      "key": "Frequency",
+      "value": "20Hz-20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "24\" x 24\" x 3\""
+    }
+  ],
+  "keywords": [
+    "ceiling tile",
+    "speaker",
+    "wide dispersion",
+    "drop-in",
+    "2x2",
+    "background music",
+    "retail",
+    "hospitality",
+    "commercial"
+  ],
+  "detailTitle": "PTS-234WD Wide Dispersion Tile Array Speaker",
+  "detailDescription": "The PTS-234WD features a unique wide dispersion radiating panel offering very well-defined coverage with no hot spots. Designed for standard 2' x 2' commercial drop-tile ceilings with easy mounting.",
+  "sku": "PTS-234WD",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Power Handling",
+      "value": "30 Watts (typical)"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "86 dB @ 1W/1m"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "24\" x 24\" x 3\""
+    },
+    {
+      "key": "Weight",
+      "value": "7.5 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "White (Black, Silver, custom available)"
+    },
+    {
+      "key": "Tile Size",
+      "value": "Standard 2' x 2' (600mm x 600mm)"
+    }
+  ],
+  "features": [
+    "Patent-pending wide dispersion radiating panel",
+    "No hot spots - uniform sound coverage",
+    "Standard drop-tile 2' x 2' form factor",
+    "Easy to mount in commercial drop-tile ceilings",
+    "External HideAway amplifier option",
+    "PADS or TPA receiver option available",
+    "CE compliant",
+    "Neutral color options for easy decor blending"
+  ],
+  "applications": [
+    "Hotels and fitness clubs",
+    "Restaurants and theme parks",
+    "Shopping malls and grocery stores",
+    "Corporate offices and schools",
+    "Healthcare waiting areas"
+  ],
+  "downloads": [
+    {
+      "name": "PTS-234WD Datasheet",
+      "url": "/documents/ceiling-tile-speakers/pts-234wd-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

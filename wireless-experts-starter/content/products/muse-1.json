@@ -1,0 +1,56 @@
+{
+  "name": "MuSe-1",
+  "title": "High-Performance Music Server",
+  "category": "Music Servers",
+  "categorySlug": "music-servers",
+  "description": "Hard disk-based music server with up to 4 stereo channels, advanced playlist scheduling, and remote management.",
+  "image": "/images/products/music-servers/muse-1.webp",
+  "url": "/products/music-servers/muse-1",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    { "key": "Channels", "value": "Up to 4 stereo" },
+    { "key": "Storage", "value": "500 GB (expandable)" },
+    { "key": "Form Factor", "value": "4RU rack-mount" }
+  ],
+  "keywords": ["music server", "playlist", "multi-room", "background music", "commercial audio", "rack mount"],
+  "detailTitle": "MuSe-1 High-Performance Music Server",
+  "detailDescription": "The MuSe-1 is a high-performance hard disk-based music server custom tailored for commercial applications. Features advanced playlist scheduling, up to 4 stereo output channels, and remote management from anywhere in the world.",
+  "sku": "MUSE-1",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    { "key": "Output Channels", "value": "Up to 4 stereo" },
+    { "key": "Output Type", "value": "Mini stereo" },
+    { "key": "Hard Disk", "value": "500 GB (optional larger capacity)" },
+    { "key": "Audio Formats", "value": "MP3, WMA" },
+    { "key": "Media Input", "value": "DVD drive, USB, Ethernet/network" },
+    { "key": "Power Supply", "value": "110VAC/240VAC universal" },
+    { "key": "Dimensions (HxWxD)", "value": "7\" x 19\" x 20.625\"" },
+    { "key": "Form Factor", "value": "4RU industrial 19\" rack mount" },
+    { "key": "Weight", "value": "41 lbs" }
+  ],
+  "features": [
+    "Advanced playlist scheduling by time, day, month, or specific dates",
+    "Channel-specific playlist assignment",
+    "Unlimited playlists with 6000+ songs each",
+    "Multiple media download options (DVD, USB, network)",
+    "Remote management from any computer worldwide",
+    "Built-in random play to prevent repetition",
+    "Total autonomous operation (no keyboard/mouse/display needed)",
+    "Tamper-resistant locking front panel",
+    "Easy integration with PADS for Cat5 distribution"
+  ],
+  "applications": [
+    "Hotels and cruise ships",
+    "Restaurants and theme parks",
+    "Fitness clubs and museums",
+    "Shopping malls and department stores",
+    "Multi-room residential audio"
+  ],
+  "downloads": [
+    { "name": "MuSe-1 Datasheet", "url": "/documents/music-servers/muse-1-datasheet.pdf", "type": "datasheet" }
+  ],
+  "relatedProducts": []
+}

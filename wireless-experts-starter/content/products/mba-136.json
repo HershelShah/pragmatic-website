@@ -1,0 +1,100 @@
+{
+  "name": "MBA-136",
+  "title": "HideAway Series 36W Mono-block Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "Compact 36W mono-block amplifier with 13.8V DC power. HideAway Series for residential and commercial audio.",
+  "image": "/images/products/amplifiers/mba-136.webp",
+  "url": "/products/amplifiers/mba-136",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "36W continuous / 60W peak"
+    },
+    {
+      "key": "Input",
+      "value": "13.8V DC"
+    },
+    {
+      "key": "SNR",
+      "value": "<100 dB"
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "mono-block",
+    "hideaway",
+    "36W",
+    "compact",
+    "DC powered"
+  ],
+  "detailTitle": "MBA-136 HideAway Series Mono-block Amplifier",
+  "detailDescription": "The MBA-136 contains a mono-block amplifier that provides extremely clean state-of-the-art power. It produces unexpected sound depth and musical clarity, accepting any volume controlled line level stereo input with super quiet 13.8V DC power.",
+  "sku": "MBA-136",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Continuous Power",
+      "value": "36 Watts"
+    },
+    {
+      "key": "Peak Power",
+      "value": "60 Watts"
+    },
+    {
+      "key": "Power Supply",
+      "value": "13.8V DC"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz to 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\"W x 3.5\"H x 3\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "9 oz."
+    }
+  ],
+  "features": [
+    "Compact mono-block design",
+    "36 Watts continuous power",
+    "Weighs only 9 oz.",
+    "Only 13.8V DC power required",
+    "High efficiency and high clock frequency",
+    "Very linear gain and phase characteristics",
+    "Flat frequency response from 10 Hz to 50 kHz",
+    "No ripple in the pass band",
+    "Very high signal-to-noise ratio and dynamic range",
+    "Advanced protection circuitry against overload, overheating, or short circuits",
+    "Optional rotary volume control",
+    "Multiple amplifiers available in standard rack mount unit"
+  ],
+  "applications": [
+    "Compact mono block amplification",
+    "Residential audio systems",
+    "Commercial audio installations"
+  ],
+  "downloads": [
+    {
+      "name": "MBA-136 Datasheet",
+      "url": "/documents/amplifiers/mba-136-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,124 @@
+{
+  "name": "PMA-4",
+  "title": "PMA-4 4-Channel Mixer/Amplifier",
+  "category": "PA Systems",
+  "categorySlug": "pa-systems",
+  "description": "4-channel active microphone mixer with built-in 24W digital amplifier. Optional 12+ hour battery.",
+  "image": "/images/products/pa-systems/pma-4.webp",
+  "url": "/products/pa-systems/pma-4",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Channels",
+      "value": "3 mic + 1 line"
+    },
+    {
+      "key": "Amplifier",
+      "value": "24W"
+    },
+    {
+      "key": "Frequency",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "10\" x 5\" x 2\""
+    }
+  ],
+  "keywords": [
+    "mixer",
+    "amplifier",
+    "microphone",
+    "preamp",
+    "portable",
+    "PA",
+    "battery",
+    "conference",
+    "classroom",
+    "presentation"
+  ],
+  "detailTitle": "PMA-4 4-Channel Active Microphone Mixer with Amplifier",
+  "detailDescription": "The PMA-4 is a low-noise, wide-dynamic range 4-channel active microphone mixer with built-in 24W digital audio power amplifier. Features 2 high-gain and 1 medium-gain microphone inputs plus 1 line-level input, with optional rechargeable battery for 12+ hours portable use.",
+  "sku": "PMA-4",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Microphone Pre-Amplifier",
+      "value": "3 Channels"
+    },
+    {
+      "key": "Line Level Input",
+      "value": "1 Channel"
+    },
+    {
+      "key": "High Microphone Gain",
+      "value": "63 dB"
+    },
+    {
+      "key": "Low Level/Line Input Gain",
+      "value": "30 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20 Hz - 20 kHz"
+    },
+    {
+      "key": "Input Impedance",
+      "value": "20K Ohms"
+    },
+    {
+      "key": "Digital Power Amplifier",
+      "value": "24 Watts"
+    },
+    {
+      "key": "Impedance",
+      "value": "4 Ohms"
+    },
+    {
+      "key": "Power",
+      "value": "DC 12V (14.4V max)"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "10\" x 5\" x 2\""
+    },
+    {
+      "key": "Weight",
+      "value": "1 lb (without battery)"
+    },
+    {
+      "key": "Regulations",
+      "value": "UL, cUL, FCC, TUV, CCC, CE, CISPR, RoHS"
+    }
+  ],
+  "features": [
+    "Low-noise, wide-dynamic range microphone pre-amplifier/mixer",
+    "2 high-gain and 1 medium-gain microphone inputs",
+    "Line level output for monitoring, external amplifier, or subwoofer",
+    "Built-in high-performance 24W digital audio power amplifier",
+    "5-way binding post for external speaker connection",
+    "Optional built-in rechargeable battery for 12+ hours",
+    "Multiple mounting options: surface, pole mount, etc.",
+    "Compact, rugged, fully self-contained design",
+    "Made in USA"
+  ],
+  "applications": [
+    "Portable PA systems",
+    "Classrooms and conference rooms",
+    "Solo/duet singers and acoustic performers",
+    "Mobile DJ and lecturers",
+    "Corporate boardrooms",
+    "Hotels, restaurants, hospitals"
+  ],
+  "downloads": [
+    {
+      "name": "PMA-4 Datasheet",
+      "url": "/documents/pa-systems/pma-4-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,83 @@
+{
+  "name": "PADS Bronze",
+  "title": "PADS Bronze Whole-Home Audio Package",
+  "category": "Directional Speakers",
+  "categorySlug": "directional-speakers",
+  "description": "Entry-level whole-home audio distribution package using Cat5 cabling. Distributes stereo audio from a single music source to multiple rooms via in-wall amplifiers.",
+  "image": "/images/products/directional-speakers/pads-bronze.webp",
+  "url": "/products/directional-speakers/pads-bronze",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Cabling",
+      "value": "Cat5"
+    },
+    {
+      "key": "Distribution",
+      "value": "Multi-room"
+    },
+    {
+      "key": "Control",
+      "value": "In-wall volume"
+    }
+  ],
+  "keywords": [
+    "PADS",
+    "whole home audio",
+    "multi-room",
+    "audio distribution",
+    "cat5",
+    "in-wall amplifier",
+    "bronze"
+  ],
+  "detailTitle": "PADS Bronze Whole-Home Audio Distribution Package",
+  "detailDescription": "The PADS Bronze package is an entry-level whole-home audio distribution system that uses standard Cat5 cabling to distribute stereo audio from a single music source to multiple rooms. Each room features an in-wall amplifier with rotary volume control, providing independent zone control throughout the home.",
+  "sku": "PADS-BRONZE",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Cable Type",
+      "value": "Standard Cat5/Cat5e"
+    },
+    {
+      "key": "Audio Source",
+      "value": "Single music source input"
+    },
+    {
+      "key": "Zone Control",
+      "value": "In-wall amplifier with rotary volume"
+    },
+    {
+      "key": "Max Distance",
+      "value": "330 ft per Cat5 run"
+    },
+    {
+      "key": "Topology",
+      "value": "Point-to-point, daisy-chain, or star"
+    }
+  ],
+  "features": [
+    "Simple whole-home audio distribution over Cat5 cabling",
+    "In-wall amplifiers with rotary volume control per room",
+    "Single music source distributed to multiple zones",
+    "Standard Cat5/Cat5e wiring — easy to install",
+    "Up to 330 ft transmission distance per cable run",
+    "Upgradeable to PADS Silver and Gold packages"
+  ],
+  "applications": [
+    "Residential whole-home audio",
+    "Multi-room music distribution",
+    "New construction and retrofits"
+  ],
+  "downloads": [
+    {
+      "name": "PADS Bronze Package Datasheet",
+      "url": "/documents/directional-speakers/pads-bronze-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

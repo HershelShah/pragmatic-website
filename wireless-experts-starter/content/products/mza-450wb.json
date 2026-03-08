@@ -1,0 +1,113 @@
+{
+  "name": "MZA-450WB",
+  "title": "MZA-450WB 4-Zone Network Audio Amplifier",
+  "category": "Streaming Audio",
+  "categorySlug": "streaming-audio",
+  "description": "4-zone network audio amplifier with Spotify, AirPlay, DLNA. 50W/ch @ 8\u03a9, built-in Ethernet switch.",
+  "image": "/images/products/streaming-audio/mza-450wb.webp",
+  "url": "/products/streaming-audio/mza-450wb",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Zones",
+      "value": "4 zones"
+    },
+    {
+      "key": "Power",
+      "value": "50W/ch @ 8\u03a9"
+    },
+    {
+      "key": "Streaming",
+      "value": "Spotify, AirPlay, DLNA"
+    },
+    {
+      "key": "formFactor",
+      "value": "2U rack mount"
+    }
+  ],
+  "keywords": [
+    "streaming",
+    "network audio",
+    "multi-zone",
+    "multi-room",
+    "Spotify",
+    "AirPlay",
+    "DLNA",
+    "amplifier",
+    "whole-home",
+    "Ethernet"
+  ],
+  "detailTitle": "MZA-450WB Four-Zone Network Audio Amplifier",
+  "detailDescription": "The MZA-450WB is a high-performance four-zone network audio amplifier with built-in 4-port Ethernet switch, delivering 50W/ch at 8 ohms (100W/ch at 4 ohms) per zone. Supports streaming via Spotify, Tidal, AirPlay, and more with RS-232C control integration.",
+  "sku": "MZA-450WB",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Zones",
+      "value": "4"
+    },
+    {
+      "key": "Speaker Output",
+      "value": "50W/ch @ 8 Ohms, 100W/ch @ 4 Ohms"
+    },
+    {
+      "key": "Zone Inputs",
+      "value": "Line In, Optical, USB per zone"
+    },
+    {
+      "key": "Master Inputs",
+      "value": "Line In, Optical, Coaxial"
+    },
+    {
+      "key": "Network",
+      "value": "Built-in 4-port Ethernet switch"
+    },
+    {
+      "key": "Streaming",
+      "value": "Spotify, Tidal, Deezer, Qobuz, AirPlay, DLNA"
+    },
+    {
+      "key": "Control",
+      "value": "Android/iOS apps, RS-232C"
+    },
+    {
+      "key": "Power Supply",
+      "value": "100-230VAC, 50/60 Hz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.5\"H x 17\"W x 12\"D (2RU)"
+    },
+    {
+      "key": "Weight",
+      "value": "22.5 lbs"
+    }
+  ],
+  "features": [
+    "4 independent zones with per-zone inputs",
+    "Built-in 4-port Ethernet switch",
+    "50W/100W per channel amplification per zone",
+    "Expandable via daisy-chaining additional units",
+    "RS-232C control system integration",
+    "Compatible with all Pragmatic PHA speakers",
+    "Supports all major streaming services",
+    "Standard 2RU rack-mount form factor"
+  ],
+  "applications": [
+    "Multi-zone whole house audio",
+    "Restaurants, hotels, offices",
+    "Corporate boardrooms",
+    "8-zone systems with daisy-chained units"
+  ],
+  "downloads": [
+    {
+      "name": "MZA-450WB Datasheet",
+      "url": "/documents/streaming-audio/mza-450wb-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

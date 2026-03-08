@@ -1,0 +1,106 @@
+{
+  "name": "PPS-24RWD",
+  "title": "PPS-24RWD Wide Dispersion Pendant Speaker",
+  "category": "Pendant Speakers",
+  "categorySlug": "pendant-speakers",
+  "description": "24\" wide dispersion pendant speaker. 30W, 87dB sensitivity, full-range 20Hz-20kHz. For open ceilings.",
+  "image": "/images/products/pendant-speakers/pps-24rwd.webp",
+  "url": "/products/pendant-speakers/pps-24rwd",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "30W max"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "87dB @ 1W/1m"
+    },
+    {
+      "key": "Frequency",
+      "value": "20Hz-20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "24\" round x 3\""
+    }
+  ],
+  "keywords": [
+    "pendant",
+    "speaker",
+    "wide dispersion",
+    "open ceiling",
+    "commercial",
+    "hotel",
+    "restaurant",
+    "retail",
+    "fitness",
+    "shopping mall"
+  ],
+  "detailTitle": "PPS-24RWD Wide Dispersion Pendant Speaker",
+  "detailDescription": "The PPS-24RWD features a unique wide dispersion radiating circular panel offering very well-defined coverage with no hot spots. Designed for commercial open ceiling environments with standard 0.75\" threaded pipe installation.",
+  "sku": "PPS-24RWD",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Power Handling",
+      "value": "30 Watts (max)"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "87 dB @ 1W/1m"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Dimensions",
+      "value": "24\" round x 3\""
+    },
+    {
+      "key": "Weight",
+      "value": "1.5 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "White (Black, Silver, custom available)"
+    },
+    {
+      "key": "Mounting",
+      "value": "Standard 0.75\" threaded pipe"
+    }
+  ],
+  "features": [
+    "Patent-pending wide dispersion radiating panel",
+    "No hot spots - very uniform sound coverage",
+    "Efficient energy consumption",
+    "External HideAway amplifier option",
+    "PADS or TPA receiver option available",
+    "CE compliant",
+    "Neutral color options for easy decor blending",
+    "Standard 0.75\" threaded pipe installation"
+  ],
+  "applications": [
+    "Hotels and restaurants",
+    "Fitness clubs and theme parks",
+    "Shopping malls and grocery stores",
+    "Corporations and schools",
+    "Hospitals and department stores"
+  ],
+  "downloads": [
+    {
+      "name": "PPS-24RWD Datasheet",
+      "url": "/documents/pendant-speakers/pps-24rwd-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

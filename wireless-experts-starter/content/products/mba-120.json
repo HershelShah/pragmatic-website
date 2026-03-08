@@ -1,0 +1,115 @@
+{
+  "name": "MBA-120",
+  "title": "MBA-120 HideAway Mono-block Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "Compact 20W mono-block amplifier with 45dB gain. 12V DC powered, ideal for digital signage and kiosks.",
+  "image": "/images/products/amplifiers/mba-120.webp",
+  "url": "/products/amplifiers/mba-120",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "20W continuous"
+    },
+    {
+      "key": "Channels",
+      "value": "1 (Mono)"
+    },
+    {
+      "key": "SNR",
+      "value": ">90 dB"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.45\" x 1.5\" x 4.2\""
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "mono",
+    "compact",
+    "hideaway",
+    "digital signage",
+    "kiosk",
+    "12V",
+    "DC",
+    "audio",
+    "commercial",
+    "small"
+  ],
+  "detailTitle": "MBA-120 HideAway Series Mono-block Amplifier",
+  "detailDescription": "The MBA-120 is a compact HideAway Series mono-block amplifier delivering 20 watts of clean power into speaker loads as low as 2 ohms. Its high 45 dB gain eliminates the need for an external preamplifier, making it ideal for digital signage, corporate boardroom audio, and commercial sound applications.",
+  "sku": "MBA-120",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Continuous Power",
+      "value": "20 Watts"
+    },
+    {
+      "key": "Peak Power",
+      "value": "36 Watts"
+    },
+    {
+      "key": "Power Supply",
+      "value": "12V DC"
+    },
+    {
+      "key": "Input Impedance",
+      "value": "25K Ohms"
+    },
+    {
+      "key": "Signal Gain",
+      "value": "45 dB"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": ">90 dB"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": ">90 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz to 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.45\"W x 1.5\"H x 4.2\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "6 oz."
+    }
+  ],
+  "features": [
+    "Compact mono-block design",
+    "20 Watts continuous, 36 Watts peak",
+    "Weighs only 6 oz.",
+    "High 45 dB gain eliminates need for preamplifier",
+    "12V DC powered",
+    "Flat frequency response 20Hz - 20kHz",
+    "Very high signal-to-noise ratio (>90 dB)",
+    "Advanced protection against overload, over-temperature, and short circuit"
+  ],
+  "applications": [
+    "Digital signage audio",
+    "Corporate boardrooms and classrooms",
+    "Retail merchandising kiosks",
+    "Plenum-rated commercial installations",
+    "Residential audio systems"
+  ],
+  "downloads": [
+    {
+      "name": "MBA-120 Datasheet",
+      "url": "/documents/amplifiers/mba-120-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

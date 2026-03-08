@@ -1,0 +1,86 @@
+{
+  "name": "PADS Silver",
+  "title": "PADS Silver Whole-Home Audio Package",
+  "category": "Directional Speakers",
+  "categorySlug": "directional-speakers",
+  "description": "Mid-tier whole-home audio distribution package with IR remote control. Adds IR detectors to in-wall amplifiers and IR emitter to the sending unit.",
+  "image": "/images/products/directional-speakers/pads-silver.webp",
+  "url": "/products/directional-speakers/pads-silver",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Cabling",
+      "value": "Cat5"
+    },
+    {
+      "key": "Control",
+      "value": "IR Remote"
+    },
+    {
+      "key": "Upgrade",
+      "value": "From Bronze"
+    }
+  ],
+  "keywords": [
+    "PADS",
+    "whole home audio",
+    "multi-room",
+    "audio distribution",
+    "IR remote",
+    "silver"
+  ],
+  "detailTitle": "PADS Silver Whole-Home Audio Distribution Package",
+  "detailDescription": "The PADS Silver package is the upgrade from the PADS Bronze, adding IR detectors to the in-wall amplifiers and an IR emitter to the sending unit. This enables remote control of audio in each zone, providing enhanced convenience for whole-home audio distribution.",
+  "sku": "PADS-SILVER",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Cable Type",
+      "value": "Standard Cat5/Cat5e"
+    },
+    {
+      "key": "Audio Source",
+      "value": "Single music source input"
+    },
+    {
+      "key": "Zone Control",
+      "value": "In-wall amplifier with IR remote control"
+    },
+    {
+      "key": "IR Control",
+      "value": "IR detectors on amplifiers, IR emitter on source"
+    },
+    {
+      "key": "Max Distance",
+      "value": "330 ft per Cat5 run"
+    },
+    {
+      "key": "Topology",
+      "value": "Point-to-point, daisy-chain, or star"
+    }
+  ],
+  "features": [
+    "All PADS Bronze features included",
+    "IR detectors added to in-wall amplifiers",
+    "IR emitter on sending unit for remote control",
+    "Wireless remote control of volume and source per zone",
+    "Standard Cat5/Cat5e wiring",
+    "Upgradeable to PADS Gold package"
+  ],
+  "applications": [
+    "Residential whole-home audio with remote control",
+    "Multi-room music distribution",
+    "Upscale home installations"
+  ],
+  "downloads": [
+    {
+      "name": "PADS Silver Package Datasheet",
+      "url": "/documents/directional-speakers/pads-silver-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

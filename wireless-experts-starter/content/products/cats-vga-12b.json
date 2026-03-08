@@ -1,0 +1,96 @@
+{
+  "name": "CATS-VGA-12B",
+  "title": "1x12 VGA + Audio Over Cat5 Distribution Amplifier",
+  "category": "Audio/Video Distribution",
+  "categorySlug": "audio-video-distribution",
+  "description": "1x12 VGA and audio distribution amplifier over Cat5. Extends up to 1000 feet with stereo audio and S/PDIF support.",
+  "image": "/images/products/audio-video-distribution/cats-vga-12b.webp",
+  "url": "/products/audio-video-distribution/cats-vga-12b",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Outputs",
+      "value": "12 VGA over Cat5"
+    },
+    {
+      "key": "Range",
+      "value": "1000 ft (Cat5e)"
+    },
+    {
+      "key": "Bandwidth",
+      "value": "350MHz"
+    }
+  ],
+  "keywords": [
+    "VGA",
+    "distribution",
+    "cat5",
+    "broadcaster",
+    "audio",
+    "1x12"
+  ],
+  "detailTitle": "CATS-VGA-12B VGA Over Cat5 Distribution Amplifier",
+  "detailDescription": "The CATS-VGA-12B distributes VGA video and audio to up to 12 remote displays over Cat5e cables at distances up to 1000 feet without loss or degradation. Supports resolutions up to WUXGA with stereo audio and S/PDIF digital audio.",
+  "sku": "CATS-VGA-12B",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Video Bandwidth",
+      "value": "350MHz"
+    },
+    {
+      "key": "Resolution",
+      "value": "1280x1024 (TX) / WUXGA 1920x1200 (RX)"
+    },
+    {
+      "key": "Transmission Range",
+      "value": "1000 ft on Cat5e"
+    },
+    {
+      "key": "Audio",
+      "value": "Stereo analog + S/PDIF digital"
+    },
+    {
+      "key": "Outputs",
+      "value": "12x RJ-45, 2x VGA loop-out"
+    },
+    {
+      "key": "Mounting",
+      "value": "2U rack-mount"
+    },
+    {
+      "key": "TX Dimensions",
+      "value": "16\" x 3.8\" x 3.5\""
+    },
+    {
+      "key": "TX Weight",
+      "value": "3.7 lbs"
+    }
+  ],
+  "features": [
+    "Distributes VGA and audio up to 1000 feet without degradation",
+    "350MHz video bandwidth",
+    "Supports stereo audio and S/PDIF digital audio",
+    "Adjustable equalization and gain control on receivers",
+    "De-skew compensation available with RX1D receiver",
+    "Scalable up to 16+ screens via daisy chaining",
+    "Two VGA and audio loop-outs for local displays"
+  ],
+  "applications": [
+    "Commercial buildings and digital signage",
+    "Corporate offices and stadiums",
+    "Large retail stores and grocery stores",
+    "Healthcare facilities"
+  ],
+  "downloads": [
+    {
+      "name": "CATS-VGA-12B Datasheet",
+      "url": "/documents/audio-video-distribution/cats-vga-12b-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

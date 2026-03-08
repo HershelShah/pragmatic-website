@@ -1,0 +1,106 @@
+{
+  "name": "PIC-651-KTE",
+  "title": "PIC-651-KTE 6\" Kevlar In-Ceiling Speaker with Enclosure",
+  "category": "In-Ceiling Speakers",
+  "categorySlug": "in-ceiling-speakers",
+  "description": "6\" Kevlar woofer with ABS back-can enclosure. 50W RMS, 105dB max output. For new construction.",
+  "image": "/images/products/in-ceiling-speakers/pic-651-kte.webp",
+  "url": "/products/in-ceiling-speakers/pic-651-kte",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Woofer",
+      "value": "6\" Kevlar"
+    },
+    {
+      "key": "Power",
+      "value": "50W RMS"
+    },
+    {
+      "key": "maxOutput",
+      "value": "105dB @ 1m"
+    },
+    {
+      "key": "Enclosure",
+      "value": "ABS Back-can"
+    }
+  ],
+  "keywords": [
+    "in-ceiling",
+    "speaker",
+    "Kevlar",
+    "enclosure",
+    "back-can",
+    "new construction",
+    "home theater",
+    "residential",
+    "commercial"
+  ],
+  "detailTitle": "PIC-651-KTE High-Performance In-Ceiling Speaker (Enhanced)",
+  "detailDescription": "The PIC-651-KTE is an enhanced version of the PIC-651-KT in-ceiling speaker with improved crossover network and higher power handling. Features a 6.5\" Kevlar woofer and 1\" titanium tweeter for superior audio performance.",
+  "sku": "PIC-651-KTE",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Woofer",
+      "value": "6.5\" Kevlar cone"
+    },
+    {
+      "key": "Tweeter",
+      "value": "1\" Titanium dome"
+    },
+    {
+      "key": "Power",
+      "value": "80 Watts RMS"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "90 dBSPL @ 1W/1m"
+    },
+    {
+      "key": "Maximum Output",
+      "value": "105 dBSPL @ 1m"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "45Hz - 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "9.25\" x 3.54\""
+    },
+    {
+      "key": "Weight",
+      "value": "4.2 lbs"
+    }
+  ],
+  "features": [
+    "Enhanced rimless thin-bezel architectural design",
+    "6.5\" Kevlar woofer for extended bass response",
+    "1\" Titanium dome tweeter",
+    "80 Watts RMS power handling",
+    "Improved crossover network",
+    "Easy ceiling installation"
+  ],
+  "applications": [
+    "Residential multi-room audio",
+    "Home theater surround sound",
+    "Commercial background music",
+    "Corporate boardrooms"
+  ],
+  "downloads": [
+    {
+      "name": "PIC-651-KTE Datasheet",
+      "url": "/documents/in-ceiling-speakers/pic-651-kte-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,100 @@
+{
+  "name": "PADS-USB-HUB",
+  "title": "PADS USB Audio Hub 3-Port",
+  "category": "Directional Speakers",
+  "categorySlug": "directional-speakers",
+  "description": "Standalone USB audio hub providing 3 channels of stereo audio over Cat5 cable to PADS audio endpoints from any PC-based audio server.",
+  "image": "/images/products/directional-speakers/pads-usb-hub.webp",
+  "url": "/products/directional-speakers/pads-usb-hub",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Channels",
+      "value": "3 Stereo"
+    },
+    {
+      "key": "Interface",
+      "value": "USB 1.1"
+    },
+    {
+      "key": "Power",
+      "value": "12-15VDC"
+    }
+  ],
+  "keywords": [
+    "PADS",
+    "USB hub",
+    "audio hub",
+    "cat5",
+    "audio distribution",
+    "PC audio"
+  ],
+  "detailTitle": "PADS-USB-HUB USB Audio Distribution Hub",
+  "detailDescription": "The PADS-USB-HUB is a standalone device that attaches to the USB port of any PC-based audio server. It provides up to three channels of stereo audio along with a control communication channel for transport over Cat5 cable to PADS audio endpoints. No special drivers are needed under Windows 2000, XP, and Vista — the PC sees three separate USB audio DACs natively.",
+  "sku": "PADS-USB-HUB",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Audio Channels",
+      "value": "3 stereo channels"
+    },
+    {
+      "key": "Connection to PC",
+      "value": "USB 1.1, Full Speed 12Mbps"
+    },
+    {
+      "key": "Endpoint Connections",
+      "value": "3x RJ45 for Cat5 cable"
+    },
+    {
+      "key": "Built-in Hub",
+      "value": "4-port USB Hub"
+    },
+    {
+      "key": "Power to Endpoints",
+      "value": "12-15VDC unregulated per port"
+    },
+    {
+      "key": "Power Input",
+      "value": "12V-15V DC"
+    },
+    {
+      "key": "Weight",
+      "value": "9.5 oz"
+    },
+    {
+      "key": "Housing",
+      "value": "Black powder coated aluminum"
+    },
+    {
+      "key": "Operating Temperature",
+      "value": "0 to 50°C"
+    }
+  ],
+  "features": [
+    "3 channels of stereo audio over Cat5 cable",
+    "Attaches to any PC USB port — no special drivers needed",
+    "PC sees three separate native USB audio DACs",
+    "Built-in 4-port USB hub",
+    "Provides 12-15VDC power to audio endpoints",
+    "Control communication channel for endpoint management",
+    "LED status indicator",
+    "Black powder coated aluminum chassis"
+  ],
+  "applications": [
+    "PC-based multi-zone audio distribution",
+    "Commercial background music systems",
+    "Multi-room audio with PC audio server"
+  ],
+  "downloads": [
+    {
+      "name": "PADS-USB-HUB Datasheet",
+      "url": "/documents/directional-speakers/pads-usb-hub-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

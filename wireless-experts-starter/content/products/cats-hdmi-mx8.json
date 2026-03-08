@@ -1,0 +1,101 @@
+{
+  "name": "CATS-HDMI-MX8",
+  "title": "8x8 HDMI over Cat5 Matrix with IR Pass-through",
+  "category": "Audio/Video Distribution",
+  "categorySlug": "audio-video-distribution",
+  "description": "8x8 HDMI matrix switcher over Cat5e/Cat6 with IR pass-through. Extends 1080p video up to 130 feet to 8 displays.",
+  "image": "/images/products/audio-video-distribution/cats-hdmi-mx8.webp",
+  "url": "/products/audio-video-distribution/cats-hdmi-mx8",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Matrix",
+      "value": "8x8 HDMI"
+    },
+    {
+      "key": "Range",
+      "value": "130 ft (Cat6)"
+    },
+    {
+      "key": "Resolution",
+      "value": "1080p60"
+    }
+  ],
+  "keywords": [
+    "HDMI",
+    "matrix",
+    "cat5",
+    "8x8",
+    "video distribution",
+    "IR pass-through"
+  ],
+  "detailTitle": "CATS-HDMI-MX8 HDMI Over Cat5 Matrix",
+  "detailDescription": "The CATS-HDMI-MX8 is a true 8x8 HDMI matrix switcher that distributes HDMI signals over Cat5e/Cat6 cables to up to eight remote displays. Supports 1080p60 video with up to 7.1 channel digital audio and IR pass-through for source control.",
+  "sku": "CATS-HDMI-MX8",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "HDMI Compliance",
+      "value": "HDMI 1.3c"
+    },
+    {
+      "key": "HDCP Compliance",
+      "value": "Yes"
+    },
+    {
+      "key": "Video Bandwidth",
+      "value": "225MHz (6.75Gbps)"
+    },
+    {
+      "key": "Video Support",
+      "value": "480i/480p/720p/1080i/1080p60"
+    },
+    {
+      "key": "Audio Support",
+      "value": "Up to 7.1ch surround or stereo digital"
+    },
+    {
+      "key": "Range (1080p)",
+      "value": "115 ft (Cat5e) / 130 ft (Cat6)"
+    },
+    {
+      "key": "Power",
+      "value": "100-240VAC, 60W max"
+    },
+    {
+      "key": "TX Dimensions",
+      "value": "17\" x 11.4\" x 1.7\""
+    },
+    {
+      "key": "TX Weight",
+      "value": "7.2 lbs"
+    }
+  ],
+  "features": [
+    "True 8x8 matrix switching to any HDMI input",
+    "Extends video up to 130 feet over Cat6 at 1080p",
+    "Supports up to 7.1 channel digital audio",
+    "IR pass-through for remote source control",
+    "Control via push button, IR remote, RS-232, or USB",
+    "Scalable up to 16 screens",
+    "1U rack-mountable"
+  ],
+  "applications": [
+    "Commercial buildings",
+    "Digital signage",
+    "Corporate offices",
+    "Stadiums",
+    "Healthcare facilities"
+  ],
+  "downloads": [
+    {
+      "name": "CATS-HDMI-MX8 Datasheet",
+      "url": "/documents/audio-video-distribution/cats-hdmi-mx8-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

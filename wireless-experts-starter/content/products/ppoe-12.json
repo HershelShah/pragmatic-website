@@ -1,0 +1,103 @@
+{
+  "name": "PPoE-12",
+  "title": "PADS Power-over-Ethernet 12VDC",
+  "category": "Directional Speakers",
+  "categorySlug": "directional-speakers",
+  "description": "Power-over-Ethernet receiver with regulated 12VDC output for PADS audio endpoints. Compatible with IEEE 802.3at/af standards with 328 ft transmission distance.",
+  "image": "/images/products/directional-speakers/ppoe-12.webp",
+  "url": "/products/directional-speakers/ppoe-12",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Output",
+      "value": "12VDC @ 2A"
+    },
+    {
+      "key": "Range",
+      "value": "328 ft / 100m"
+    },
+    {
+      "key": "Standard",
+      "value": "IEEE 802.3at/af"
+    }
+  ],
+  "keywords": [
+    "PADS",
+    "PoE",
+    "power over ethernet",
+    "12VDC",
+    "audio distribution",
+    "network power"
+  ],
+  "detailTitle": "PPoE-12 PADS Power-over-Ethernet Receiver",
+  "detailDescription": "The PPoE-12 is a PADS proprietary Power-over-Ethernet receiver with regulated 12VDC output. Compatible with up to 30W IEEE 802.3at and backwards compatible with 15.4W IEEE 802.3af. Provides plug-and-play simplicity with 328 ft / 100m transmission distance on standard Cat5e/Cat6 cables, plus 10/100/1000 Ethernet pass-through.",
+  "sku": "PPOE-12",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "PoE Input Connector",
+      "value": "RJ-45"
+    },
+    {
+      "key": "Data Output Connector",
+      "value": "RJ-45"
+    },
+    {
+      "key": "Power Output Connector",
+      "value": "2.5mm / 5.5mm center positive"
+    },
+    {
+      "key": "Power Output",
+      "value": "DC 12V @ 2A typical"
+    },
+    {
+      "key": "PoE Compatibility",
+      "value": "Up to 30W IEEE 802.3at, backwards compatible with 15.4W IEEE 802.3af"
+    },
+    {
+      "key": "Ethernet Pass-through",
+      "value": "10/100/1000 Mbps"
+    },
+    {
+      "key": "Transmission Distance",
+      "value": "328 ft / 100m on Cat5e/Cat6"
+    },
+    {
+      "key": "Operating Temperature",
+      "value": "50°-104°F (10°-40°C)"
+    },
+    {
+      "key": "Humidity",
+      "value": "20-85% (non-condensing)"
+    }
+  ],
+  "features": [
+    "Pragmatic proprietary PoE receiver technology",
+    "Regulated 12VDC output for PADS endpoints",
+    "Compatible with IEEE 802.3at (30W) and 802.3af (15.4W)",
+    "328 ft / 100m transmission on Cat5e/Cat6",
+    "10/100/1000 Ethernet output pass-through",
+    "Plug-and-play simplicity",
+    "Circuit isolation protection for equipment safety",
+    "Energy efficient with very low power consumption"
+  ],
+  "applications": [
+    "Background music systems",
+    "Multi-room audio systems",
+    "Schools and college campuses",
+    "Hospitals and healthcare facilities",
+    "Theme parks and outdoor events",
+    "Hotels, lobbies, and restaurants"
+  ],
+  "downloads": [
+    {
+      "name": "PPoE-12 Datasheet",
+      "url": "/documents/directional-speakers/ppoe-12-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

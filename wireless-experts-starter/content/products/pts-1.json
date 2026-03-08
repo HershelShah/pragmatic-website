@@ -1,0 +1,118 @@
+{
+  "name": "PTS-1",
+  "title": "PADS Amplified Tube Speaker",
+  "category": "Pendant Speakers",
+  "categorySlug": "pendant-speakers",
+  "description": "PADS amplified tube speaker with proprietary technology for stereo audio, power, and control on a single cat5 cable.",
+  "image": "/images/products/pendant-speakers/pts-1.webp",
+  "url": "/products/pendant-speakers/pts-1",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power Output",
+      "value": "3W RMS"
+    },
+    {
+      "key": "Connection",
+      "value": "RJ-45 / Cat5"
+    },
+    {
+      "key": "Range",
+      "value": "300 ft / 100m"
+    }
+  ],
+  "keywords": [
+    "tube speaker",
+    "PADS",
+    "amplified",
+    "cat5",
+    "pendant",
+    "background music"
+  ],
+  "detailTitle": "PTS-1 PADS Amplified Tube Speaker",
+  "detailDescription": "The PTS-1 uses PADS proprietary technology for stereo audio, power, and control signals on a single cat5 cable. It features plug-and-play simplicity with point-to-point, daisy-chain, or star distribution over 300 ft / 100m transmission distance.",
+  "sku": "PTS-1",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Audio/Power Connector",
+      "value": "RJ-45"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "120 Hz - 20kHz typical"
+    },
+    {
+      "key": "Distortion",
+      "value": "<0.1% typical"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": ">90 dB"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": ">90 dB"
+    },
+    {
+      "key": "Power Output",
+      "value": "81 dBSPL @ 1W/1m, 3W RMS max"
+    },
+    {
+      "key": "Output Pattern",
+      "value": "Omni-directional point source"
+    },
+    {
+      "key": "Power",
+      "value": "DC 12V (typ.), 15V (max)"
+    },
+    {
+      "key": "Transmission Distance",
+      "value": "300 ft / 100m on Cat5/Cat5e/Cat6"
+    },
+    {
+      "key": "Operating Temperature",
+      "value": "50-104\u00b0F (10-40\u00b0C)"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\" diameter x 4.8\" high"
+    },
+    {
+      "key": "Weight",
+      "value": "4.5 oz."
+    },
+    {
+      "key": "Color",
+      "value": "Natural white, optional Gray or Black"
+    }
+  ],
+  "features": [
+    "PADS proprietary technology for stereo audio, power, and control on single Cat5 cable",
+    "Easily expandable to multi-source, multi-zone applications",
+    "300 ft / 100m transmission distance on standard Cat5/Cat5e/Cat6",
+    "Plug-and-play simplicity with point-to-point, daisy-chain, or star distribution",
+    "Energy efficient with very low power consumption",
+    "Made in USA"
+  ],
+  "applications": [
+    "Background music systems",
+    "Multi-room audio systems",
+    "Schools and college campuses",
+    "Hospitals and healthcare facilities",
+    "Theme parks and outdoor events",
+    "Health and fitness clubs",
+    "Hotel lobbies and restaurants"
+  ],
+  "downloads": [
+    {
+      "name": "PTS-1 Datasheet",
+      "url": "/documents/pendant-speakers/pts-1-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

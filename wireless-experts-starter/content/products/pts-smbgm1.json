@@ -1,0 +1,114 @@
+{
+  "name": "PTS-SMBGM1",
+  "title": "PTS-SMBGM1 Sound Masking Tile Speaker",
+  "category": "Ceiling Tile Speakers",
+  "categorySlug": "ceiling-tile-speakers",
+  "description": "2x2 tile speaker with sound masking and background music. 400-600 sq ft coverage, UL/CSA/CE.",
+  "image": "/images/products/ceiling-tile-speakers/pts-smbgm1.webp",
+  "url": "/products/ceiling-tile-speakers/pts-smbgm1",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Coverage",
+      "value": "400-600 sq ft"
+    },
+    {
+      "key": "Frequency",
+      "value": "20Hz-20kHz"
+    },
+    {
+      "key": "Features",
+      "value": "Sound masking + BGM"
+    },
+    {
+      "key": "Certifications",
+      "value": "UL/CSA/CE/NFPA"
+    }
+  ],
+  "keywords": [
+    "ceiling tile",
+    "speaker",
+    "sound masking",
+    "background music",
+    "privacy",
+    "office",
+    "healthcare",
+    "open office",
+    "HIPAA",
+    "noise masking"
+  ],
+  "detailTitle": "PTS-SMBGM1 Tile Speaker with Sound Masking & Background Music",
+  "detailDescription": "The PTS-SMBGM1 is a high-performance wide dispersion ceiling tile speaker offering the best sound masking and background music quality available. Built-in white/pink noise generator with 8 preset EQ curves raises ambient noise levels to reduce speech distractions and protect private conversations.",
+  "sku": "PTS-SMBGM1",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Frequency Response",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Sensitivity",
+      "value": ">86 dB @ 1W/1m"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "24\" x 24\" x 3\""
+    },
+    {
+      "key": "Weight",
+      "value": "12 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "White (Black, Silver, custom available)"
+    },
+    {
+      "key": "Grille",
+      "value": "Perforated aluminum"
+    },
+    {
+      "key": "Volume Control",
+      "value": "Dual channel 78 dB with 1 dB steps"
+    },
+    {
+      "key": "Coverage",
+      "value": "400-600 sq. ft. per speaker"
+    },
+    {
+      "key": "Certifications",
+      "value": "Plenum/UL/CSA/CE/NFPA"
+    }
+  ],
+  "features": [
+    "Uniform omni-directional sound dispersion",
+    "400-600 sq. ft. coverage per speaker",
+    "Built-in white/pink noise generator",
+    "8 preset EQ curves",
+    "Two audio input channels for multi-zone applications",
+    "Dual channel 78 dB volume control with 1 dB steps",
+    "PADS loop output for daisy-chain applications",
+    "Power/audio/control on Cat5",
+    "Local, central, Wi-Fi, and IR control",
+    "Plenum/UL/CSA/CE/NFPA certified",
+    "Retrofit friendly"
+  ],
+  "applications": [
+    "Open offices and closed offices",
+    "Court rooms and secure facilities",
+    "Medical facilities and healthcare waiting areas",
+    "Collaborative educational spaces",
+    "Hotels, fitness clubs, restaurants",
+    "Shopping malls, retail, entertainment"
+  ],
+  "downloads": [
+    {
+      "name": "PTS-SMBGM1 Datasheet",
+      "url": "/documents/ceiling-tile-speakers/pts-smbgm1-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

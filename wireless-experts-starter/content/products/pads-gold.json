@@ -1,0 +1,90 @@
+{
+  "name": "PADS Gold",
+  "title": "PADS Gold Premium Whole-Home Audio Package",
+  "category": "Directional Speakers",
+  "categorySlug": "directional-speakers",
+  "description": "Premium whole-home audio distribution package with doorbell integration, paging system, PM 4.1 matrix mixer, and PDM distribution module.",
+  "image": "/images/products/directional-speakers/pads-gold.webp",
+  "url": "/products/directional-speakers/pads-gold",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Cabling",
+      "value": "Cat5"
+    },
+    {
+      "key": "Features",
+      "value": "Paging + Doorbell"
+    },
+    {
+      "key": "Upgrade",
+      "value": "From Silver"
+    }
+  ],
+  "keywords": [
+    "PADS",
+    "whole home audio",
+    "multi-room",
+    "audio distribution",
+    "paging",
+    "doorbell",
+    "gold",
+    "premium"
+  ],
+  "detailTitle": "PADS Gold Premium Whole-Home Audio Distribution Package",
+  "detailDescription": "The PADS Gold package is the premium upgrade from the PADS Silver, adding a doorbell input (PDB), paging system (PPT), PM 4.1 matrix mixer, PH distribution hub, and PDM distribution module. This full-featured system provides complete whole-home audio with paging, doorbell chimes through speakers, and advanced zone management.",
+  "sku": "PADS-GOLD",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Cable Type",
+      "value": "Standard Cat5/Cat5e"
+    },
+    {
+      "key": "Audio Sources",
+      "value": "Multiple sources via PM 4.1 matrix"
+    },
+    {
+      "key": "Zone Control",
+      "value": "In-wall amplifier with IR remote + paging"
+    },
+    {
+      "key": "Paging",
+      "value": "PPT paging system integrated"
+    },
+    {
+      "key": "Doorbell",
+      "value": "PDB doorbell input module"
+    },
+    {
+      "key": "Hub",
+      "value": "PH distribution hub included"
+    }
+  ],
+  "features": [
+    "All PADS Silver features included",
+    "Doorbell input (PDB) for chimes through speakers",
+    "PPT paging system for whole-home intercom",
+    "PM 4.1 matrix mixer for multiple source selection",
+    "PH distribution hub for zone management",
+    "PDM distribution module for expanded capabilities",
+    "PARI in-wall amplifiers with IR remote in every zone"
+  ],
+  "applications": [
+    "Premium residential whole-home audio",
+    "Homes requiring paging and intercom",
+    "Custom home theater and audio installations",
+    "Multi-source, multi-zone audio systems"
+  ],
+  "downloads": [
+    {
+      "name": "PADS Gold Package Datasheet",
+      "url": "/documents/directional-speakers/pads-gold-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

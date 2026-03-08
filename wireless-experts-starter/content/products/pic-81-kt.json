@@ -1,0 +1,107 @@
+{
+  "name": "PIC-81-KT",
+  "title": "PIC-81-KT 8\" Kevlar In-Ceiling Speaker",
+  "category": "In-Ceiling Speakers",
+  "categorySlug": "in-ceiling-speakers",
+  "description": "8\" Kevlar woofer, 1\" titanium tweeter. 80W RMS, 105dB max output. Extended bass response.",
+  "image": "/images/products/in-ceiling-speakers/pic-81-kt.webp",
+  "url": "/products/in-ceiling-speakers/pic-81-kt",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Woofer",
+      "value": "8\" Kevlar"
+    },
+    {
+      "key": "Power",
+      "value": "80W RMS"
+    },
+    {
+      "key": "maxOutput",
+      "value": "105dB @ 1m"
+    },
+    {
+      "key": "Frequency",
+      "value": "50Hz-20kHz"
+    }
+  ],
+  "keywords": [
+    "in-ceiling",
+    "speaker",
+    "Kevlar",
+    "8-inch",
+    "large",
+    "bass",
+    "home theater",
+    "whole-home audio",
+    "residential",
+    "commercial"
+  ],
+  "detailTitle": "PIC-81-KT 8-Inch High-Performance In-Ceiling Speaker",
+  "detailDescription": "The PIC-81-KT is a high-performance rimless thin-bezel 8-inch in-ceiling speaker featuring a Kevlar woofer and 1\" titanium tweeter for deep bass and exceptional clarity in larger rooms.",
+  "sku": "PIC-81-KT",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Woofer",
+      "value": "8\" Kevlar cone"
+    },
+    {
+      "key": "Tweeter",
+      "value": "1\" Titanium dome"
+    },
+    {
+      "key": "Power",
+      "value": "80 Watts RMS"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "91 dBSPL @ 1W/1m"
+    },
+    {
+      "key": "Maximum Output",
+      "value": "107 dBSPL @ 1m"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "38Hz - 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "11.25\" x 4.25\""
+    },
+    {
+      "key": "Weight",
+      "value": "5.5 lbs"
+    }
+  ],
+  "features": [
+    "8\" Kevlar woofer for deep, extended bass",
+    "1\" Titanium dome tweeter",
+    "80 Watts RMS power handling",
+    "High sensitivity (91 dB) for efficient operation",
+    "Rimless thin-bezel architectural design",
+    "Ideal for larger rooms requiring deeper bass"
+  ],
+  "applications": [
+    "Residential multi-room audio",
+    "Home theater (especially as ceiling channels)",
+    "Larger commercial spaces",
+    "Corporate boardrooms and auditoriums"
+  ],
+  "downloads": [
+    {
+      "name": "PIC-81-KT Datasheet",
+      "url": "/documents/in-ceiling-speakers/pic-81-kt-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

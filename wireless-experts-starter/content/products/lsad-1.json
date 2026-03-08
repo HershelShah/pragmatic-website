@@ -1,0 +1,78 @@
+{
+  "name": "LSAD-1",
+  "title": "Life Safety Audio Defeat",
+  "category": "Life Safety",
+  "categorySlug": "life-safety",
+  "description": "Compact life safety audio defeat unit that automatically silences background audio when triggered by fire alarm systems.",
+  "image": "/images/products/life-safety/lsad-1.webp",
+  "url": "/products/life-safety/lsad-1",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Inputs",
+      "value": "Mini Stereo, PADS (Cat5)"
+    },
+    {
+      "key": "Signal",
+      "value": "5-24VDC, Relay"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.19\" x 2.63\" x 1\""
+    }
+  ],
+  "keywords": [
+    "life safety",
+    "audio defeat",
+    "fire alarm",
+    "safety",
+    "background music"
+  ],
+  "detailTitle": "LSAD-1 Life Safety Audio Defeat",
+  "detailDescription": "The LSAD-1 kills background audio when triggered by a life safety or fire alarm system. It also provides an interface to non-fire paging equipment for non-emergency paging applications. Works with all common fire panels and alarm systems.",
+  "sku": "LSAD-1",
+  "brand": "Pragmatic",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Audio Input Types",
+      "value": "Mini Stereo, PADS (Cat5)"
+    },
+    {
+      "key": "Signal Inputs",
+      "value": "5-24VDC, Relay"
+    },
+    {
+      "key": "Compatibility",
+      "value": "All common fire panels and alarms"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "1\" x 3.19\" x 2.63\""
+    }
+  ],
+  "features": [
+    "Automatically silences background audio on fire alarm trigger",
+    "Interface for non-fire paging equipment",
+    "Works with all life safety systems",
+    "Compact size for non-obtrusive mounting",
+    "Cost-efficient life saving innovation",
+    "Easy to install with existing fire systems"
+  ],
+  "applications": [
+    "Commercial buildings with background music",
+    "Retail and hospitality venues",
+    "Healthcare facilities",
+    "Life safety compliance for audio systems"
+  ],
+  "downloads": [
+    {
+      "name": "LSAD-1 Datasheet",
+      "url": "/documents/life-safety/lsad-1-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

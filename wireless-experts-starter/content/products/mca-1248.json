@@ -1,0 +1,109 @@
+{
+  "name": "MCA-1248",
+  "title": "MCA-1248 12-Channel Audiophile Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "12-channel audiophile amplifier with 48W per channel. >100dB SNR, no heat sink required.",
+  "image": "/images/products/amplifiers/mca-1248.webp",
+  "url": "/products/amplifiers/mca-1248",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "48W per channel"
+    },
+    {
+      "key": "Channels",
+      "value": "12"
+    },
+    {
+      "key": "SNR",
+      "value": ">100 dB"
+    },
+    {
+      "key": "Dimensions",
+      "value": "17\" x 4\" x 10.5\""
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "multi-channel",
+    "12-channel",
+    "audiophile",
+    "multi-room",
+    "whole-home",
+    "bi-amplified",
+    "rack mount",
+    "high-fidelity",
+    "audio"
+  ],
+  "detailTitle": "MCA-1248 12-Channel Audiophile Quality Amplifier",
+  "detailDescription": "The MCA-1248 is a 12-channel audiophile quality amplifier delivering 48 watts continuous per channel with 90 watts peak, producing luxurious sound from a compact 2RU form factor weighing only 10 pounds. Requires no heat sink or ventilating fan.",
+  "sku": "MCA-1248",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Channels",
+      "value": "12"
+    },
+    {
+      "key": "Continuous Power",
+      "value": "48 Watts per channel"
+    },
+    {
+      "key": "Peak Power",
+      "value": "90 Watts per channel"
+    },
+    {
+      "key": "Power Supply",
+      "value": "110V AC"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": ">100 dB"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": ">100 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz to 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "17\"W x 4\"H x 10.5\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "10 lbs"
+    }
+  ],
+  "features": [
+    "12 channels of audiophile-quality amplification",
+    "48W continuous / 90W peak per channel",
+    "No heat sink or ventilating fan required",
+    "Compact 2RU rack-mount form factor",
+    "Only 10 pounds",
+    "Flat frequency response from 10 Hz to 50 kHz",
+    "Very high signal-to-noise ratio (>100 dB)",
+    "Advanced protection circuitry"
+  ],
+  "applications": [
+    "Multi-room audio systems",
+    "Bi-amplified speaker configurations",
+    "Home audio systems",
+    "Commercial installations"
+  ],
+  "downloads": [
+    {
+      "name": "MCA-1248 Datasheet",
+      "url": "/documents/amplifiers/mca-1248-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

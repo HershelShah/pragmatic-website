@@ -1,0 +1,129 @@
+{
+  "name": "SAA-212",
+  "title": "SAA-212 HideAway Stereo Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "Compact 2x12W stereo amplifier with phoenix terminals. UL/CE certified, 3-year warranty.",
+  "image": "/images/products/amplifiers/saa-212.webp",
+  "url": "/products/amplifiers/saa-212",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "12W per channel"
+    },
+    {
+      "key": "Channels",
+      "value": "2 (Stereo)"
+    },
+    {
+      "key": "Frequency",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.3\" x 3.45\" x 1.5\""
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "stereo",
+    "compact",
+    "hideaway",
+    "flat panel",
+    "projector",
+    "conference room",
+    "12V",
+    "DC",
+    "audio",
+    "UL",
+    "CE"
+  ],
+  "detailTitle": "SAA-212 Compact Stereo Audio Amplifier",
+  "detailDescription": "The SAA-212 is a compact high-performance HideAway Series stereo audio amplifier delivering 12 watts continuous power with exceptional audio clarity. Features locking phoenix terminal outputs, 3.5mm stereo input, and UL/RoHS/CE certification with a 3-year warranty.",
+  "sku": "SAA-212",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Configuration",
+      "value": "2-channel stereo"
+    },
+    {
+      "key": "Continuous Power",
+      "value": "12 Watts"
+    },
+    {
+      "key": "Peak Power",
+      "value": "18 Watts"
+    },
+    {
+      "key": "Input Impedance",
+      "value": "48K Ohms"
+    },
+    {
+      "key": "Voltage Gain",
+      "value": "39 dB"
+    },
+    {
+      "key": "Audio Input",
+      "value": "3.5mm stereo jack"
+    },
+    {
+      "key": "Audio Output",
+      "value": "Locking phoenix terminals"
+    },
+    {
+      "key": "Power Supply",
+      "value": "12V DC @ 2A"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20 Hz to 20 kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.3\"L x 3.45\"W x 1.5\"H"
+    },
+    {
+      "key": "Weight",
+      "value": "4.86 oz. / 0.3 lbs"
+    },
+    {
+      "key": "Certifications",
+      "value": "UL, RoHS, CE"
+    },
+    {
+      "key": "Warranty",
+      "value": "3 years limited"
+    }
+  ],
+  "features": [
+    "HideAway Series ultra-compact stereo amplifier",
+    "Optimized for speaker impedances from 2 to 32 ohms",
+    "3.5mm stereo input, locking phoenix terminal outputs",
+    "12V DC powered with included switching power supply",
+    "Advanced protection against overload, over-current, over-temperature, short circuit",
+    "Mountable anywhere including multiple units on 1RU rack trays",
+    "UL, RoHS, and CE certified",
+    "Made in the USA"
+  ],
+  "applications": [
+    "Flat panel displays and video projectors",
+    "Digital signage",
+    "School classrooms and corporate boardrooms",
+    "Hospital lobbies, hotels, restaurants, casinos",
+    "Lecterns and podiums",
+    "Plenum installations"
+  ],
+  "downloads": [
+    {
+      "name": "SAA-212 Datasheet",
+      "url": "/documents/amplifiers/saa-212-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,109 @@
+{
+  "name": "PTS-4077F",
+  "title": "PTS-4077F Directional Tile Speaker",
+  "category": "Ceiling Tile Speakers",
+  "categorySlug": "ceiling-tile-speakers",
+  "description": "2x2 directional ceiling tile speaker with DAC technology. 96dB sensitivity, Cat5 plug-and-play.",
+  "image": "/images/products/ceiling-tile-speakers/pts-4077f.webp",
+  "url": "/products/ceiling-tile-speakers/pts-4077f",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Sensitivity",
+      "value": ">96dB @ 1W/1m"
+    },
+    {
+      "key": "Frequency",
+      "value": "200Hz-10kHz"
+    },
+    {
+      "key": "Connection",
+      "value": "Cat5 plug-and-play"
+    },
+    {
+      "key": "Dimensions",
+      "value": "24\" x 24\" x 3\""
+    }
+  ],
+  "keywords": [
+    "ceiling tile",
+    "speaker",
+    "directional",
+    "DAC",
+    "focused sound",
+    "digital signage",
+    "museum",
+    "exhibit",
+    "kiosk",
+    "retail"
+  ],
+  "detailTitle": "PTS-4077F Directional Tile Array Speaker with DAC",
+  "detailDescription": "The PTS-4077F is a high-performance focused tile-array active speaker with Defined Acoustic Coverage (DAC). It creates a well-defined audio zone while eliminating sound bleeding into adjacent areas, offering the best low-frequency response of any directional speaker in the industry.",
+  "sku": "PTS-4077F",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Frequency Response",
+      "value": "200Hz - 10kHz"
+    },
+    {
+      "key": "Sensitivity",
+      "value": ">96 dB @ 1W/1m"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "24\" x 24\" x 3\""
+    },
+    {
+      "key": "Weight",
+      "value": "12 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "White (Black, Silver, custom available)"
+    },
+    {
+      "key": "Grille",
+      "value": "Perforated aluminum"
+    },
+    {
+      "key": "Tile Size",
+      "value": "Standard 2' x 2' (600mm x 600mm)"
+    },
+    {
+      "key": "Connection",
+      "value": "Cat5 (300 ft max to PH-1AA hub)"
+    }
+  ],
+  "features": [
+    "Innovative design with highly focused directional sound",
+    "Defined Acoustic Coverage - eliminates sound bleeding to adjacent zones",
+    "High efficiency full-range drivers",
+    "Greatest low-frequency capability of any directional speaker",
+    "Excellent speech intelligibility",
+    "Energy efficient internal audio amplifier",
+    "Cat5 cable plug-and-play operation",
+    "Standard drop-tile 2' x 2' form factor",
+    "Retrofit friendly - quick and easy to install",
+    "CE compliant"
+  ],
+  "applications": [
+    "Digital signage directional speakers",
+    "Museums, exhibits, displays, libraries",
+    "Healthcare waiting areas and POP displays",
+    "Collaborative educational spaces",
+    "Hotels, fitness clubs, restaurants, theme parks",
+    "Shopping malls, grocery stores, retail"
+  ],
+  "downloads": [
+    {
+      "name": "PTS-4077F Datasheet",
+      "url": "/documents/ceiling-tile-speakers/pts-4077f-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

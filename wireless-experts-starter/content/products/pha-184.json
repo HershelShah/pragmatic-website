@@ -1,0 +1,107 @@
+{
+  "name": "PHA-184",
+  "title": "PHA-184 Line Array Speaker",
+  "category": "Line Array Speakers",
+  "categorySlug": "line-array-speakers",
+  "description": "18\" line array speaker with 48W max power. Dual-ported design with 360\u00b0 sound dispersion for home theater and digital signage.",
+  "image": "/images/products/line-array-speakers/pha-184.webp",
+  "url": "/products/line-array-speakers",
+  "badge": "PHA Series",
+  "available": true,
+  "showInGrid": false,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "48W max"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "84dB @ 1W/1m"
+    },
+    {
+      "key": "Dimensions",
+      "value": "18\" x 2\" x 2\""
+    }
+  ],
+  "keywords": [
+    "speaker",
+    "line array",
+    "audio",
+    "PA",
+    "sound",
+    "DAC",
+    "directional",
+    "home theater",
+    "digital signage",
+    "plasma",
+    "LCD"
+  ],
+  "detailTitle": "PHA-184 Compact Line Array Speaker",
+  "detailDescription": "The PHA-184 is a compact line array speaker with 4 full-range drivers rated at 18W RMS. Part of the small PHA series, it provides outstanding sound quality for small to medium spaces.",
+  "sku": "PHA-184",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Drivers",
+      "value": "4 full-range neodymium"
+    },
+    {
+      "key": "Power Handling",
+      "value": "1 - 48 watts max"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "84dB @ 1W/1M"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "72Hz - 20kHz"
+    },
+    {
+      "key": "Impedance",
+      "value": "4 Ohms"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "18\" x 2\" x 2\""
+    },
+    {
+      "key": "Weight",
+      "value": "1.5 lbs"
+    },
+    {
+      "key": "Finish",
+      "value": "Black anodized aluminum"
+    },
+    {
+      "key": "Grille",
+      "value": "Perforated aluminum"
+    }
+  ],
+  "features": [
+    "360-degree well-defined sound dispersion",
+    "Off-axis sound cancelling reduces noise bleed",
+    "Ultra-compact line array design",
+    "High efficiency full-range drivers",
+    "Excellent speech intelligibility and music clarity",
+    "Multiple mounting options available",
+    "4 Ohm impedance"
+  ],
+  "applications": [
+    "Houses of worship",
+    "Schools and classrooms",
+    "Corporate boardrooms and conference rooms",
+    "Restaurants, hotels, fitness clubs",
+    "Museums and retail spaces",
+    "Healthcare facilities"
+  ],
+  "downloads": [
+    {
+      "name": "PHA-184 Datasheet",
+      "url": "/documents/line-array-speakers/pha-184-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

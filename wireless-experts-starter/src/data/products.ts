@@ -94,18 +94,18 @@ export const products: Product[] = [
     title: 'PLP-HD63 Laser Projector',
     category: 'Laser Projectors',
     categorySlug: 'laser-projectors',
-    description: 'Professional 6200 lumen WUXGA laser projector designed for digital signage. Features 20,000 hour lifespan, 24/7 operation capability.',
+    description: 'Professional 6300 lumen WUXGA laser projector designed for digital signage. Features 20,000 hour lifespan, 24/7 operation capability.',
     image: '/images/products/laser-projectors/plp-hd63/plp-hd63-front.webp',
     url: '/products/laser-projectors/plp-hd63',
     badge: 'Pragmatic Signage',
     specs: {
-      brightness: '6200 ANSI lumens',
+      brightness: '6300 ANSI lumens',
       resolution: 'WUXGA (1920x1200)',
       lifespan: '20,000 hours',
       technology: '3-LCD'
     },
     keywords: [
-      'laser', 'projector', 'digital signage', 'WUXGA', '6200 lumens',
+      'laser', 'projector', 'digital signage', 'WUXGA', '6300 lumens',
       '3-LCD', 'HDBaseT', 'signage', 'display', 'video',
       'hospital', 'retail', 'hotel', 'mall', 'museum', 'corporate'
     ],

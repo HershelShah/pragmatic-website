@@ -1,0 +1,101 @@
+{
+  "name": "PHA-48",
+  "title": "PHA-48 Line Array Speaker",
+  "category": "Line Array Speakers",
+  "categorySlug": "line-array-speakers",
+  "description": "72\" high-performance line array with 48 full-range drivers. 100W RMS continuous, 300W peak. Ideal for hotels, theaters, restaurants, and large venues.",
+  "image": "/images/products/line-array-speakers/pha-48.webp",
+  "url": "/products/line-array-speakers",
+  "badge": "PHA Series",
+  "available": true,
+  "showInGrid": false,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "100W RMS / 300W peak"
+    },
+    {
+      "key": "Drivers",
+      "value": "48 full-range"
+    },
+    {
+      "key": "Dimensions",
+      "value": "72\" x 2\" x 2\""
+    }
+  ],
+  "keywords": [
+    "speaker",
+    "line array",
+    "audio",
+    "PA",
+    "sound",
+    "high power",
+    "DAC",
+    "directional",
+    "hotel",
+    "theater",
+    "restaurant",
+    "large venue",
+    "home theater"
+  ],
+  "detailTitle": "PHA-48 Large Line Array Speaker",
+  "detailDescription": "The PHA-48 is the flagship large line array speaker with 48 full-range drivers delivering 100W RMS and 300W peak power. The most powerful PHA speaker for the largest venues and demanding installations.",
+  "sku": "PHA-48",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Drivers",
+      "value": "48 full-range"
+    },
+    {
+      "key": "Power Handling",
+      "value": "100W RMS continuous, 300W peak"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "120Hz - 20kHz"
+    },
+    {
+      "key": "Impedance",
+      "value": "4 Ohms"
+    },
+    {
+      "key": "Dimensions (HxWxD)",
+      "value": "72\" x 2\" x 2\""
+    },
+    {
+      "key": "Finish",
+      "value": "Silver, White, Black, and custom colors"
+    }
+  ],
+  "features": [
+    "360-degree well-defined sound dispersion",
+    "Off-axis sound cancelling reduces noise bleed",
+    "Ultra-compact line array design",
+    "High efficiency full-range drivers",
+    "Excellent speech intelligibility and music clarity",
+    "Multiple mounting options available",
+    "4 Ohm impedance",
+    "Highest power output in PHA series (100W RMS / 300W peak)",
+    "48 full-range drivers for maximum coverage"
+  ],
+  "applications": [
+    "Houses of worship",
+    "Schools and classrooms",
+    "Corporate boardrooms and conference rooms",
+    "Restaurants, hotels, fitness clubs",
+    "Museums and retail spaces",
+    "Healthcare facilities",
+    "Large auditoriums and performance venues",
+    "Gymnasiums and sports facilities"
+  ],
+  "downloads": [
+    {
+      "name": "PHA-48 Datasheet",
+      "url": "/documents/line-array-speakers/pha-48-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

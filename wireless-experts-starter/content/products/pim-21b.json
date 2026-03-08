@@ -1,0 +1,177 @@
+{
+  "name": "PIM-21B",
+  "title": "PIM-21B Medical Imaging Monitor",
+  "category": "Medical Displays",
+  "categorySlug": "medical-displays",
+  "description": "21.5\" DICOM calibrated medical/dental imaging monitor. Full HD 1920x1080, 3-year warranty.",
+  "image": "/images/products/medical-displays/pim-21b/pim-21b-front.webp",
+  "url": "/products/medical-displays/pim-21b",
+  "badge": "Pragmatic Healthcare",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Size",
+      "value": "21.5\""
+    },
+    {
+      "key": "Resolution",
+      "value": "1920 x 1080"
+    },
+    {
+      "key": "Calibration",
+      "value": "DICOM"
+    },
+    {
+      "key": "Warranty",
+      "value": "3 years"
+    }
+  ],
+  "keywords": [
+    "medical",
+    "monitor",
+    "display",
+    "DICOM",
+    "dental",
+    "imaging",
+    "x-ray",
+    "radiology",
+    "healthcare",
+    "hospital",
+    "clinic",
+    "LED",
+    "LCD",
+    "diagnostic"
+  ],
+  "detailTitle": "PIM-21B Medical Imaging Monitor",
+  "detailDescription": "21.5-inch DICOM calibrated medical and dental imaging monitor. Full HD 1920x1080 resolution with wide viewing angles, ideal for X-ray, MRI, ultrasound, and dental imaging applications.",
+  "sku": "PIM-21B",
+  "brand": "Pragmatic Healthcare",
+  "images": [
+    {
+      "src": "/images/products/medical-displays/pim-21b/pim-21b-front.webp",
+      "alt": "PIM-21B Front View"
+    },
+    {
+      "src": "/images/products/medical-displays/pim-21b/pim-21b-rear.webp",
+      "alt": "PIM-21B Rear View"
+    },
+    {
+      "src": "/images/products/medical-displays/pim-21b/pim-21b-dental-chair.webp",
+      "alt": "PIM-21B in Dental Chair Installation"
+    },
+    {
+      "src": "/images/products/medical-displays/pim-21b/pim-21b-dental-operatory.webp",
+      "alt": "PIM-21B in Dental Operatory"
+    }
+  ],
+  "specifications": [
+    {
+      "key": "Screen Size",
+      "value": "21.5\" diagonal"
+    },
+    {
+      "key": "Resolution",
+      "value": "1920 x 1080 (Full HD)"
+    },
+    {
+      "key": "Aspect Ratio",
+      "value": "16:9 Widescreen"
+    },
+    {
+      "key": "Brightness",
+      "value": "250 nits (typical)"
+    },
+    {
+      "key": "Contrast Ratio (Static)",
+      "value": "1000:1"
+    },
+    {
+      "key": "Contrast Ratio (Dynamic)",
+      "value": "2,000,000:1"
+    },
+    {
+      "key": "Response Time",
+      "value": "8ms Gray-to-Gray"
+    },
+    {
+      "key": "Viewing Angle",
+      "value": "178\u00b0 Horizontal / 178\u00b0 Vertical"
+    },
+    {
+      "key": "Colors",
+      "value": "> 16 Million"
+    },
+    {
+      "key": "Calibration",
+      "value": "DICOM compliant"
+    },
+    {
+      "key": "Video Inputs",
+      "value": "HDMI, DVI-D, VGA (analog RGB)"
+    },
+    {
+      "key": "Power Supply",
+      "value": "12VDC @ 5 Amps"
+    },
+    {
+      "key": "VESA Mount",
+      "value": "100mm x 100mm"
+    },
+    {
+      "key": "Dimensions",
+      "value": "12.375\" W x 20.1\" H x 1.2\" D"
+    },
+    {
+      "key": "Weight",
+      "value": "6 lbs (including base)"
+    },
+    {
+      "key": "Certifications",
+      "value": "cULus, FCC, RoHS, ENERGY STAR"
+    },
+    {
+      "key": "Warranty",
+      "value": "3 years (extendable to 5 years)"
+    }
+  ],
+  "features": [
+    "DICOM calibrated for accurate medical imaging display",
+    "21.5\" Full HD 1920x1080 resolution for sharp detail",
+    "Wide 178\u00b0 viewing angles for collaborative consultations",
+    "2,000,000:1 dynamic contrast for deep blacks",
+    "LED backlighting for energy efficiency and longevity",
+    "Multiple inputs: HDMI, DVI-D, and VGA",
+    "Auto-selectable input detection",
+    "VESA 100mm mount for flexible installation",
+    "Easy to clean, durable housing",
+    "Energy-efficient ENERGY STAR compliant design",
+    "RS-232 control with optional adaptor",
+    "Eco-friendly, sustainable design",
+    "3-year warranty with option to extend to 5 years",
+    "UL/CE/FCC certified for safety compliance"
+  ],
+  "applications": [
+    "Dental operatories for X-ray and intraoral camera display",
+    "Medical clinics for patient imaging review",
+    "Radiology reading rooms",
+    "Dental simulation labs and training facilities",
+    "Veterinary clinics",
+    "Chiropractic offices",
+    "Orthopedic imaging centers",
+    "Patient consultation rooms"
+  ],
+  "downloads": [
+    {
+      "name": "PIM-21B Datasheet",
+      "url": "/documents/medical-displays/pim-21b/pim-21b-datasheet.pdf",
+      "type": "datasheet"
+    },
+    {
+      "name": "PIM-21B User Manual",
+      "url": "/documents/medical-displays/pim-21b/pim-21b-manual.pdf",
+      "type": "manual"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,99 @@
+{
+  "name": "PIW-6521-GT",
+  "title": "Dual 6.5\" In-Wall Speaker with Graphite Cones",
+  "category": "In-Wall Speakers",
+  "categorySlug": "in-wall-speakers",
+  "description": "High-performance edge-less thin-bezel architectural in-wall speaker with dual 6.5\" graphite cone woofers. Ideal for Dolby Atmos installations.",
+  "image": "/images/products/in-wall-speakers/piw-6521-gt.webp",
+  "url": "/products/in-wall-speakers/piw-6521-gt",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "100W RMS"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Frequency",
+      "value": "50Hz - 20kHz"
+    }
+  ],
+  "keywords": [
+    "in-wall",
+    "speaker",
+    "graphite",
+    "titanium",
+    "dolby atmos",
+    "home theater",
+    "dual woofer"
+  ],
+  "detailTitle": "PIW-6521-GT High-Performance In-Wall Speaker",
+  "detailDescription": "The PIW-6521-GT is a high-performance edge-less thin-bezel architectural speaker with dual 6.5\" graphite cone woofers and a 1\" titanium dome tweeter. Ideal for front, center, and surround in-wall home theater, and perfect for Dolby Atmos installations.",
+  "sku": "PIW-6521-GT",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Woofers",
+      "value": "Two 6.5\" Graphite cone"
+    },
+    {
+      "key": "Tweeter",
+      "value": "1\" Titanium dome"
+    },
+    {
+      "key": "Power",
+      "value": "100 Watts RMS"
+    },
+    {
+      "key": "Impedance",
+      "value": "8 Ohms"
+    },
+    {
+      "key": "Sensitivity",
+      "value": "87 dBSPL @ 1W/1m"
+    },
+    {
+      "key": "Maximum Output",
+      "value": "105 dBSPL @ 1m"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "50Hz - 20kHz"
+    },
+    {
+      "key": "Dispersion Angle",
+      "value": "90 degrees"
+    },
+    {
+      "key": "Dimensions",
+      "value": "18.93\" x 8.26\" x 3.94\""
+    }
+  ],
+  "features": [
+    "High-performance edge-less thin-bezel architectural design",
+    "Dual 6.5\" graphite cone woofers for powerful bass",
+    "1\" titanium dome tweeter for crystal-clear highs",
+    "100 Watts RMS power handling",
+    "Ideal for Dolby Atmos installations",
+    "90-degree dispersion angle for wide coverage"
+  ],
+  "applications": [
+    "Front, center, and surround in-wall home theater",
+    "Dolby Atmos installations",
+    "Residential and commercial audio"
+  ],
+  "downloads": [
+    {
+      "name": "PIW-6521-GT Datasheet",
+      "url": "/documents/in-wall-speakers/piw-6521-gt-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

@@ -1,0 +1,90 @@
+{
+  "name": "PH-NODE",
+  "title": "Healthcare Network Node",
+  "category": "Healthcare Solutions",
+  "categorySlug": "healthcare",
+  "description": "Ultra-compact network node for healthcare environments. View records, charts, x-rays, and MRI results at the bedside.",
+  "image": "/images/products/healthcare/ph-node.webp",
+  "url": "/products/healthcare/ph-node",
+  "badge": "",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Processor",
+      "value": "Intel Atom 1.6 GHz"
+    },
+    {
+      "key": "Network",
+      "value": "Gigabit Ethernet"
+    },
+    {
+      "key": "Storage",
+      "value": "Flash memory card reader"
+    }
+  ],
+  "keywords": [
+    "healthcare",
+    "network node",
+    "hospital",
+    "medical records",
+    "bedside terminal"
+  ],
+  "detailTitle": "PH-NODE Healthcare Network Node",
+  "detailDescription": "The PH-NODE is an ultra-compact network node designed for healthcare professionals to access patient records, charts, x-rays, and MRI results at the bedside. Features Gigabit Ethernet, VGA output, USB ports, and flash memory card support.",
+  "sku": "PH-NODE",
+  "brand": "Pragmatic Healthcare",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Processor",
+      "value": "Intel Atom 230, 1.6 GHz"
+    },
+    {
+      "key": "Network",
+      "value": "Gigabit Ethernet 10/100/1000Mbps"
+    },
+    {
+      "key": "Front Ports",
+      "value": "2x USB 2.0, microphone, headphone"
+    },
+    {
+      "key": "Rear Ports",
+      "value": "4x USB 2.0, VGA, RJ-45, Audio I/O"
+    },
+    {
+      "key": "Card Slots",
+      "value": "xD, Memory Stick, CF, MMC, SD"
+    },
+    {
+      "key": "Dimensions (WxDxH)",
+      "value": "9.44\" x 2.56\" x 11.81\""
+    },
+    {
+      "key": "Housing",
+      "value": "Flame retardant"
+    }
+  ],
+  "features": [
+    "Network gateway for viewing medical records, charts, x-rays, MRI results",
+    "Gigabit Ethernet for fast reliable networking",
+    "VGA output to connect to TV for browsing",
+    "Multiple USB ports and flash card reader",
+    "High security with biometric lock support",
+    "Eco-friendly design with flame retardant housing",
+    "Five Star Service warranty program"
+  ],
+  "applications": [
+    "Hospital patient rooms",
+    "Medical offices",
+    "Healthcare facility bedside terminals"
+  ],
+  "downloads": [
+    {
+      "name": "PH-NODE Datasheet",
+      "url": "/documents/healthcare/ph-node-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

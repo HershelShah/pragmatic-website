@@ -1,0 +1,98 @@
+{
+  "name": "SAA-248",
+  "title": "SAA-248 HideAway Stereo Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "Compact 2x48W high-power stereo amplifier. High efficiency design optimized to drive loudspeaker impedances from 2 to 32 ohms.",
+  "image": "/images/products/amplifiers/saa-248.webp",
+  "url": "/products/amplifiers/saa-248",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "48W per channel"
+    },
+    {
+      "key": "Channels",
+      "value": "2 (Stereo)"
+    },
+    {
+      "key": "Frequency",
+      "value": "20Hz - 20kHz"
+    },
+    {
+      "key": "Impedance",
+      "value": "2 - 32 ohms"
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "stereo",
+    "compact",
+    "hideaway",
+    "high power",
+    "flat panel",
+    "commercial",
+    "residential",
+    "audio"
+  ],
+  "detailTitle": "SAA-248 Compact Stereo Audio Amplifier",
+  "detailDescription": "The SAA-248 is a compact HideAway Series stereo audio amplifier delivering 48 watts per channel. The highest-power model in the SAA series for demanding speaker loads and larger spaces.",
+  "sku": "SAA-248",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Configuration",
+      "value": "2-channel stereo"
+    },
+    {
+      "key": "Continuous Power",
+      "value": "48 Watts per channel"
+    },
+    {
+      "key": "Power Supply",
+      "value": "15V DC"
+    },
+    {
+      "key": "Audio Input",
+      "value": "3.5mm stereo jack"
+    },
+    {
+      "key": "Audio Output",
+      "value": "Locking phoenix terminals"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20 Hz to 20 kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "3.3\"L x 3.45\"W x 1.5\"H"
+    }
+  ],
+  "features": [
+    "HideAway Series ultra-compact stereo amplifier",
+    "48 Watts per channel - highest power in SAA series",
+    "3.5mm stereo input, locking phoenix terminal outputs",
+    "15V DC powered",
+    "Advanced protection circuitry",
+    "UL, RoHS, and CE certified"
+  ],
+  "applications": [
+    "Digital signage with larger speakers",
+    "Flat panel displays and projectors",
+    "Corporate boardrooms",
+    "Commercial installations requiring higher power"
+  ],
+  "downloads": [
+    {
+      "name": "SAA Series Datasheet",
+      "url": "/documents/amplifiers/saa-212-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

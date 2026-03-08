@@ -1,0 +1,103 @@
+{
+  "name": "MBA-148",
+  "title": "MBA-148 HideAway Mono-block Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "Compact 48W mono-block amplifier with 15V DC power. High dynamic range and flat frequency response from 20Hz to 20kHz.",
+  "image": "/images/products/amplifiers/mba-148.webp",
+  "url": "/products/amplifiers/mba-148",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "48W continuous / 60W peak"
+    },
+    {
+      "key": "Channels",
+      "value": "1 (Mono)"
+    },
+    {
+      "key": "SNR",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\" x 3.5\" x 3\""
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "mono",
+    "compact",
+    "hideaway",
+    "15V",
+    "DC",
+    "audio",
+    "commercial",
+    "residential"
+  ],
+  "detailTitle": "MBA-148 HideAway Series Mono-block Amplifier",
+  "detailDescription": "The MBA-148 is a compact HideAway Series mono-block amplifier housing 48 watts continuous power per channel with 60 watts peak, delivering exceptional sound depth and musical clarity from a miniature form factor with 15V DC power.",
+  "sku": "MBA-148",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Continuous Power",
+      "value": "48 Watts per channel"
+    },
+    {
+      "key": "Peak Power",
+      "value": "60 Watts"
+    },
+    {
+      "key": "Power Supply",
+      "value": "15V DC"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz to 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\"W x 3.5\"H x 3\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "9 oz."
+    }
+  ],
+  "features": [
+    "Compact design weighing only 9 oz.",
+    "48 Watts continuous, 60 Watts peak",
+    "15V DC powered",
+    "High efficiency with high clock frequency",
+    "Flat frequency response from 10 Hz to 50 kHz",
+    "Very high signal-to-noise ratio and dynamic range",
+    "Optional rotary volume control",
+    "Advanced protection against overload, overheating, or short circuits"
+  ],
+  "applications": [
+    "Compact stereo amplification",
+    "Residential audio systems",
+    "Commercial audio installations"
+  ],
+  "downloads": [
+    {
+      "name": "MBA-148 Datasheet",
+      "url": "/documents/amplifiers/mba-148-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}

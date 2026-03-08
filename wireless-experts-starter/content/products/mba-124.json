@@ -1,0 +1,105 @@
+{
+  "name": "MBA-124",
+  "title": "MBA-124 HideAway Mono-block Amplifier",
+  "category": "Amplifiers",
+  "categorySlug": "amplifiers",
+  "description": "Compact 24W mono-block amplifier with 12V DC power. High dynamic range and flat frequency response from 20Hz to 20kHz.",
+  "image": "/images/products/amplifiers/mba-124.webp",
+  "url": "/products/amplifiers/mba-124",
+  "badge": "Pragmatic Audio",
+  "available": true,
+  "showInGrid": true,
+  "specs": [
+    {
+      "key": "Power",
+      "value": "24W continuous / 60W peak"
+    },
+    {
+      "key": "Channels",
+      "value": "1 (Mono)"
+    },
+    {
+      "key": "SNR",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\" x 3.5\" x 3\""
+    }
+  ],
+  "keywords": [
+    "amplifier",
+    "mono",
+    "compact",
+    "hideaway",
+    "digital signage",
+    "kiosk",
+    "12V",
+    "DC",
+    "audio",
+    "commercial"
+  ],
+  "detailTitle": "MBA-124 HideAway Series Mono-block Amplifier",
+  "detailDescription": "The MBA-124 is a compact HideAway Series mono-block amplifier providing 24 watts continuous and 60 watts peak power with exceptional sound depth and musical clarity. Accepts any volume-controlled line level stereo input with super quiet 12V DC power.",
+  "sku": "MBA-124",
+  "brand": "Pragmatic Audio",
+  "images": [],
+  "specifications": [
+    {
+      "key": "Continuous Power",
+      "value": "24 Watts per channel"
+    },
+    {
+      "key": "Peak Power",
+      "value": "60 Watts"
+    },
+    {
+      "key": "Power Supply",
+      "value": "12V DC"
+    },
+    {
+      "key": "Signal-to-Noise Ratio",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Dynamic Range",
+      "value": "<100 dB"
+    },
+    {
+      "key": "Frequency Response",
+      "value": "20Hz to 20kHz"
+    },
+    {
+      "key": "Dimensions",
+      "value": "2\"W x 3.5\"H x 3\"D"
+    },
+    {
+      "key": "Weight",
+      "value": "9 oz."
+    }
+  ],
+  "features": [
+    "Compact design weighing only 9 oz.",
+    "24 Watts continuous, 60 Watts peak",
+    "12V DC powered",
+    "High efficiency with high clock frequency",
+    "Flat frequency response from 10 Hz to 50 kHz",
+    "No ripple in the pass band",
+    "Very high signal-to-noise ratio and dynamic range",
+    "Optional rotary volume control",
+    "Advanced protection against overload, overheating, or short circuits"
+  ],
+  "applications": [
+    "Compact stereo amplification",
+    "Residential audio systems",
+    "Commercial audio installations"
+  ],
+  "downloads": [
+    {
+      "name": "MBA-124 Datasheet",
+      "url": "/documents/amplifiers/mba-124-datasheet.pdf",
+      "type": "datasheet"
+    }
+  ],
+  "relatedProducts": []
+}
