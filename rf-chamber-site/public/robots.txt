@@ -1,0 +1,8 @@
+# RF/EMC Test Chamber Rental — robots.txt
+# TODO: After attaching your custom domain, update the Sitemap URL below.
+# thanks.html is kept out of search results via its noindex meta tag
+# (it must stay crawlable for the noindex to be seen, so no Disallow here).
+User-agent: *
+Allow: /
+
+Sitemap: https://rf-chamber-rental.pages.dev/sitemap.xml

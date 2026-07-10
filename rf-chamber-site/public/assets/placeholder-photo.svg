@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Placeholder image: photo coming soon">
+  <!-- Placeholder gallery image. Replace with real chamber photos (JPG/WebP) and
+       update the alt text on each <img> that references this file. -->
+  <rect width="800" height="500" fill="#e2e8f0"/>
+  <rect x="8" y="8" width="784" height="484" fill="none" stroke="#94a3b8" stroke-width="3" stroke-dasharray="14 10"/>
+  <g fill="none" stroke="#64748b" stroke-width="8" stroke-linecap="round">
+    <path d="M400 330V230"/>
+    <circle cx="400" cy="212" r="18" fill="#64748b" stroke="none"/>
+    <path d="M352 190a68 68 0 0 1 96 0"/>
+    <path d="M326 160a105 105 0 0 1 148 0"/>
+  </g>
+  <text x="400" y="395" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="30" fill="#475569" font-weight="600">Photo coming soon</text>
+  <text x="400" y="432" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="20" fill="#64748b">[TODO: replace with a real chamber photo]</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Placeholder favicon: antenna-with-waves mark. Replace with a branded icon if desired. -->
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <g stroke="#67e8f9" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M32 52V28"/>
+    <circle cx="32" cy="24" r="5" fill="#67e8f9" stroke="none"/>
+    <path d="M20 18a17 17 0 0 1 24 0"/>
+    <path d="M14 11a26 26 0 0 1 36 0"/>
+  </g>
+</svg>

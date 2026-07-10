@@ -1,0 +1,18 @@
+// FALLBACK DEPLOY METHOD — Cloudflare Workers static assets.
+// Only needed if Cloudflare Pages is unavailable to you. To use it:
+//   1. Rename this file to wrangler.jsonc (keeping it in rf-chamber-site/).
+//   2. From rf-chamber-site/, run:  npx wrangler deploy
+// The site will be served from a *.workers.dev URL (free tier).
+//
+// NOTE: Keep this file under its fallback name while using Cloudflare Pages
+// Direct Upload, so `wrangler pages deploy` isn't confused by a Workers config.
+//
+// Other free alternatives: GitHub Pages, or Netlify's drag-and-drop deploy
+// (drop the public/ folder at https://app.netlify.com/drop).
+{
+  "name": "rf-chamber-rental",
+  "compatibility_date": "2026-07-01",
+  "assets": {
+    "directory": "./public"
+  }
+}
